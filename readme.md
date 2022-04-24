@@ -1,3 +1,5 @@
+[![Entra21](./assets/logoEntra21.png)](https://www.entra21.com.br/)
+
 
 "Aula dada é aula estudada HOJE!" (Pierluigi Piazzi)
 

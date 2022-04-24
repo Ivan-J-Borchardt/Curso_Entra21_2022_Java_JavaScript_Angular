@@ -15,6 +15,13 @@ https://www.youtube.com/watch?v=idGIiDwn41Y
 
 https://www.youtube.com/watch?v=qCL-pC3dRFs 
 
+## Palestra Wizard 2012
+
+https://www.youtube.com/watch?v=cVVg_T_vSbc
+
+https://www.youtube.com/watch?v=1w-1XMmMdHc
+
+
 ---
 ---
 

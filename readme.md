@@ -1,3 +1,10 @@
+
+"Aula dada é aula estudada HOJE!" (Pierluigi Piazzi)
+
+"A simplicidade é o mais alto grau de sofisticação" (Leonardo da Vinci)
+
+---
+
 ## Aulas 
 ### Aula 1 - 2022.04.18
 - Abertura do curso 
@@ -11,11 +18,40 @@
 ### Aula 4 - 2022.04.25 
 - Revisão dos conceitos introdutórios à Lógica de Programação
 - Ambientação no Visual Studio Code
-- Introdução ao HTML  
+- Introdução ao HTML  (Estrutura de um arquivo HTML, Comentários, Tags de Cabeçalho)
+- Tags semânticas (header, main, footer, section, nav, article, aside, span)
+- Principais Tags do HTML ( Títulos, Parágrafos, Imagens, Links, Listas e Tabelas)
+
+#### Materiais Complementares
+- https://www.w3.org/html/ 
+- https://pt.wikipedia.org/wiki/HTML 
+- https://developer.mozilla.org/pt-BR/docs/Web/HTML 
+- https://www.w3schools.com/html/
 
 
 ### Aula 5 - 2022.04.26
--  
+- HTML (Layout baseado em tabelas vs. Layout livre de tabelas (Entendendo o valor semântico das tags do HTML)
+- Formulários 
+
+
+### Aula 6 - 2022.04.27
+- HTML (Mais sobre Formulários) 
+- Revisão rápida dos conceitos de lógica de programação 
+- Lógica de Programação com JavaScript
+
+
+#### Materiais Complementares
+- https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
+- https://www.w3schools.com/js/js_intro.asp
+
+
+### Aula 7 - 2022.04.28
+- JavaScript (Acessando o DOM)
+
+
+### Aula 8 - 2022.04.29
+- JavaScript (Funções, Um pouco sobre 'Paradigmas de programação')
+
 
 
 ## Ferramentas 

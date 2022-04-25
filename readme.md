@@ -24,7 +24,7 @@
 - Tags semânticas (header, main, footer, section, nav, article, aside, span)
 - Principais Tags do HTML ( Títulos, Parágrafos, Imagens, Links, Listas e Tabelas)
 
-#### Materiais Complementares
+#### Materiais Complementares - HTML
 - https://www.w3.org/html/ 
 - https://pt.wikipedia.org/wiki/HTML 
 - https://developer.mozilla.org/pt-BR/docs/Web/HTML 
@@ -42,7 +42,7 @@
 - Lógica de Programação com JavaScript
 
 
-#### Materiais Complementares
+#### Materiais Complementares - JavaScript
 - https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
 - https://www.w3schools.com/js/js_intro.asp
 
@@ -55,11 +55,15 @@
 - JavaScript (Funções, Um pouco sobre 'Paradigmas de programação')
 
 
+### Aula 9 - 2022.05.02
+- Introdução à Git e GitHub 
+
 
 ## Ferramentas 
 
 Visual Studio Code:  https://code.visualstudio.com
 
+Git: https://git-scm.com/
 
 ## Links úteis 
  

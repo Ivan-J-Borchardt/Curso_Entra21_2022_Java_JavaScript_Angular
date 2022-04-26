@@ -22,7 +22,7 @@
 - Ambientação no Visual Studio Code
 - Introdução ao HTML  (Estrutura de um arquivo HTML, Comentários, Tags de Cabeçalho)
 - Tags semânticas (header, main, footer, section, nav, article, aside, span)
-- Principais Tags do HTML ( Títulos, Parágrafos, Imagens, Links, Listas e Tabelas)
+- Principais Tags do HTML ( Títulos, Parágrafos, Imagens, Links, Listas)
 
 #### Materiais Complementares - HTML
 - https://www.w3.org/html/ 
@@ -31,7 +31,8 @@
 - https://www.w3schools.com/html/
 
 
-### Aula 5 - 2022.04.26
+### Aula 5 - 2022.04.264
+- HTML (Tabelas, Links, Vídeo, Audio, Imagens em outro servidor)
 - HTML (Layout baseado em tabelas vs. Layout livre de tabelas (Entendendo o valor semântico das tags do HTML)
 - Formulários 
 

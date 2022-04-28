@@ -32,41 +32,86 @@
 - https://www.w3schools.com/html/
 
 
-### Aula 5 - 2022.04.264
+### Aula 5 - 2022.04.26
 - HTML (Tabelas, Links, Vídeo, Audio, imagens em outro servidor)
 - HTML (Layout baseado em tabelas vs. Layout livre de tabelas (Entendendo o valor semântico das tags do HTML)
-- Formulários 
+
 
 
 ### Aula 6 - 2022.04.27
-- HTML (Mais sobre Formulários) 
+- HTML (Formulários - TAG input e seus vários tipos e atributos) 
+
+
+### Aula 7 - 2022.04.28
+- Publicando um site estático no Github Pages 
+  - Criando uma conta no Github 
+  - Criando o primeiro repositório 
+  - Subindo os arquivos e Publicação do Site   
+
+- HTML (Formulários - Textarea, fieldset, button, select, datalist, output)
+
+### Aula 8 - 2022.04.29
+- Aprofundando um pouco mais no HTML
+    - Boas práticas 
+    - Atalhos no VSCode 
+    - mais dicas... 
+- Exercícios HTML
+
+
+### Aula 9 - 2022.05.02
 - Revisão rápida dos conceitos de lógica de programação 
 - Lógica de Programação com JavaScript
-
-
+    - Variáveis (tipagem forte vs. tipagem fraca)
+    - Saída para o console 
+    - Operadores Aritméticos 
+    - Estruturas de seleção simples 
+    
 #### Materiais Complementares - JavaScript
 - https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
 - https://www.w3schools.com/js/js_intro.asp
 
-
-### Aula 7 - 2022.04.28
+### Aula 10 - 2022.05.03
 - JavaScript (Acessando o DOM)
+- Estruturas de Repetição 
 
-
-### Aula 8 - 2022.04.29
+### Aula 11 - 2022.05.04 
 - JavaScript (Funções, Um pouco sobre 'Paradigmas de programação')
 
 
-### Aula 9 - 2022.05.02
+### Aula ID - 2022.05.05 
+- Profa. Maiara 
+
+### Aula 12 - 2022.05.06 
 - Introdução à Git e GitHub 
+    - Instalação do Git 
+    - git init, git add ., git commit, git remote, git push 
 
 
 ## Ferramentas 
 
-Visual Studio Code:  https://code.visualstudio.com
+**Visual Studio Code**
+~~~
+        https://code.visualstudio.com
+~~~
 
-Git: https://git-scm.com/
+**Google Chrome**
+~~~
+        Download Google Chrome: 
+            https://www.google.pt/intl/pt-PT/chrome/
 
+        Tutorial de Instalacao do Google Chrome: 
+            https://canaltech.com.br/navegadores/como-instalar-o-google-chrome/
+            https://support.google.com/chrome/answer/95346?hl=pt&co=GENIE.Platform%3DDesktop
+
+        Extensão do Google Tradutor para o Chrome: 
+            https://canaltech.com.br/utilitarios/conheca-a-extensao-do-google-tradutor-para-o-chrome/
+
+~~~
+
+**Git**
+~~~
+        https://git-scm.com/
+~~~
 ## Links úteis 
  
 [![WhatsApp](https://img.shields.io/badge/Grupo-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/HXtjXa8b22I1NfbChLuFjx)

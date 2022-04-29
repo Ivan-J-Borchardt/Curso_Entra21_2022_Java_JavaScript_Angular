@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplos Elem. Form</title>
+    </head>
+    <body>
+        <form action="">
+            <!-- Conjunto de campos -->
+            <fieldset >
+                <legend>Cadastro Usuário</legend>
+                <!-- Input (todos os tipos...)-->
+                <label for="idNome">Nome</label><br>
+                <input type="text" id="idNome" name="nmNome" size="30">
+                <br><br>
+    
+                <!-- Caixa de texto -->
+                <label for="idTexto">Texto</label><br>
+                <textarea name="nmTexto" id="idTexto" cols="30" rows="10"></textarea>
+
+                <br><br>
+                <!-- Botoes -->
+                <button type="button">Salvar</button>
+                <button type="submit">Submeter</button>
+                <button type="reset">Limpar Tela</button>
+
+
+            </fieldset>
+        </form>
+
+        <form action="">
+            <fieldset>
+                <legend>Formulário 2</legend>
+
+                <!-- Caixa de seleção -->
+                <label for="idCarros">Escolha seu carro:</label><br>
+                <select name="nmCarros" id="idCarros" size="2" multiple>
+                    <option value="volvo">Volvo</option>
+                    <option value="ford ka">Ford Ka</option>
+                    <option value="lamburgine">Lamburgine</option>
+                    <option value="fiat">Fiat</option>
+                </select>
+
+                <br><br>
+                
+                <!-- Lista de dados (seleção de item) -->
+                <label for="idBowsers"></label><br>
+                <input list="idBowsers">
+                <datalist id="idBowsers"> 
+                    <option value="Internet Explorer">o melhor NV...</option>
+                    <option value="edge">Edge</option>
+                    <option value="chrome">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="opera">Opera</option>
+                    <option value="safari">Safari</option>
+                    <option value="brave">Brave</option>
+                </datalist> 
+
+            </fieldset>
+
+        </form>
+
+    </body>
+</html>

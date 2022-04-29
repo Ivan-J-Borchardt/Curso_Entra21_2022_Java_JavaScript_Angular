@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplos de atributos</title>
+    </head>
+    <body>
+        <form action="" method="GET">
+
+            <!-- placeholder, required, autocomplete -->
+            <label for="idNome">Nome</label><br>
+            <input type="text" id="idNome" name="nmNome" placeholder="Nome Completo" required  autocomplete="off">
+            <br><br>
+
+            <!-- size, maxlength -->
+            <label for="idSobreNome">Sobrenome</label><br>
+            <input type="text" name="nmSobrenome" id="idSobreNome" size="35" maxlength="5" autofocus>
+
+            <br><br>
+            <!-- value, readonly -->
+            <label for="idEmail">Email</label><br>
+            <input type="email" id="idEmail" name="nmEmail" value="meuEmail@servidor.com" readonly>
+            <br><br>
+
+            <!-- required, disabled-->
+            <label for="idSenha">Senha</label><br>
+            <input type="password" id="idSenha" name="nmSenha" required  disabled>
+
+            <br><br>
+            <!-- min, max, step-->
+            <label for="idIdade">Idade</label><br>
+            <input type="number" id="idIdade" name="nmIdade" min="-89" max="89" step="0.01">
+
+            <br><br>
+            <!-- checked -->
+            <input type="radio" id="idFem" name="nmSexo" checked disabled>
+            <label for="idFem">Feminino</label>
+
+            <input type="radio" id="idMas" name="nmSexo" disabled>
+            <label for="idMas">Masculino</label>
+
+            <br><br>
+            <label for="idTel">Telefone</label><br>
+            <input type="text" id="idTel" name="nmTel">
+
+            <br><br>
+            <p>Selecione os assuntos de seu interesse</p>
+           
+            <!-- checked -->
+            <input type="checkbox" id="idVendas" name="nmVendas" checked>
+            <label for="idVendas">Vendas</label>
+
+            <br>
+            <input type="checkbox" id="idCompras" name="nmCompras">
+            <label for="idCompras">Compras</label>   
+
+            <br>
+            <input type="checkbox" id="idServicos" name="nmServicos">
+            <label for="idServicos">Servicos</label>
+
+            <br><br>
+            <input type="submit">
+            <input type="reset">
+            <input type="button">
+
+        </form>  
+    </body>
+</html>

@@ -53,14 +53,18 @@
 - HTML (Formulários - Textarea, fieldset, button, select, datalist, output)
 
 ### Aula 8 - 2022.04.29
-- Aprofundando um pouco mais no HTML
-    - Boas práticas 
-    - Atalhos no VSCode 
-    - mais dicas... 
+- Revisão dos conceitos introdutórios de HTML
+- Correcão do Exercício 1 (E1L1)
 - Exercícios HTML
 
 
 ### Aula 9 - 2022.05.02
+- Aprofundando um pouco mais no HTML
+    - Boas práticas 
+    - Atalhos no VSCode 
+    - mais dicas... 
+- Correção de Exercícios HTML 
+    
 - Revisão rápida dos conceitos de lógica de programação 
 - Lógica de Programação com JavaScript
     - Variáveis (tipagem forte vs. tipagem fraca)

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E1L1</title>
+    </head>
+    <body>
+        <form action="" method="get">
+
+            <label for="idNome">Nome</label> <br>
+            <input type="text" id="idNome" name="nmNome" required> 
+           
+            <br><br>
+            <label for="idSobrenome">Sobrenome</label> <br>
+            <input type="text" id="idSobrenome" name="nmSobrenome" required> 
+
+            <br><br>
+            <label for="idDataNasc">Data de Nascimento</label> <br>
+            <input type="date" id="idDataNasc" name="nmDataNasc" min="2018-01-01" max="2022-01-01" required>         
+
+            <br><br>
+            <label for="idNomeMae">Nome da Mae</label> <br>
+            <input type="text" id="idNomeMae" name="nmNomeMae" required> 
+
+            <br><br>
+            <label for="idNomePai">Nome do Pai</label> <br>
+            <input type="text" id="idNomePai" name="nmNomePai"> 
+
+            <br><br>
+            <label for="idEmail">E-mail</label> <br>
+            <input type="email" id="idEmail" name="nmEmail"> 
+
+            <br><br>
+            <label for="idSerie">Serie</label> <br>
+            <input type="number" id="idSerie" name="nmSerie" min="1" max="9"> 
+
+            <br><br>
+            <input type="radio" id="idFeminino" name="nmSexo" checked > 
+            <label for="idFeminino">Feminino</label> 
+    
+            <input type="radio" id="idMasculino" name="nmSexo" > 
+            <label for="idMasculino">Masculino</label> 
+
+            <br><br>
+            <fieldset>
+                <legend>Endereço</legend>
+                <label for="idRua">Rua</label> <br>
+                <input type="text" id="idRua" name="nmRua"> 
+
+                <br><br>
+                <label for="idCidade">Cidade</label> <br>
+                <input type="text" id="idCidade" name="nmCidade">    
+                
+                <br><br>
+                <label for="idUf">Uf</label> <br>
+                <input type="text" id="idUf" name="nmUf" size="2" maxlength="2">    
+
+            </fieldset>
+            <br>
+            <button type="submit">Salvar</button>
+            <button type="reset">Cancelar</button>
+
+        </form>
+
+    </body>
+</html>

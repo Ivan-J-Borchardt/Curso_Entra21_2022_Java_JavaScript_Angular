@@ -5,6 +5,8 @@
 
 "A simplicidade é o mais alto grau de sofisticação" (Leonardo da Vinci)
 
+"o mundo ama os talentosos, mas recompensa os disciplinados" (Autor Desconhecido)
+
 ---
 
 ## Aulas 

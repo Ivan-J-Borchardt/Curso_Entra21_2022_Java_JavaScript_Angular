@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <fieldset>
+                <legend>Login</legend>
+
+                <label for="idUsuario">Usuario</label><br>
+                <input type="text" id="idUsuario" name="nmUsuario" autocomplete="on">
+
+                <br><br>
+                <label for="idSenha">Senha</label><br>
+                <input type="text" id="idSenha" name="nmSenha" minlength="8" maxlength="15" autocomplete="off" pattern="^(?=.[A-Z])(?=.[a-z])(?=.[0-9])(?=.[@#$])[a-zA-Z0-9@#$]{8,15}$">                
+
+                <br><br>
+                <button type="submit">Login</button>
+                <button type="button">Recuperar Senha</button>
+
+            </fieldset>
+
+        </form>
+        
+    </body>
+</html>

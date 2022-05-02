@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <fieldset>
+                <legend>Urna Eletrônica</legend>
+                <label for="idNumCan">Número Candidato</label><br>
+                <select name="nmNumCan" id="idNumCan">
+                    <option value="10">10 - Joao Sorriso</option>
+                    <option value="20">20 - Julia Feliz</option>
+                    <option value="30">30 - Mikey Mouse</option>
+                    <option value="40">40 - Mine</option>
+                </select>
+                <br><br>
+                <!--
+                <input list="idNumCan">
+                <datalist id="idNumCan">
+                    <option value="10">Joao Sorriso</option>
+                    <option value="20">Julia Feliz</option>
+                    <option value="30">Mikey Mouse</option>
+                    <option value="40">Mine</option>
+                </datalist>
+                
+                -->
+
+                <!-- 
+                <label for="idNum">Numero Candidato</label> <br>
+                <input type="number" id="idNum" name="nmNum" min="1" max="5">
+                <br><br>
+                -->
+
+
+                <label for="idNome">Candidato</label> <br>
+                <input type="text" id="idNome" name="nmNome" readonly value="Joao">
+
+                <br><br>
+
+                <img src="fotos/smiles.jpg" alt="Candidato" width="250">
+
+                <br><br>
+                <input type="submit" value="Confirmar">
+                <input type="reset"  value="Cancelar">
+                <input type="button" value="Branco">
+            </fieldset>
+
+        </form>
+    </body>
+</html>

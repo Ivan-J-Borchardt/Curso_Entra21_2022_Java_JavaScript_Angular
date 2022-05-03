@@ -10,9 +10,9 @@
         <form action="">
 
             <label for="idNome">Nome</label><br>
-            <input type="text" name="nmNome" id="idNome">
+            <input type="text" name="nmNome" id="idNome" value="conteudo da caixa...">
             <br><br>
-            <input type="button" value="Clique Me">
+            <input type="button" value="Clique Me" onclick="pegarNome()" >
 
         </form>
          
@@ -28,13 +28,14 @@
             */
            
             idade = idade + 20
-            nome = 'Ivan'
-
-            console.log("Nome: " + nome + " Idade: " + idade)
-            console.log("Nome 2: ")
             
-            alert("Isso é um Alert")
+            //alert("Isso é um Alert")
 
+            function pegarNome(){
+                nome = document.getElementById("idNome").value
+                console.log("Nome: " + nome + " Idade: " + idade)
+                console.log("Nome 2: ")
+            }
             
         </script>    
     </body>

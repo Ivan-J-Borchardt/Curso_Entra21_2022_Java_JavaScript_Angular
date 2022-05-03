@@ -64,25 +64,36 @@
     - Atalhos no VSCode 
     - mais dicas... 
 - Correção de Exercícios HTML 
-    
+
 - Revisão rápida dos conceitos de lógica de programação 
 - Lógica de Programação com JavaScript
     - Variáveis (tipagem forte vs. tipagem fraca)
-    - Saída para o console 
-    - Operadores Aritméticos 
-    - Estruturas de seleção simples 
+    - Conceito de sequencia lógica 
+    - Conceito de Sub-Rotina (uma função simples)
+- Saída para o console 
+- JavaScript (Acessando o DOM)
+
     
 #### Materiais Complementares - JavaScript
 - https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
 - https://www.w3schools.com/js/js_intro.asp
 
 ### Aula 10 - 2022.05.03
-- JavaScript (Acessando o DOM)
-- Estruturas de Repetição 
+
+- Tipos de dados 
+- Operadores para testar o tipo da variável 
+- Conversão de tipos 
+    - Conversão Implícita
+    - Conversão Explícita 
+
+- Operadores Aritméticos 
+- Estruturas de seleção simples 
+- Exemplos de Manipulação do DOM (capturando Radio button, checkbox,  
+  datalist, select, etc)
 
 ### Aula 11 - 2022.05.04 
-- JavaScript (Funções, Um pouco sobre 'Paradigmas de programação')
-
+- Conceito de Proposições 
+- Estruturas de Repetição 
 
 ### Aula ID - 2022.05.05 
 - Profa. Maiara 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tipos de Dados</title>
+    </head>
+    <body>
+        
+
+        <script>
+            /*
+               5 - Tipos de dados
+               --------------------- 
+                - string 
+                - number 
+                - boolean 
+                - Object 
+                - function 
+
+                2 - Special Data Type (Tipos de dados especiais)
+                -------------------------------------------------
+                - null 
+                - undefined 
+
+                6 - Object Types (Tipos de Objetos)
+                --------------------------------------
+                - Object 
+                - Date 
+                - Array 
+                - Number
+                - String 
+                - Boolean 
+
+                Operadores para testar o tipo de variavel 
+                -----------------------------------------
+                typeOf
+                isNaN (Not a Numeric)
+            */
+
+            var nome = "Vinte e Um"
+
+            console.log(typeof(nome));
+            console.log(isNaN(nome));
+
+            /*
+                2 - Formas de fazer conversao de tipo 
+                -------------------------------------
+                - Conversão automática (Conversão Implicita)
+            */
+
+               console.log(5 + "2"); //Conversao para string 
+               console.log(5 + null); //Conversao para number
+               console.log("5" + undefined); 
+               console.log("5" + null); //Conversao para string
+               console.log("5" - 2); //Conversao para number
+               console.log("5" * "2"); //Conversao para number
+
+            /*
+               - Conversão usando funções do JS (Conversão Explicita)
+               ------------------------------------------------------
+               - Para String 
+                 
+            */
+
+
+            // - Para Number
+            // - Strind to Number 
+                var numX =  Number("3.14")
+                console.log(typeof(numX));
+
+                numX =  parseFloat("10")
+                console.log(typeof(numX));
+
+                numX = parseInt("10.3")
+                console.log(typeof(numX));
+
+                var y = "5"
+                var x =  + y
+                console.log("tipo de x: " + typeof(x) + "  " + x);
+
+        </script>
+    </body>
+</html>

@@ -87,18 +87,22 @@
     - Conversão Explícita 
 
 - Operadores Aritméticos 
-- Estruturas de seleção simples 
+
 - Exemplos de Manipulação do DOM (capturando Radio button, checkbox,  
   datalist, select, etc)
 
 ### Aula 11 - 2022.05.04 
-- Conceito de Proposições 
-- Estruturas de Repetição 
+- Exercícios e revisão pontual da aula anterior 
+- Mais sobre operadores Aritméticos 
+- Precedência dos calculos aritméticos 
+- Potencia Enésima, cálculo percentual, Biblioteca Math (pow, sqrt, PI)
 
 ### Aula ID - 2022.05.05 
 - Profa. Maiara 
 
 ### Aula 12 - 2022.05.06 
+- Conceito de Proposições 
+- Estruturas de seleção simples 
 - Introdução à Git e GitHub 
     - Instalação do Git 
     - git init, git add ., git commit, git remote, git push 

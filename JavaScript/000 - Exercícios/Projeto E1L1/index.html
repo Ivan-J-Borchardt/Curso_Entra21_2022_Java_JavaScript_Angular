@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="idTexto1">Texto 1</label><br>
+            <input type="text" id="idTexto1" name="nmTexto1">
+            <br><br>
+
+            <label for="idTexto2">Texto 2</label><br>
+            <input type="text" id="idTexto2" name="nmTexto2">
+            <br><br>
+
+            <input type="button" onclick="capturarTela()" value="Executar">
+
+        </form>
+
+        <script>
+
+            function capturarTela(){
+                var texto1 = document.getElementById("idTexto1").value
+                document.getElementById("idTexto2").value = texto1
+            }
+
+
+        </script>
+    </body>
+</html>

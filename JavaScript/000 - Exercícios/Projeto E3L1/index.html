@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <label for="idNum1">Primeiro Numero</label><br>
+        <input type="number" id="idNum1" name="nmNum1">
+        <br><br>
+        <label for="idNum2">Segundo Numero</label><br>
+        <input type="number" id="idNum2" name="nmNum2">
+        <br><br>
+
+        <label for="idResul">Resultado</label><br>
+        <input type="text" id="idResul" name="nmResul">
+        <br><br>
+
+        <button type="button" onclick="somar()">Somar</button>
+        <button type="button" onclick="subtrair()">Subtrair</button>
+        <button type="button" onclick="multiplicar()">Multiplicar</button>
+        <button type="button" onclick="dividir()">Dividir</button>
+
+        <script>
+
+
+            function somar(){
+                var num1 = Number(document.getElementById("idNum1").value)
+                var num2 = Number(document.getElementById("idNum2").value)
+
+                //console.log("NUM1 " + typeof(num1));
+                //console.log("NUM2 " + typeof(num2));
+
+                var resultado = num1 + num2
+
+                document.getElementById("idResul").value = resultado
+
+            }
+
+            function subtrair(){
+                var num1 = Number(document.getElementById("idNum1").value)
+                var num2 = Number(document.getElementById("idNum2").value)
+
+                //console.log("NUM1 " + typeof(num1));
+                //console.log("NUM2 " + typeof(num2));
+
+                var resultado = num1 - num2 
+
+                document.getElementById("idResul").value = resultado
+
+            }
+
+            function multiplicar(){
+                var num1 = Number(document.getElementById("idNum1").value)
+                var num2 = Number(document.getElementById("idNum2").value)
+
+                //console.log("NUM1 " + typeof(num1));
+                //console.log("NUM2 " + typeof(num2));
+
+                var resultado = num1 * num2
+
+                document.getElementById("idResul").value = resultado
+
+            }            
+
+            function dividir(){
+                var num1 = Number(document.getElementById("idNum1").value)
+                var num2 = Number(document.getElementById("idNum2").value)
+
+                //console.log("NUM1 " + typeof(num1));
+                //console.log("NUM2 " + typeof(num2));
+
+                var resultado = num1 / num2
+
+                document.getElementById("idResul").value = resultado
+
+            }
+
+        </script>
+    </body>
+</html>

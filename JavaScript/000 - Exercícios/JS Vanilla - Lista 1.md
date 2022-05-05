@@ -4,3 +4,6 @@
 2. Crie um programa para ler dois números da tela, somá-los e mostrar o resultado em um terceiro Input. 
 
 3. Crie um projeto a partir do exercício 2, implemente as demais operações aritméticas (Subtração, multiplicação, divisão) 
+
+4. Crie um programa para receber a altura, peso  e calcule o imc.
+  IMC = peso / (altura x altura).

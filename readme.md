@@ -10,16 +10,16 @@
 ---
 
 ## Aulas 
-### Aula 1 - 2022.04.18
+### Aula 1 - 2022.04.18 - 4h
 - Abertura do curso 
 
-### Aula 2 - 2022.04.19
+### Aula 2 - 2022.04.19 - 8h
 - Introdução à lógica de programação
 
-### Aula 3 - 2022.04.20
+### Aula 3 - 2022.04.20 - 12h
 - Introdução à lógica de programação (algoritmo, variáveis, proposições, operadores relacionais, operadores lógicos, operadores aritméticos)  
 
-### Aula 4 - 2022.04.25 
+### Aula 4 - 2022.04.25 - 16h 
 - Revisão dos conceitos introdutórios à Lógica de Programação
 - Ambientação no Visual Studio Code
 - Introdução ao HTML  (Estrutura de um arquivo HTML, Comentários, Tags de Cabeçalho)
@@ -34,17 +34,17 @@
 - https://www.w3schools.com/html/
 
 
-### Aula 5 - 2022.04.26
+### Aula 5 - 2022.04.26 - 20h
 - HTML (Tabelas, Links, Vídeo, Audio, imagens em outro servidor)
 - HTML (Layout baseado em tabelas vs. Layout livre de tabelas (Entendendo o valor semântico das tags do HTML)
 
 
 
-### Aula 6 - 2022.04.27
+### Aula 6 - 2022.04.27 - 24h
 - HTML (Formulários - TAG input e seus vários tipos e atributos) 
 
 
-### Aula 7 - 2022.04.28
+### Aula 7 - 2022.04.28 - 28h
 - Publicando um site estático no Github Pages 
   - Criando uma conta no Github 
   - Criando o primeiro repositório 
@@ -52,13 +52,13 @@
 
 - HTML (Formulários - Textarea, fieldset, button, select, datalist, output)
 
-### Aula 8 - 2022.04.29
+### Aula 8 - 2022.04.29 - 32h
 - Revisão dos conceitos introdutórios de HTML
 - Correcão do Exercício 1 (E1L1)
 - Exercícios HTML
 
 
-### Aula 9 - 2022.05.02
+### Aula 9 - 2022.05.02 - 36h
 - Aprofundando um pouco mais no HTML
     - Boas práticas 
     - Atalhos no VSCode 
@@ -78,7 +78,7 @@
 - https://www.ecma-international.org/publications-and-standards/standards/ecma-262/
 - https://www.w3schools.com/js/js_intro.asp
 
-### Aula 10 - 2022.05.03
+### Aula 10 - 2022.05.03 - 40h
 
 - Tipos de dados 
 - Operadores para testar o tipo da variável 
@@ -91,7 +91,7 @@
 - Exemplos de Manipulação do DOM (capturando Radio button, checkbox,  
   datalist, select, etc)
 
-### Aula 11 - 2022.05.04 
+### Aula 11 - 2022.05.04 - 44h
 - Exercícios e revisão pontual da aula anterior 
 - Mais sobre operadores Aritméticos 
 - Precedência dos calculos aritméticos 
@@ -100,20 +100,23 @@
 ### Aula ID - 2022.05.05 
 - Profa. Maiara 
 
-### Aula 12 - 2022.05.06 
+### Aula XX - 2022.05.06 
+- Aula cancelada - Instrutor com problemas de internet. 
+- A aula será reposta em uma data futura. 
+ 
+### Aula 12 - 2022.05.09 - 48h
+- Correção dos exercícios da lista 1 
 - Conceito de Proposições 
 - Estruturas de seleção simples 
-- Introdução à Git e GitHub 
-    - Instalação do Git 
-    - git init, git add ., git commit, git remote, git push 
+- Lista de exercícios 2 
 
-### Aula 13 - 2022.05.09
-
-
-### Aula 14 - 2022.05.10
+### Aula 13 - 2022.05.10 - 52h
+- Correção de exercícios
+- Estruturas de seleção compostas, case, ternário 
+- Lista de exercícios 3 
 
 
-### Aula AM - 2022.05.11
+### Aula AM - 2022.05.11 
 - Aula Magna  10:00:00 (Horário de Brasília)
 - Link em breve
 - Participação obrigatória
@@ -122,7 +125,16 @@
 ### Aula ID - 2022.05.12
 - Profa. Maiara 
 
-### Aula 15 - 2022.05.13
+### Aula 14 - 2022.05.13 - 56h
+- Correção de exercícios 
+- Introdução à Git e GitHub 
+    - Instalação do Git 
+    - git init, git add ., git commit, git remote, git push
+- Desafio da pizza (Para executar no final de semana)
+
+### Aula 15 - 2022.05.16 - 60h
+- Estruturas de repetição 
+- Lista de Exercícios 4 
 
 
 ## Ferramentas 

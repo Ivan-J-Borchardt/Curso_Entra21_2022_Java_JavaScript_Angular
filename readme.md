@@ -16,6 +16,9 @@
 ### Aula 2 - 2022.04.19 - 8h
 - Introdução à lógica de programação
 
+#### Materiais Complementares - Cursos de Lógica de Programação
+- https://www.cursoemvideo.com/
+
 ### Aula 3 - 2022.04.20 - 12h
 - Introdução à lógica de programação (algoritmo, variáveis, proposições, operadores relacionais, operadores lógicos, operadores aritméticos)  
 

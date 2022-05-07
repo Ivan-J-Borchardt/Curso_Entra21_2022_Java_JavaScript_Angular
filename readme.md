@@ -107,6 +107,23 @@
     - Instalação do Git 
     - git init, git add ., git commit, git remote, git push 
 
+### Aula 13 - 2022.05.09
+
+
+### Aula 14 - 2022.05.10
+
+
+### Aula AM - 2022.05.11
+- Aula Magna  10:00:00 (Horário de Brasília)
+- Link em breve
+- Participação obrigatória
+- Neste dia não haverá aula a noite
+
+### Aula ID - 2022.05.12
+- Profa. Maiara 
+
+### Aula 15 - 2022.05.13
+
 
 ## Ferramentas 
 

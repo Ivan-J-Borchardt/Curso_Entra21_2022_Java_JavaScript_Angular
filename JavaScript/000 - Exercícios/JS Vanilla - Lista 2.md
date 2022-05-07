@@ -1,22 +1,24 @@
-1. Usando o projeto HTML-L1E5 (Tela de Login) como base, crie um programa para autenticação de usuários.
+# Lógica de Programação 
+## Lista de Exercícios 2 
+### Objetivos
+- Compreender na prática os conceitos de proposições, conjunção, disjunção e negação. 
+- Criar algoritmos simples usando estruturas de seleção. 
+- Compreender os operadores relacionais e operadores lógicos. 
+- Promover a construção de um ferramental lógico e algorítmico para posterior aplicação em soluções de maior complexidade.
+- Desenvolver o racíocinio lógico e a habilidade analítica. 
+--- 
+### Exercícios 
+1. Crie um algoritmo que leia um número, se ele for maior que 20, divida o número por 2.
 
-- Salve 3 usuários em variáveis pré-inicializadas 
+2. Faça um programa para testar a idade da pessoa e descubra se ela pode dirigir ou não.
 
-|  userId   |    senha    |
-|-----------|:-----------:|
-| E21Aluno1 |  Trocar123  |
-| E21Aluno2 |  Senha@123  |
-| E21Aluno3 |  123Trocar  |
+3. Crie um algoritmo que permita cadastrar e imprimir a temperatura dos últimos 3 dias. Calcule a média e descubra se a temperatura de hoje está acima ou abaixo da média. 
 
-- Regras
--   Se o usuário informar o userId e senha corretamente o sistema deverá exibir a mensagem: 
+7. Crie um algoritmo em pseudocódigo que permita cadastrar um cliente de um banco: nome do correntista, o nome do banco, o número da conta, o limite de credito e saldo atual. Realize operações de crédito e débito na conta específica e, no final, imprima o saldo final do cliente. 
 
-    **"Acesso Permitido"**
+8. Elabore um algoritmo que verifica se o número digitado é par ou ímpar. 
+- A primeira pergunta que podemos fazer é: Como verifico na **vida real** se um número e par ou impar? Por exemplo, 2, 4, 5, 10, 17. Certamente você sabe que dentre os números apresentados, 2, 4 e 10 são pares e que 5 e 17 são ímpares. Mas, como você sabe? - Sabemos que um número é par se ele for divisível por 2, ou seja, o resto da divisão por 2 é 0 (zero). Caso contrário, o número é ímpar.
 
--   Se o userId não estiver correto, exibir: 
+9. Crie um algoritmo que permita ao aluno responder qual é a capital do Brasil. O algoritmo deve dizer se a resposta está certa ou errada.
 
-    **"Usuário não cadastrado"**
-
--   Se o usuário estiver correto, mas a senha estiver errada, exibir:
-
-    **"Senha incorreta"**
+10.	No algoritmo do exemplo anterior, percebe-se que apenas se o aluno digitar Brasília a resposta será correta. Mas, se o aluno digitar brasília com “b” minúsculo? Resolva o exemplo anterior para aceitar tal situação (apenas usando estruturas de seleção).

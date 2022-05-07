@@ -1,5 +1,5 @@
 # Lógica de Programação 
-## Lista de Exercícios 2 
+## Lista de Exercícios 2  
 ### Objetivos
 - Compreender na prática os conceitos de proposições, conjunção, disjunção e negação. 
 - Criar algoritmos simples usando estruturas de seleção. 

@@ -1,3 +1,12 @@
+# Lógica de Programação 
+## Lista de Exercícios 3 
+### Objetivos
+- Compreender na prática os conceitos de proposições, conjunção, disjunção e negação. 
+- Criar algoritmos simples usando estruturas de seleção. 
+- Compreender os operadores relacionais e operadores lógicos. 
+- Promover a construção de um ferramental lógico e algorítmico para posterior aplicação em soluções de maior complexidade.
+- Desenvolver o racíocinio lógico e a habilidade analítica. 
+---
 1. Elabore um algoritmo que permita a entrada de dois números diferentes e verifique qual deles é o maior. 
 
 2. Elabore um algoritmo que permita a entrada de três números e imprima o maior deles.

@@ -139,6 +139,22 @@
 - Estruturas de repetição 
 - Lista de Exercícios 4 
 
+### Aula 16 - 2022.05.17 - 64h
+- Estruturas de repetição 
+- Lista de Exercícios 5
+
+### Aula 17 - 2022.05.18 - 68h
+- Estrutura de dados
+-   Arrays 
+-   Listas 
+-   Pilhas e Filas
+-   JavaScript Object
+- Lista de Exercícios 6
+
+### Aula 18 - 2022.05.18 - 72h
+- Funções
+- Ideia de subrotina 
+- Escopo das variaveis
 
 ## Ferramentas 
 

@@ -1,10 +1,14 @@
 # Lógica de Programação 
 ## Lista de Exercícios 1 
 ### Objetivos
-- Compreender na prática os conceitos de variáveis, sequencia lógica, fluxo do processamento (Entrada - Processamento - Saída). 
+- Compreender na prática os conceitos de variáveis, sequencia lógica, fluxo do processamento (Entrada - Processamento - Saída. 
 - Criar algoritmos simples capturando elementos da tela (Entrada de dados), efetuar cálculos aritméticos (Processamento) e imprimir os resultados na tela (Saída). 
 - Compreender os operadores aritméticos, e tipagem de dados.   
 - Desenvolver o racíocinio lógico e a habilidade analítica. 
+---
+### Instruções Adicionais 
+- Resolva os exercícios propostos usando HTML e JavaScript 
+
 --- 
 1. Crie uma tela com dois Inputs e um botão. Ao clicar no botão o programa deverá copiar o conteúdo do primeiro input para o segundo.
 

@@ -109,6 +109,7 @@
  
 ### Aula 12 - 2022.05.09 - 48h
 - Correção dos exercícios da lista 1 
+- Conversão de dados para String, arredondamento, etc
 - Conceito de Proposições 
 - Estruturas de seleção simples 
 - Lista de exercícios 2 

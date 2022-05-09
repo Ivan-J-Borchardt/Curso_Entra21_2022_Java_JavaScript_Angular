@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="idIdade">Idade</label><br>
+        <input type="number" name="nmIdade" id="idIdade" >
+        <br><br>
+        <label for="idAltura">Altura</label><br>
+        <input type="number" name="nmAltura" id="idAltura" step="0.01">
+        <br><br>
+        <input type="radio" name="nmGenero" id="idFem" checked>
+        <label for="idFem">Feminino</label>
+        <input type="radio" name="nmGenero" id="idMasc">
+        <label for="idMasc">Maculino</label>
+        <br><br>
+        <output id="idOut">Peso Ideal: </output>
+        <br><br>
+        <input type="Button" value="Calcular" onclick="calcular()">
+        <input type="Button" value="Testar Genero" onclick="testaGenero()">
+        <input type="Button" value="Testar Alistamento" onclick="testaServicoMilitar()">
+
+    </form>
+    <script>
+
+        function calcular() {
+            var altura = Number(document.getElementById("idAltura").value)
+            var masculino = document.getElementById("idMasc").checked
+            var feminino = document.getElementById("idFem").checked
+            var pesoIdeal
+
+            if (masculino == true) {
+                // verdadeiro 
+                pesoIdeal = (72.7 * altura) - 58
+            } else {
+                // Falso 
+                pesoIdeal = (62.1 * altura) - 44.7
+            }
+            document.getElementById("idOut").value = "Peso Ideal: " + pesoIdeal.toFixed(2)
+        }
+
+        //Estruturas de seleção 
+        function testaGenero() {
+            var masculino = document.getElementById("idMasc").checked
+            var feminino = document.getElementById("idFem").checked
+
+            if (masculino == true) {
+                console.log("é Masculino");
+            }
+
+            if (feminino == true) {
+                console.log("é Feminino");
+            }
+
+        }
+
+        function testaServicoMilitar() {
+            var idade = document.getElementById("idIdade").value
+            var masculino = document.getElementById("idMasc").checked
+            var feminino = document.getElementById("idFem").checked
+            
+            if (masculino == true && idade >= 18) {
+                console.log("Va se alistar");
+            }else{
+                console.log("Não precisa se alistar");
+            }
+
+ 
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -25,8 +25,67 @@
             function calcular(){
                 var peso = Number(document.getElementById("idPeso").value)
                 var altura = Number(document.getElementById("idAltura").value)
-                var imc = peso/(altura * altura)
-                document.getElementById("idOut").value = "IMC: " + imc
+                var imc = (peso/(altura * altura)).toFixed(2)
+              
+                var mensagem
+                /*
+                if (imc <= 16.9) {
+                    mensagem = "Muito abaixo do peso"
+                }else{
+                    if ((imc > 16.9) && (imc <= 18.4)) {
+                        mensagem = "Abaixo do peso"
+                    } else {
+                        if ((imc > 18.4) && (imc <= 24.9)) {
+                            mensagem = "Peso normal"
+                        } else {
+                            if ((imc > 24.9) && (imc <= 29.9)) {
+                                mensagem = "Acima do peso"
+                            } else {
+                                if ((imc > 29.9) && (imc <= 34.9)) {
+                                    mensagem = "Obesidade grau I "
+                                } else {
+                                    if ((imc > 34.9) && (imc <= 40)) {
+                                        mensagem = "Obesidade grau II "
+                                    } else {
+                                        mensagem = "Obesidade grau III "
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                */
+
+                
+                if (imc <= 16.9) {
+                    mensagem = "Muito abaixo do peso"
+                }
+                
+                if ((imc > 16.9) && (imc <= 18.4)) {
+                    mensagem = "Abaixo do peso"
+                }
+
+                if ((imc > 18.4) && (imc <= 24.9)) {
+                    mensagem = "Peso normal"
+                }
+
+                if ((imc > 24.9) && (imc <= 29.9)) {
+                    mensagem = "Acima do peso"
+                }
+
+                if ((imc > 29.9) && (imc <= 34.9)) {
+                    mensagem = "Obesidade grau I "
+                }
+
+                if ((imc > 34.9) && (imc <= 40)) {
+                    mensagem = "Obesidade grau II  "
+                }
+
+                if (imc > 40) {
+                    mensagem = "Obesidade grau III"
+                }
+                
+                document.getElementById("idOut").value = "IMC: " + imc + " - " + mensagem
                 document.getElementById("idPar").innerText = "IMC: " + imc
             }
         </script>

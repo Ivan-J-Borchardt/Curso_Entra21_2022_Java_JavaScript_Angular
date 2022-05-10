@@ -192,6 +192,9 @@ Login: E-mail do cadastro no Entra21
 
 Senha inicial: data de nascimento no formato: ddmmaaaa
 
+### Como devo proceder na avaliação diária?
+
+[![Entra21](./assets/avaliacao.jpeg)](https://externo.proway.com.br/login-aluno)
 
 ## Instrutor 
 

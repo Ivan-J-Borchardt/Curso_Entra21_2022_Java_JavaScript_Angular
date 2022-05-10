@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="idAltura">Altura</label><br>
+            <input type="number" name="nmAltura" id="idAltura" step="0.01">
+            <br><br>
+            <output id="idOut">Peso Ideal: </output>
+            <br><br>
+            <input type="Button" value="Masculino" onclick="calcularMasc()">
+            <input type="Button" value="Feminino" onclick="calcularFem()">
+
+        </form>
+        <script>
+
+            function calcularMasc(){
+                var altura = Number(document.getElementById("idAltura").value)
+                var pesoIdeal =  (72.7 * altura) - 58
+                document.getElementById("idOut").value = "Peso Ideal: " + pesoIdeal.toFixed(2)
+            }
+
+            function calcularFem(){
+                var altura = Number(document.getElementById("idAltura").value)
+                document.getElementById("idOut").value = "Peso Ideal: " + ((62.1 * altura) - 44.7).toFixed(2)
+
+                //var pesoIdeal =  (62.1 * altura) - 44.7 
+                //document.getElementById("idOut").value = "Peso Ideal: " + pesoIdeal.toFixed(2)
+            }
+
+        </script>
+
+    </body>
+</html>

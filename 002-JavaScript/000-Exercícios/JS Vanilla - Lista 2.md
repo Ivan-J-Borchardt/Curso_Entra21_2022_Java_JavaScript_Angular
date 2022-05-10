@@ -29,3 +29,11 @@
 6. Crie um algoritmo que permita ao aluno responder qual é a capital do Brasil. O algoritmo deve dizer se a resposta está certa ou errada.
 
 7.	No algoritmo do exemplo anterior, percebe-se que apenas se o aluno digitar Brasília a resposta será correta. Mas, se o aluno digitar brasília com “b” minúsculo? Resolva o exemplo anterior para aceitar tal situação (apenas usando estruturas de seleção).
+
+8. Faça um algoritmo que leia um determinado ano e mostre se ele é ou não BISSEXTO.
+
+9. Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua situação em relação ao alistamento militar.
+- Se estiver antes dos 18 anos, mostre em quantos anos faltam para o alistamento.
+- Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do alistamento.
+
+10. Crie um programa que leia o tamanho de três segmentos de reta. Analise seus comprimentos e diga se é possível formar um triângulo com essas retas. Matematicamente, para três segmentos formarem um triângulo, o comprimento de cada lado deve ser menor que a soma dos outros dois.

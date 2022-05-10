@@ -122,7 +122,7 @@
 
 ### Aula AM - 2022.05.11 
 - Aula Magna  10:00:00 (Horário de Brasília)
-- Link em breve
+- Link: https://us06web.zoom.us/j/81413514668
 - Participação obrigatória
 - Neste dia não haverá aula a noite
 

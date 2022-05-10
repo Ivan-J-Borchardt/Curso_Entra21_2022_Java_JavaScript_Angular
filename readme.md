@@ -185,6 +185,8 @@
 ## Links úteis 
  
 [![WhatsApp](https://img.shields.io/badge/Grupo-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/HXtjXa8b22I1NfbChLuFjx)
+
+Planilha Entrega de Exercícios: https://docs.google.com/spreadsheets/d/1uzgzau9SHCGINTxFawSdd3ksCsgg29LyPv8_nAGOh-U/edit?usp=sharing
         
 Central do Aluno:   https://externo.proway.com.br/login-aluno
 

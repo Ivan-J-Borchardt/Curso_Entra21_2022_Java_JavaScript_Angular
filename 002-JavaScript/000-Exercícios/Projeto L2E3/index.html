@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="idTemp1">Temperatura 1</label><br>
+            <input type="number" name="nmTemp1" id="idTemp1" step="0.01">
+            <br><br>
+            <label for="idTemp2">Temperatura 2</label><br>
+            <input type="number" name="nmTemp2" id="idTemp2" step="0.01">
+            <br><br>
+            <label for="idTemp3">Temperatura 3</label><br>
+            <input type="number" name="nmTemp3" id="idTemp3" step="0.01">
+            <br><br>
+            <label for="idTempHoje">Temperatura Hoje</label><br>
+            <input type="number" name="nmTempHoje" id="idTempHoje" step="0.01">
+            <br><br>
+            <output id="idOut">Resultado: </output>
+            <br><br>
+            <input type="button" value="Testar Temp" onclick="testarTemp()">
+        </form>
+        <script>
+
+            function testarTemp(){
+                var temp1 = Number(document.getElementById("idTemp1").value)
+                var temp2 = Number(document.getElementById("idTemp2").value)
+                var temp3 = Number(document.getElementById("idTemp3").value)
+                var tempHoje = Number(document.getElementById("idTempHoje").value)
+
+                var media = (temp1 + temp2 + temp3)/3
+                var mensagem 
+
+                if (tempHoje > media) {
+                    mensagem = "Temperatura Hoje: " + tempHoje + 
+                               " Maior que a média: " + media 
+                } else {
+                    if (tempHoje < media) {
+                        mensagem = "Temperatura Hoje: " + tempHoje + 
+                               " Menor que a média: " + media 
+                    } else {
+                        mensagem = "Temperatura Hoje: " + tempHoje + 
+                               " Esta na média: " + media 
+                    }
+                }
+
+                document.getElementById("idOut").value = mensagem
+
+            }
+
+        </script>
+        
+    </body>
+</html>

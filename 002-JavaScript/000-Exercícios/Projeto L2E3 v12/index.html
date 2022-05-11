@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="idTemp">Temperatura</label><br>
+            <input type="number" name="nmTemp" id="idTemp" step="0.01">
+            <br><br>
+            <label for="idTempHoje">Temperatura Hoje</label><br>
+            <input type="number" name="nmTempHoje" id="idTempHoje" step="0.01">
+            <br><br>
+            <output id="idOut">Resultado: </output>
+            <br><br>
+            <input type="button" value="Ler Temp" onclick="lerTemp()">
+            <input type="button" value="Testar Temp" onclick="testarTemp()">
+        </form>
+        <script>
+            var somaTemp = 0
+            var contaTemp = 0 
+
+            function lerTemp(){
+                somaTemp = somaTemp + Number(document.getElementById("idTemp").value) 
+                contaTemp++
+                document.getElementById("idTemp").value = "" 
+                //console.log("Soma das temp: " + temp);
+            }
+
+
+            function testarTemp(){
+                var tempHoje = Number(document.getElementById("idTempHoje").value)
+                var media = (somaTemp/contaTemp).toFixed(2)
+                var mensagem 
+
+                if (tempHoje > media) {
+                    mensagem = "Temperatura Hoje: " + tempHoje + 
+                               " Maior que a média: " + media 
+                } else {
+                    if (tempHoje < media) {
+                        mensagem = "Temperatura Hoje: " + tempHoje + 
+                               " Menor que a média: " + media 
+                    } else {
+                        mensagem = "Temperatura Hoje: " + tempHoje + 
+                               " Esta na média: " + media 
+                    }
+                }
+
+                document.getElementById("idOut").value = mensagem
+
+            }
+
+        </script>
+        
+    </body>
+</html>

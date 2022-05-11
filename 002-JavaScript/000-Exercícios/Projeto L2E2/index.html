@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="idIdade">Idade</label><br>
+            <input type="number" name="nmIdade" id="idIdade">
+            <br><br>
+            <output id="idOut">Situação: </output>
+            <br><br>
+            <button type="button" onclick="testarIdade()">Testar Idade</button>
+        </form>
+        <script>
+
+            function testarIdade(){
+                var idade = Number(document.getElementById("idIdade").value)
+
+                var saida = document.getElementById("idOut") 
+                //console.log(saida);
+
+                if (idade >= 18) {
+                   saida.value = "Situação: Pode Dirigir"
+                } else {
+                   saida.value = "Situação: Não Pode Dirigir"
+                }
+
+            
+            }
+
+        </script>
+
+    </body>
+</html>

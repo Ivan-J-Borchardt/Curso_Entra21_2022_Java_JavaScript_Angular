@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="idNum">Numero</label><br>
+            <input type="number" name="nmNumero" id="idNum">
+            <br><br>
+            <output id="idOut"></output>
+            <br><br>
+            <input type="button" value="Testar Num" onclick="testarNum()">
+        </form>
+
+        <script>
+            function testarNum(){
+                var numero = Number(document.getElementById("idNum").value)
+                var saida = document.getElementById("idOut")
+
+                if ((numero % 2) == 0) {
+                    saida.value = "O numero é Par"
+                } else {
+                    saida.value = "O numero é Ímpar"
+                }
+            }
+
+        </script>
+
+    </body>
+</html>

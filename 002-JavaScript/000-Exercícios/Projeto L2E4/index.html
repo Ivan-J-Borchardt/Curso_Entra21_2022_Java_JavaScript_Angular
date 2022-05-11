@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="idNomeBanco">Nome Banco</label><br>
+            <input type="text" name="nmNomeBanco" id="idNomeBanco">
+            <br><br>
+            <label for="idNomeCorrentista">Nome Correntista</label><br>
+            <input type="text" name="nmNomeCorrentista" id="idNomeCorrentista">
+            <br><br>
+            <label for="idNumeroConta">Numero Conta Corrente</label><br>
+            <input type="text" name="nmNumeroConta" id="idNumeroConta">
+            <br><br>
+            <label for="idLimiteCredito">Limite Credito</label><br>
+            <input type="number" name="nmLimiteCredito" id="idLimiteCredito" step="0.01" disabled>
+            <br><br>
+            <label for="idSaldoAtual">Saldo Atual</label><br>
+            <input type="number" name="nmSaldoAtual" id="idSaldoAtual" step="0.01" disabled>
+            <br><br>
+            <label for="idValorOperacao">Valor</label><br>
+            <input type="number" name="nmValorOperacao" id="idValorOperacao" step="0.01">
+            <br><br>
+            <input type="radio" name="nmOperacao" id="idSacar" checked>
+            <label for="idSacar">Sacar</label>
+            <input type="radio" name="nmOperacao" id="idDepositar" checked>
+            <label for="idDepositar">Depositar</label>
+            <br><br>
+            <output id="idOut">Status: </output>
+            <br><br>
+            <input type="button" value="Depositar/Sacar" onclick="efetuarOperacao()">
+            <input type="button" value="Conferir Saldo" onclick="conferirSaldo()">
+
+        </form>
+        <script>
+            //Pré-inicializacao da tela a partir dos dados da conta 
+            document.getElementById("idSaldoAtual").value = 0
+            document.getElementById("idLimiteCredito").value = 200.00
+            var saldo = 0 
+            var limiteCredito = 200 
+
+
+            function efetuarOperacao(){
+                var opSacar = document.getElementById("idSacar").checked
+                var valorOperacao = Number(document.getElementById("idValorOperacao").value)
+
+                if (opSacar) {
+                    if (limiteCredito >= (-1 * saldo) +  valorOperacao) {
+                        saldo = saldo - valorOperacao
+                        document.getElementById("idOut").value = "Status: Operacao Realizada com Sucesso" 
+                    }else{
+                        document.getElementById("idOut").value = "Status: Saldo Insuficiente" 
+                    }
+                    
+                } else {
+                    saldo = saldo + valorOperacao
+                    document.getElementById("idOut").value = "Status: Operacao Realizada com Sucesso"
+                }
+                document.getElementById("idSaldoAtual").value = saldo
+                console.log("saldo " + saldo);
+            }
+
+            function conferirSaldo(){
+                var banco = document.getElementById("idNomeBanco").value
+                var nomeCorrentista = document.getElementById("idNomeCorrentista").value
+                var numeroConta = document.getElementById("idNumeroConta").value
+
+                document.getElementById("idOut").value = "Banco: " + banco + 
+                                                         " Correntista: " + nomeCorrentista +
+                                                         " Numero Conta: " + numeroConta +
+                                                         " Saldo: " + saldo
+            }
+
+        </script>
+        
+    </body>
+</html>

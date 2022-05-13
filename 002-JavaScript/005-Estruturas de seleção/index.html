@@ -27,6 +27,12 @@
         <input type="Button" value="Testar Genero" onclick="testaGenero()">
         <input type="Button" value="Testar Alistamento" onclick="testaServicoMilitar()">
 
+        <br><br>
+        <input type="number" id="idMenu" name="nmMenu">
+        <br>
+        <br>
+        <input type="button" value="Testar Menu" onclick="exemplosEstruturasSelecao()">
+
     </form>
     <script>
 
@@ -75,6 +81,85 @@
  
 
         }
+
+        function exemplosEstruturasSelecao() {
+
+            //Estrutura de seleção simples
+            var idade = 18
+            if (idade > 18) {
+                console.log("é maior de idade");
+            }
+
+            //Estrutura de seleção composta 
+            var num = 25
+            if (num < 10 || (num > 23 && num < 50)) {
+                console.log("o numero é menor que 10 ou está no intervalo entre 23 e 50");
+            }
+
+            //Estrutura de seleção encadeada
+            var menu = Number(document.getElementById("idMenu").value)
+            if (menu == 0) {
+                console.log("Opcao 0 selecionada");
+            } else {
+                if (menu == 1) {
+                    console.log("Opcao 1 selecionada");
+                } else {
+                    if (menu == 2) {
+                        console.log("Opcao 2 selecionada");
+                    } else {
+                        if (menu == 3) {
+                            console.log("Opcao 3 selecionada");
+                        } else {
+                            console.log("Opcao inválida");
+                        }
+                    }
+                }
+            }
+
+            //Estrutura de seleção encadeada usando IF-ELSE-IF
+            if (menu == 0) {
+                console.log("* Opcao 0 selecionada");
+            } else if (menu == 1) {
+                console.log("* Opcao 1 selecionada");
+            } else if (menu == 2) {
+                console.log("* Opcao 2 selecionada");
+            } else if (menu == 3) {
+                console.log("* Opcao 3 selecionada");
+            }else {
+                console.log("* Opacao inválida");
+            }
+                
+            //SWITCH-CASE 
+            switch (menu) {
+                case 0:
+                    console.log("- Opcao 0 selecionada");
+                    break;
+                
+                case 1:
+                    console.log("- Opcao 1 selecionada");
+                    break;
+
+                case 2:
+                    console.log("- Opcao 2 selecionada");
+                    break;
+            
+                case 3:
+                    console.log("- Opcao 3 selecionada");
+                    break;
+
+                default:
+                    console.log("- Opção Inválida");
+                    break;
+            }
+
+            //Ternário 
+            var opcao = (menu == 0)? "verdadeiro" : "falso"
+            console.log("Opcao " + opcao);
+
+            
+        }
+
+
 
 
     </script>

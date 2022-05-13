@@ -31,7 +31,7 @@
 7.	Entrar com o salário de uma pessoa e imprimir o Salário Líquido, segundo a tabela a seguir:
    
 |  Salário Bruto                                   |   INSS   |
-|:------------------------------------------------:|:--------:|
+|:-------------------------------------------------|:--------:|
 | Menor ou igual a R$600,00                        |  Isento  |
 | Maior que R$600,00 e menor ou igual a R$1200,00  |    25%   |
 | Maior que R$1200,00 e menor ou igual a R$2000,00 |    30%   |

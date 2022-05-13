@@ -28,13 +28,15 @@
 
 6.	Construa uma calculadora. O programa deverá receber 2 números e o caractere equivalente a um dos operadores aritméticos. Efetuar a operação aritmética correspondente e apresentar o resultado. 
 
-7.	Entrar com o salário de uma pessoa e imprimir o Salário Líquido, segundo a tabela a seguir: 
+7.	Entrar com o salário de uma pessoa e imprimir o Salário Líquido, segundo a tabela a seguir:
+   
 |  Salário Bruto                                   |   INSS   |
-|--------------------------------------------------|:--------:|
+|:------------------------------------------------:|:--------:|
 | Menor ou igual a R$600,00                        |  Isento  |
 | Maior que R$600,00 e menor ou igual a R$1200,00  |    25%   |
 | Maior que R$1200,00 e menor ou igual a R$2000,00 |    30%   |
 | Maior que R$2000,00                              |    30%   |	
+
 - O salário líquido é igual ao Salário Bruto menos o desconto de INSS. 
 
 8.	Um comerciante comprou um produto e quer vende-lo com um lucro de 50% se o valor da compra for menor que R$ 20,00. Caso contrário, o lucro será de 35%. Entrar com o valor do produto e imprimir o valor de venda.

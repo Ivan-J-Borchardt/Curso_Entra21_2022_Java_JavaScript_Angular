@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="idResposta">Qual é a capital do Brasil?</label><br>
+            <input type="text" id="idResposta" name="nmResposta">
+            <br><br>
+            <output id="idOut"></output>
+            <br><br>
+            <input type="button" value="Enviar" onclick="testarResposta()">
+        </form>
+
+        <script>
+
+            function testarResposta(){
+                var resposta = document.getElementById("idResposta").value
+                if (resposta == "brasilia ") {
+                    document.getElementById("idOut").value = "Resposta Certa!"
+                } else {
+                    document.getElementById("idOut").value = "Resposta Errada, tente novamente!"
+                }
+
+            }
+
+        </script>
+        
+    </body>
+</html>

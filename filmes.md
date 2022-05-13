@@ -21,6 +21,13 @@ https://www.youtube.com/watch?v=cVVg_T_vSbc
 
 https://www.youtube.com/watch?v=1w-1XMmMdHc
 
+## Aperfeiçoar a capacidade intelectiva - Clóvis de Barros 
+
+https://www.youtube.com/watch?v=uMxPhSs_1O4 
+
+## Como mudar hábitos e deixar de adiar obrigações? - Leandro Karnal
+
+https://www.youtube.com/watch?v=UZKNwP1YWBU
 
 ---
 ---

@@ -35,7 +35,7 @@
 | Menor ou igual a R$600,00                        |  Isento  |
 | Maior que R$600,00 e menor ou igual a R$1200,00  |    25%   |
 | Maior que R$1200,00 e menor ou igual a R$2000,00 |    30%   |
-| Maior que R$2000,00                              |    30%   |	
+| Maior que R$2000,00                              |    35%   |	
 
 - O salário líquido é igual ao Salário Bruto menos o desconto de INSS. 
 

@@ -115,9 +115,8 @@
 - Lista de exercícios 2 
 
 ### Aula 13 - 2022.05.10 - 52h
-- Correção de exercícios
-- Estruturas de seleção compostas, case, ternário 
-- Lista de exercícios 3 
+- Resolução Lista de exercícios 2 
+- Correção L2E1 até L2E5  
 
 
 ### Aula AM - 2022.05.11 
@@ -130,21 +129,30 @@
 - Profa. Maiara 
 
 ### Aula 14 - 2022.05.13 - 56h
-- Correção de exercícios 
-- Introdução à Git e GitHub 
-    - Instalação do Git 
-    - git init, git add ., git commit, git remote, git push
+- Correção de exercícios L2E6 até L2E10 
+- Estruturas de seleção compostas, case, ternário 
+- Lista de exercícios 3 
 - Desafio da pizza (Para executar no final de semana)
 
 ### Aula 15 - 2022.05.16 - 60h
-- Estruturas de repetição 
-- Lista de Exercícios 4 
+- Correção de exercícios 
+- Introdução à Git e GitHub 
+    - Instalação do Git 
+    - git init, git add ., git commit, git remote, git push, git Clone
+
 
 ### Aula 16 - 2022.05.17 - 64h
 - Estruturas de repetição 
-- Lista de Exercícios 5
+- Lista de Exercícios 4 
 
 ### Aula 17 - 2022.05.18 - 68h
+- Estruturas de repetição 
+- Lista de Exercícios 5
+
+### Aula ID - 2022.05.19 
+- Profa. Maiara 
+
+### Aula 18 - 2022.05.20 - 72h
 - Estrutura de dados
 -   Arrays 
 -   Listas 
@@ -152,10 +160,34 @@
 -   JavaScript Object
 - Lista de Exercícios 6
 
-### Aula 18 - 2022.05.18 - 72h
+### Aula 19 - 2022.05.23 - 76h
 - Funções
 - Ideia de subrotina 
 - Escopo das variaveis
+
+### Aula 20 - 2022.05.24 - 80h 
+- CSS - Sintaxe, Onde declarar, Comentários 
+- CSS - Seletores (Elemento, id, Classe, Universal)
+- CSS - Especificidade de seletores 
+- CSS - Propriedades Background, Color 
+- CSS - Formatação de texto e fontes 
+
+### Aula 21 - 2022.05.25 - 84h
+- CSS - Margens, Padding, Bordas, outline, Box Model 
+- CSS - Formatação de Formulários  
+
+### Aula ID - 2022.05.26 
+- Profa. Maiara 
+
+### Aula 22 - 2022.05.27 - 88h
+- CSS - CSS Reset e CSS Normalize
+- CSS - Margens, Padding, Bordas, outline, Box Model 
+- CSS - Formatação de Formulários 
+
+### Aula 23 - 2022.05.27 - 92h
+- CSS - Layout, Elementos de Bloco x Elementos de linha 
+- CSS - Responsividade (Media Query, viewport)
+
 
 ## Ferramentas 
 

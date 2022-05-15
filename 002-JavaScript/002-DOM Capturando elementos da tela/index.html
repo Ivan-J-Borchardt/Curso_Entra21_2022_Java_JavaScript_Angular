@@ -11,7 +11,7 @@
 
         <!-- Exemplo 001 - Caixa de texto -->
         <label for="idTexto">Texto</label><br>
-        <input type="text" id="idTexto" name="nmTexto">
+        <input type="text" id="idTexto" name="nmTexto" class="inputTexto">
 
         <br>
         <!-- Exemplo 002 - Caixa de texto - Numerico -->
@@ -97,6 +97,9 @@
         var itemSelected
         var pergunta
         var navegador
+
+
+        document.querySelector("#idTexto").value = "teste"
 
         document.getElementById("idTextArea").innerText = "Texto de inicializacao..."
 

@@ -136,6 +136,7 @@
 
 ### Aula 15 - 2022.05.16 - 60h
 - Correção de exercícios 
+- Condicionando o racíocinio lógico com o emprego de boas práticas
 - Introdução à Git e GitHub 
     - Instalação do Git 
     - git init, git add ., git commit, git remote, git push, git Clone

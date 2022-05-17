@@ -16,14 +16,14 @@ git --version
 2. Configurando algumas variáveis 
 
 git config --global user.email you@example.com   
-git config --global user.name Your Name  
+git config --global user.name "Your Name"  
   
 ou   
   
 git config --local user.email you@example.com  
-git config --local user.name Your Name  
+git config --local user.name "Your Name"  
   
-** --Global -> Configuração para a máquina toda   
+** --global -> Configuração para a máquina toda   
 ** --local  -> Configuração para o projeto   
   
 Visualizar as configurações válidas para o projeto:  
@@ -33,12 +33,12 @@ git config user.name
 
 3. Inicializando um repositório 
 
-git init
+git init  
 git status 
 
 4. Adicionando arquivos ao stage 
 
-git add nome_arquivo
+git add nome_arquivo   
 git add . 
 
 6. Consolidando alterações 
@@ -48,14 +48,14 @@ git commit -m "comentário"
 
 7. Mapeando um repositório remoto
 
-git remote add origin "http://...url do rep remoto..."
+git remote add origin "http://...url do rep remoto..."  
 git remote -v 
 
 8. Enviando as alterações para o repositório remoto 
 
 git push origin master 
 git push 
-git push --force 
+git push --force   
 
 9. Clonando um repositório remoto 
 

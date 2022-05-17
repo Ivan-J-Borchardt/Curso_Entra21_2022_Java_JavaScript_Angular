@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <output id="idOut"></output>
+
+        <script>
+            var contador = 5
+            var textoContador = ""
+            var out = document.getElementById("idOut")
+
+            //Enquanto - usado quando não sabemos a qtd de vezes 
+            console.log("Inicio ");
+            while (contador < 10) {
+                textoContador  = textoContador + contador + " "
+
+                console.log("while " + contador)
+                contador++ 
+            }
+            console.log("Fim...");
+
+            out.value = "Inicio " + textoContador + " Fim..."
+
+
+            //Faça enquanto - se precisar executar pelo uma vez
+            do {
+              console.log("do While " + contador);  
+              contador--
+            } while (contador > 0)
+
+            //Para - usado quando sabemos exatamente quantas vezes
+            for (let ind = 0; ind < 10; ind++) {
+                console.log("For " + ind)  
+            }
+
+         
+
+        </script>        
+    </body>
+</html>

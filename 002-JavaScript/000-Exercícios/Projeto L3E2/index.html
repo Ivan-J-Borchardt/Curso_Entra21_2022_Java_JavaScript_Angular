@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+
+            <label for="idNum">Numero:</label><br>
+            <input type="number" id="idNum" name="nmNum">
+            <br><br>
+            <output id="idOut"></output>
+            <br><br>
+            <input type="button" value="Enviar" onclick="enviarNumero()">
+
+        </form>
+
+        <script>
+            var maiorNumero = -99999999999
+            var contNumeros = 0
+
+            function enviarNumero() {
+                contNumeros++
+                let out = document.getElementById("idOut")
+                let num = Number(document.getElementById("idNum").value)
+                document.getElementById("idNum").value = ""
+
+                if (num > maiorNumero) {
+                    maiorNumero = num 
+                }
+                
+                out.value = " Maior Número: " +  maiorNumero
+
+                if (contNumeros == 3) {
+                    document.getElementById("idNum").disabled = true
+                }
+            }
+
+        </script>
+        
+    </body>
+</html>

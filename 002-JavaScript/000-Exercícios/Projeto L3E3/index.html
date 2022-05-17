@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+
+            <label for="idNum">Numero:</label><br>
+            <input type="number" id="idNum" name="nmNum">
+            <br><br>
+            <output id="idOut"></output>
+            <br><br>
+            <input type="button" value="Enviar" onclick="enviarNumero()">
+
+        </form>
+
+        <script>
+            function enviarNumero() {
+                const numero = Number(document.getElementById("idNum").value) 
+                let out = document.getElementById("idOut")
+
+                if (numero > 20) {
+                    out.value = "O número digitado(" + numero + ") é maior que 20" 
+                } else if (numero < 20) {
+                    out.value = "O número digitado(" + numero + ") é menor que 20" 
+                } else {
+                    out.value = "O número digitado(" + numero + ") é igual 20" 
+                }
+
+            }
+
+        </script>
+        
+    </body>
+</html>

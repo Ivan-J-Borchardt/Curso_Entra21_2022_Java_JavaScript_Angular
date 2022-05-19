@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="idLimiteInf">Limite Inferior</label><br>
+        <input type="number" name="nmLimiteInf" id="idLimiteInf">
+        <br><br>
+        <label for="idLimiteSup">Limite Superior</label><br>
+        <input type="number" name="nmLimiteSup" id="idLimiteSup">
+        <br><br>
+        <input type="radio" name="nmParidade" id="idPar" checked>
+        <label for="idPar">Par</label>
+        <input type="radio" name="nmParidade" id="idImpar">
+        <label for="idImpar">Impar</label>
+        <br><br>
+        <button type="button" onclick="contarWhile()">Contar While</button><br>
+        <output id="idOutWhile"></output><br>
+        <output id="idOutQtdPar"></output><br>
+        <output id="idOutQtdImpar"></output><br>
+
+        <input type="button" value="gerar numero randomico" onclick="gerarNum()">
+    </form>
+
+    <Script>
+
+        function contarWhile() {
+            let limiteInf = Number(document.querySelector("#idLimiteInf").value)   
+            let limiteSup = Number(document.querySelector("#idLimiteSup").value) 
+            let numPar = document.getElementById("idPar").checked
+            //let numImpar = document.getElementById("idImar").checked
+            let numerosPares = ""
+            let numerosImpares = ""
+            let cont = limiteInf
+            let contPar = 0
+            let contImpar = 0
+
+           // num % 2 == 0 Par 
+           limiteSup++
+            while (cont < limiteSup) {
+                if ((cont % 2) == 0 ) {
+                    numerosPares = numerosPares + cont + " "
+                    contPar++ 
+                }else{
+                    numerosImpares = numerosImpares + cont + " "
+                    contImpar++
+                }
+                cont++
+            }
+
+            if (numPar) {
+                document.getElementById("idOutWhile").value = "Numeros Pares: " + numerosPares
+            }else{
+                document.getElementById("idOutWhile").value = "Numeros Impares: " + numerosImpares
+            }
+            document.getElementById("idOutQtdPar").value = "Qtd Par: " + contPar
+            document.getElementById("idOutQtdImpar").value = "Qtd Impar: " + contImpar
+        }
+
+        function gerarNum(){
+            console.log(parseInt(Math.random() * 10));
+        }
+
+    </Script>
+</body>
+
+</html>

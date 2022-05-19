@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <button type="button" onclick="contarWhile()">Contar While</button>
+        <output id="idOutWhile"></output>
+        <br><br>
+        <button type="button" onclick="contarFor()">Contar For</button>
+        <output id="idOutFor"></output>
+    </form>
+
+    <Script>
+
+        function contarWhile() {
+            let cont = 6
+            let soma = 0               
+
+
+            while (cont < 101) {
+                soma = soma + cont
+                cont = cont + 2
+            }
+
+            document.getElementById("idOutWhile").value = "PA: " + soma 
+        }
+
+
+        function contarFor() {
+            let soma = 0  
+            for (let ind = 6; ind < 101; ind += 2) {
+                soma = soma + ind
+            }
+            document.getElementById("idOutFor").value = "PA: " + soma
+        }
+
+    </Script>
+</body>
+
+</html>

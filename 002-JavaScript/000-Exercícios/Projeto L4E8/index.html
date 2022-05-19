@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="idLimiteInf">Limite Inferior</label><br>
+        <input type="number" name="nmLimiteInf" id="idLimiteInf">
+        <br><br>
+        <label for="idLimiteSup">Limite Superior</label><br>
+        <input type="number" name="nmLimiteSup" id="idLimiteSup">
+        <br><br>
+        <label for="idPasso">Passo</label><br>
+        <input type="number" name="nmPasso" id="idPasso">
+        <br><br>
+        <button type="button" onclick="contarWhile()">Contar While</button>
+        <output id="idOutWhile"></output>
+        <br><br>
+        <button type="button" onclick="contarFor()">Contar For</button>
+        <output id="idOutFor"></output>
+    </form>
+
+    <Script>
+
+        function contarWhile() {
+            let limiteInf = Number(document.querySelector("#idLimiteInf").value)   
+            let limiteSup = Number(document.querySelector("#idLimiteSup").value) 
+            let passo = Number(document.querySelector("#idPasso").value)   
+            let textoCont = ""
+
+            let cont = limiteInf
+            while (cont < limiteSup) {
+                textoCont = textoCont + cont + " "
+
+                cont = cont + passo
+            }
+
+            document.getElementById("idOutWhile").value = "Inicio " + textoCont + " Acabou!"
+        }
+
+
+        function contarFor() {
+            let limiteInf = Number(document.querySelector("#idLimiteInf").value)   
+            let limiteSup = Number(document.querySelector("#idLimiteSup").value) 
+            let passo = Number(document.querySelector("#idPasso").value)   
+            let textoCont = ""
+ 
+            for (let ind = limiteInf; ind < limiteSup; ind += passo) {
+                textoCont = textoCont + ind + " "
+            }
+            document.getElementById("idOutFor").value = "Inicio " + textoCont + " Acabou!"
+        }
+
+    </Script>
+</body>
+
+</html>

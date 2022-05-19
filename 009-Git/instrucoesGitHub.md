@@ -20,3 +20,5 @@ Eu dei uma passada de olhos nos seus Githubs e notei alguns pontos que podemos m
 ![Github](../assets/gitHub1.png)
 
 ![Github](../assets/gitHub2.png)
+
+4. Excluir ou tornar privados os repositórios "teste".

@@ -18,9 +18,9 @@
 2. Crie um programa que leia os valores inicial e final de um intervalo e imprima todos os números primos contidos no intervalo. 
 
 3. Desenvolva um programa que faça o sorteio de 20 números entre 0 e 10 e mostre na tela:
-a) Quais foram os números sorteados
-b) Quantos números estão acima de 5
-c) Quantos números são divisíveis por 3
+a) Quais foram os números sorteados  
+b) Quantos números estão acima de 5  
+c) Quantos números são divisíveis por 3  
 
 4. Faça um programa que mostre os 10 primeiros elementos da Sequência de Fibonacci:  
 1 1 2 3 5 8 13 21...

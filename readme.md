@@ -154,41 +154,67 @@
 - Profa. Maiara 
 
 ### Aula 18 - 2022.05.20 - 72h
-- Estrutura de dados
--   Arrays 
--   Listas 
--   Pilhas e Filas
--   JavaScript Object
-- Lista de Exercícios 6
+- Tempo para resolução da lista 5 
+- Revisão geral sobre lógica de programação 
+- Correção L3E6 e L3E7
 
 ### Aula 19 - 2022.05.23 - 76h
-- Funções
-- Ideia de subrotina 
-- Escopo das variaveis
+- Correção lista 5 
+- Estrutura de dados
+-   Arrays 
+-   Pilhas e Filas
+- Lista de Exercícios 6
 
 ### Aula 20 - 2022.05.24 - 80h 
+- Correção Lista 6
+- Funções Nomeadas 
+- Funções Anônimas 
+- Arrow Functions 
+- Funções auto-invocadas 
+- Ideia de subrotina 
+- Escopo das variaveis 
+- Lista de Exercícios 7 
+
+### Aula 21 - 2022.05.25 - 84h
+- Desafio da calculadora
 - CSS - Sintaxe, Onde declarar, Comentários 
 - CSS - Seletores (Elemento, id, Classe, Universal)
 - CSS - Especificidade de seletores 
 - CSS - Propriedades Background, Color 
-- CSS - Formatação de texto e fontes 
+- CSS - Formatação de texto e fontes   
 
-### Aula 21 - 2022.05.25 - 84h
-- CSS - Margens, Padding, Bordas, outline, Box Model 
-- CSS - Formatação de Formulários  
+#### Materiais Complementares - CSS
+- https://www.w3schools.com/css/default.asp
 
 ### Aula ID - 2022.05.26 
 - Profa. Maiara 
 
 ### Aula 22 - 2022.05.27 - 88h
+- CSS - Margens, Padding, Bordas, outline, Box Model 
+- CSS - Formatação de Formulários
+
+### Aula 23 - 2022.05.30 - 92h
 - CSS - CSS Reset e CSS Normalize
 - CSS - Margens, Padding, Bordas, outline, Box Model 
 - CSS - Formatação de Formulários 
-
-### Aula 23 - 2022.05.27 - 92h
 - CSS - Layout, Elementos de Bloco x Elementos de linha 
 - CSS - Responsividade (Media Query, viewport)
 
+
+### Aula 24 - 2022.05.31 - 96h
+- Correção Lista 7 
+- Funções para trabalhar com arrays (Map, Filter, Reduce, Concat)
+- JavaScript Object
+
+### Aula 25 - 2022.06.01 - 100h
+- Programação assíncrona com AJAX 
+- Consumo de uma API REST
+
+### Aula ID - 2022.06.02 
+- Profa. Maiara 
+
+### Aula 26 - 2022.06.03 - 104h
+- Programação assíncrona com Async/Await 
 
 ## Ferramentas 
 

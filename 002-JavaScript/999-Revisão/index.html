@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <h1 id="idTitulo">Areas Geométricas</h1>
+
+        <form>
+            <input type="radio" name="nmFormGeometrica" id="idRetangulo" checked>  
+            <label for="idRetangulo">Retangulo</label>
+            <br>
+            <input type="radio" name="nmFormGeometrica" id="idCirculo">  
+            <label for="idCirculo">Circulo</label>
+            <br>
+            <input type="radio" name="nmFormGeometrica" id="idTrianguloRetangulo">  
+            <label for="idTrianguloRetangulo">Triangulo Retângulo</label>
+            <br>
+            <input type="radio" name="nmFormGeometrica" id="idQuadrado">  
+            <label for="idQuadrado">Quadrado</label>
+            <br><br>
+            <input type="number" id="idParm1" placeholder="Base" >
+            <br><br>
+            <input type="number" id="idParm2" placeholder="Altura">
+            <br><br>
+            <input type="button" value="Config Tela" onclick="configTela()">
+            <input type="button" value="Testar Repitição" onclick="estruturasRepeticao()">
+        </form>
+
+        <script>
+
+
+
+            function configTela() {
+                let rdRetangulo = document.getElementById("idRetangulo").checked
+                let rdCirculo = document.getElementById("idCirculo").checked
+                let rdTrianguloRetangulo = document.getElementById("idTrianguloRetangulo").checked
+                let rdQuadrado = document.getElementById("idQuadrado").checked
+
+
+                if (rdRetangulo) {
+                    //tratamento do retangulo
+                    document.getElementById("idParm1").disabled = true
+                } else {
+                    if (rdCirculo) {
+                        //Tratamento do circulo 
+                    } else {
+                        if (rdTrianguloRetangulo) {
+                            //Tratamento do triangulo retangulo 
+                        } else {
+                            if (rdQuadrado) {
+                                //tratamento do quadrado 
+                            }
+                        }
+                    }
+                }
+
+                if (rdRetangulo) {
+                    //tratamento do retangulo
+                }else if (rdCirculo) {
+                    //Tratamento do circul
+                }else if (rdTrianguloRetangulo) {
+                    //Tratamento do triangulo retangulo
+                }else if (rdQuadrado){
+                    //tratamento do quadrado
+                }
+
+                if (rdRetangulo) {
+                    //tratamento do retangulo
+                }
+
+                if (rdCirculo) {
+                    //Tratamento do circulo
+                }
+
+                if (rdTrianguloRetangulo) {
+                    //Tratamento do triangulo retangulo 
+                }
+
+                if (rdQuadrado) {
+                    //tratamento do quadrado
+                }
+
+
+            }
+
+            function estruturasRepeticao() {
+                let rdRetangulo = document.getElementById("idRetangulo").checked
+                let rdCirculo = document.getElementById("idCirculo").checked
+                let rdTrianguloRetangulo = document.getElementById("idTrianguloRetangulo").checked
+                let rdQuadrado = document.getElementById("idQuadrado").checked
+
+                let cont = 0
+                while (rdRetangulo) {
+                    console.log("Retangulo selecionado " + cont);
+                    cont++
+                    if (cont > 1000) {
+                        rdRetangulo = false
+                    }
+                }
+                
+                //sequencia de  1  até 20 
+                if (1 % 2 == 0) {
+                    //eh par 
+                }
+
+                if (2 % 2 == 0) {
+                    //eh par 
+                }
+
+                if (3 % 2 == 0) {
+                    //eh par 
+                }
+
+                if (4 % 2 == 0) {
+                    //eh par 
+                }
+
+                for (let num = 1; num < 21; num++) {
+                    if ((num % 2) == 0) {
+                        //eh par
+                    }
+                }
+
+                
+            }
+            
+
+
+  
+        </script>
+        
+    </body>
+</html>

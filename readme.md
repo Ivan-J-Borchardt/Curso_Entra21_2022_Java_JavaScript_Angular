@@ -216,6 +216,15 @@
         https://git-scm.com/
 ~~~
 ## Links úteis 
+
+Sala 1 no Teams (é onde temos as aulas):
+
+https://teams.microsoft.com/l/meetup-join/19%3ameeting_N2U1NDA0ZjEtNjYyNi00ZjY4LWI5NGUtYmQ1MDRmZTA2Yzg0%40thread.v2/0?context=%7b%22Tid%22%3a%2211bd213a-7403-4997-88b5-fa787aee4e78%22%2c%22Oid%22%3a%227a378a2b-683e-48dc-82bf-630c15f588e8%22%7d
+
+
+Sala 2 no Teams (Sala para reuniões sob demanda): 
+
+
  
 [![WhatsApp](https://img.shields.io/badge/Grupo-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/HXtjXa8b22I1NfbChLuFjx)
 
@@ -251,3 +260,5 @@ Felipe Grillo
 
 ### License
 This project is under the MIT license.
+
+

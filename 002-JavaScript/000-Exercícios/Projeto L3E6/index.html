@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="number" id="idNum1">
+        <input type="text" id="idOperador">
+        <input type="number" id="idNum2">
+        =
+        <input type="text" id="idResultado">
+        <br><br>
+        <input type="button" value="Calcular" onclick="calcular()">
+
+    </form>
+
+    <script>
+
+
+        function calcular() {
+            let num1 = Number(document.getElementById("idNum1").value)
+            let num2 = Number(document.getElementById("idNum2").value)
+            let operador = document.getElementById("idOperador").value
+
+            let resultado = document.getElementById("idResultado")
+            //console.log(resultado)
+
+            /*
+            if (operador == "+") {
+                resultado.value = num1 + num2
+
+            } else if (operador == "-") {
+                resultado.value = num1 - num2
+
+            } else if (operador == "*") {
+                resultado.value = num1 * num2
+                
+            } else if (operador == "/") {
+                resultado.value = num1 / num2
+
+            } else {
+                //default
+            }
+            */
+
+            switch (operador) {
+                case "+":
+                    resultado.value = num1 + num2
+                    break;
+
+                case "-":
+                    resultado.value = num1 - num2
+                    break;
+
+                case "*":
+                    resultado.value = num1 * num2
+                    break;
+
+                case "/":
+                    resultado.value = num1 / num2
+                    break;
+
+                default:
+                    alert("Operação inválida")
+                    
+                    break;
+            }
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

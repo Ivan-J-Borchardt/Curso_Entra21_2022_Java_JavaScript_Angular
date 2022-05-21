@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+
+            <label for="idSalarioBruto">Salário Bruto:</label><br>
+            <input type="number" id="idSalarioBruto" step="0.01" >
+            <br><br>
+            <output id="idOut"></output>
+            <br><br>
+            <input type="button" value="Enviar" onclick="calcularSalLiquido()">
+
+        </form>
+
+        <script>
+            function calcularSalLiquido() {
+                let salBruto = Number(document.getElementById("idSalarioBruto").value)
+                
+                let salLiquido = salBruto
+
+                if (salBruto > 600.00 && salBruto <= 1200.00) {
+                    //-25%
+                    salLiquido = salBruto * 0.75 
+                } else if (salBruto > 1200.00 && salBruto <= 2000.00) {
+                    //-30%
+                    salLiquido = salBruto * 0.70 
+                } else if (salBruto > 2000.00) {
+                    //-35% 
+                    salLiquido = salBruto * 0.65 
+                } 
+
+                document.getElementById("idOut").value = "Salário Líquido " + salLiquido
+                
+            }
+
+        </script>
+        
+    </body>
+</html>

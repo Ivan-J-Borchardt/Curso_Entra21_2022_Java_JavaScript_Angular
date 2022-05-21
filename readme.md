@@ -216,7 +216,7 @@
 ### Aula 26 - 2022.06.03 - 104h
 - Programação assíncrona com Async/Await 
 
-## Ferramentas 
+## Ferramentas (Setup) 
 
 **Visual Studio Code**
 ~~~
@@ -241,15 +241,42 @@
 ~~~
         https://git-scm.com/
 ~~~
+
+**NodeJS**
+
+~~~
+        https://nodejs.org/en/download/
+~~~
+
+**Java JDK**
+~~~
+        Oracle:
+            https://docs.oracle.com/en/java/javase/18/install/preface.html#GUID-A1E4DD95-DA5E-4441-BFCD-2E8AE63C573D
+                
+        Open JDK Zulu: 
+            https://www.azul.com/downloads/?package=jdk
+
+        Como Instalar: 
+            https://www.youtube.com/watch?v=laC0fiI-IOM
+~~~
+
+**Eclipse**
+~~~
+        https://wiki.eclipse.org/Eclipse/Installation
+~~~
+
+**Postman**
+~~~
+        https://www.postman.com/downloads/
+~~~
+
+**Postgress** 
+~~~
+        https://www.postgresql.org/
+~~~
+
+
 ## Links úteis 
-
-Sala 1 no Teams (é onde temos as aulas):
-
-https://teams.microsoft.com/l/meetup-join/19%3ameeting_N2U1NDA0ZjEtNjYyNi00ZjY4LWI5NGUtYmQ1MDRmZTA2Yzg0%40thread.v2/0?context=%7b%22Tid%22%3a%2211bd213a-7403-4997-88b5-fa787aee4e78%22%2c%22Oid%22%3a%227a378a2b-683e-48dc-82bf-630c15f588e8%22%7d
-
-
-Sala 2 no Teams (Sala para reuniões sob demanda): 
-
 
  
 [![WhatsApp](https://img.shields.io/badge/Grupo-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/HXtjXa8b22I1NfbChLuFjx)
@@ -265,6 +292,16 @@ Senha inicial: data de nascimento no formato: ddmmaaaa
 ### Como devo proceder na avaliação diária?
 
 [![Entra21](./assets/avaliacao.jpeg)](https://externo.proway.com.br/login-aluno)
+
+
+Sala 1 no Teams (é onde temos as aulas):
+
+https://teams.microsoft.com/l/meetup-join/19%3ameeting_N2U1NDA0ZjEtNjYyNi00ZjY4LWI5NGUtYmQ1MDRmZTA2Yzg0%40thread.v2/0?context=%7b%22Tid%22%3a%2211bd213a-7403-4997-88b5-fa787aee4e78%22%2c%22Oid%22%3a%227a378a2b-683e-48dc-82bf-630c15f588e8%22%7d
+
+
+Sala 2 no Teams (Sala para reuniões sob demanda): 
+
+
 
 ## Instrutor 
 

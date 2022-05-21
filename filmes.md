@@ -31,7 +31,19 @@ https://www.youtube.com/watch?v=UZKNwP1YWBU
 
 ---
 ---
+# A história dos computadores - Manual do Mundo 
 
+#SagaDosComputadores Ep.1 
+    https://www.youtube.com/watch?v=xajcV4lwY3Q
+
+#SagaDosComputadores Ep.2 
+    https://www.youtube.com/watch?v=uQPiyxoCk9E
+
+#SagaDosComputadores Ep.3
+    https://www.youtube.com/watch?v=c5lugpYQLD8
+
+---
+---
 
 # Alguns filmes, documentários e biografias ligados a nossa àrea
 

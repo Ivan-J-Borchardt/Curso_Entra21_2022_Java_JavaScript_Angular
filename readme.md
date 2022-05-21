@@ -270,7 +270,7 @@
         https://www.postman.com/downloads/
 ~~~
 
-**Postgress** 
+**PostgreSQL** 
 ~~~
         https://www.postgresql.org/
 ~~~

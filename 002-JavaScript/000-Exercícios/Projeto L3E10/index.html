@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="idUser">Usuario:</label><br>
+            <input type="text" id="idUser" name="nmUser">
+            <br><br>
+            <label for="idSenha">Senha:</label><br>
+            <input type="password" name="nmSenha" id="idSenha">
+            <br><br>
+            <input type="button" value="Login" onclick="login()">
+            <br><br>
+            <output id="idOut"></output>
+
+        </form>
+        <script>
+            var userId1 = "E21Aluno1"
+            var userId2 = "E21Aluno2"
+            var userId3 = "E21Aluno3"
+
+            var senhaUser1 = "Trocar123"
+            var senhaUser2 = "Senha@123"
+            var senhaUser3 = "123Trocar"
+            var contTentativa = 0
+
+            function login() {
+                
+                let userId = document.getElementById("idUser").value
+                let senha = document.getElementById("idSenha").value
+                let msnOut = document.getElementById("idOut")
+                
+                if (contTentativa < 3) {
+                    if ((userId != userId1)
+                    &&  (userId != userId2)
+                    &&  (userId != userId3)) {
+                        msnOut.value = "Usuário Não Cadastrado"
+                    }
+    
+                    if (((userId == userId1) && (senha != senhaUser1))
+                    || ((userId == userId2) && (senha != senhaUser2))
+                    || ((userId == userId3) && (senha != senhaUser3))) {
+                        msnOut.value = "Senha Incorreta"
+                    }
+    
+                    if (((userId == userId1) && (senha == senhaUser1)) 
+                    || ((userId == userId2) && (senha == senhaUser2))
+                    || ((userId == userId3) && (senha == senhaUser3))) {
+                        msnOut.value = "Acesso Permitido"
+                    }
+                    
+                } else {
+                    msnOut.value = "Usuário Bloqueado"
+                }
+                contTentativa++
+            }
+
+
+        </script>
+
+    </body>
+</html>

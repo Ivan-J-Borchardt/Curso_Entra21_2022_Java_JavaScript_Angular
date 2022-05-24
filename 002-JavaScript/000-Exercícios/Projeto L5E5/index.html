@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="idPreco">Preço</label><br>
+            <input type="number" id="idPreco" name="nmPreco" step="0.01">
+            <br><br>
+            
+            <!--
+            <label for="idFim">Fim</label><br>
+            <input type="number" id="idFim" name="nmFim">
+            <br><br>
+             -->
+            <input type="button" value="Processar" onclick="processar()">
+            <input type="button" value="Relatorio" onclick="relatorio()">
+            <br><br>
+            <output id="idOut"></output>
+
+        </form>
+        <script>
+            var menorPreco = 9999999999
+            var maiorPreco = 0
+
+            function processar() {
+                let preco = Number(document.getElementById("idPreco").value)
+                if (preco < menorPreco) {
+                    menorPreco = preco
+                }
+
+                if (preco > maiorPreco) {
+                    maiorPreco = preco
+                }
+                console.log("menor: " + menorPreco);
+                console.log("maior: " + maiorPreco);
+            }
+
+            function relatorio(){
+                document.getElementById("idOut").value = "Menor Preco: " + menorPreco + " Maior Preco " + maiorPreco
+            }
+
+        </script>
+    </body>
+</html>

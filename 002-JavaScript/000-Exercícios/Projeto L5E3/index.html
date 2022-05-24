@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <!--
+            <label for="idInicio">Inicio</label><br>
+            <input type="number" id="idInicio" name="nmInicio">
+            <br><br>
+            
+            <label for="idFim">Fim</label><br>
+            <input type="number" id="idFim" name="nmFim">
+            <br><br>
+             -->
+            <input type="button" value="Processar" onclick="processar()">
+            <br><br>
+            <output id="idOut"></output>
+
+        </form>
+        <script>
+
+            function processar() {
+                var contMaiorCinco = 0
+                var contDidTres = 0
+                var numSorteados = ""
+                for (let i = 0; i < 200000; i++) {
+                    let num = parseInt(Math.random() * 11)
+
+                    console.log(num);
+                    if (num > 5) {
+                        contMaiorCinco++
+                    }
+                    if ((num % 3) == 0 ) {
+                        contDidTres++
+                    }
+                    numSorteados = numSorteados + num + " " 
+                
+                }
+                console.log("Numeros sorteados: " + numSorteados);
+                console.log("Qdt Numeros maiores q 5: " + contMaiorCinco);
+                console.log("Qtd Numeros divisiveis p 3: " + contDidTres);
+                
+                
+            }
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+
+            <label for="idInicio">Inicio</label><br>
+            <input type="number" id="idInicio" name="nmInicio">
+            <br><br>
+            
+            <label for="idFim">Fim</label><br>
+            <input type="number" id="idFim" name="nmFim">
+            <br><br>
+
+            <input type="button" value="Processar" onclick="processar()">
+            <br><br>
+            <output id="idOut"></output>
+
+        </form>
+        <script>
+
+            function processar() {
+                let inicio = Number(document.getElementById("idInicio").value)
+                let fim = Number(document.getElementById("idFim").value)
+
+                let isPrimo = true
+                for (let n = inicio; n < (fim + 1); n++) {
+                    for (let i = 2; i < n; i++) {
+                        if (n % i == 0) {
+                            isPrimo = false
+                        } 
+                    }  
+                    if (isPrimo) {
+                        console.log(n + " é Primo");
+                    }
+                    isPrimo = true
+                }
+            }
+
+
+        </script>
+    </body>
+</html>

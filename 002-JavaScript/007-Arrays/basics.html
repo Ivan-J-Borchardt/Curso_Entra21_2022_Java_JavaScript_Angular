@@ -18,8 +18,11 @@
         var frutas = ['laranja', "morango", 'abacate', 10]
 
         var frutasCitricas = frutas
+
         for (let index = 0; index < frutasCitricas.length; index++) {
+
             console.log(" -?-> " + frutasCitricas[index])
+
         }
 
         //Usando o construtor da classe Array 
@@ -34,6 +37,8 @@
         console.log(frutas[3]);
         console.log(frutas[4]);
         console.log(frutas[5]);
+        console.table(frutas)
+        console.log(frutas.toString())
 
         //Tamanho do Array
         console.log("Tamanho do array " + frutas.length);
@@ -52,7 +57,6 @@
         }
 
          //Inserindo um novo elemento no inicio do array
-         frutas[frutas.length] = 'Banana'
         frutas.unshift("Kiwi")
 
         for (let index = 0; index < frutas.length; index++) {

@@ -19,7 +19,8 @@
 |-----|:---:|:---:|:---:|:---:|:---:|:---:|
 |  0  |  1  |  2  |  3  |  4  |  5  |  6  |
 
-for (i = 0; i < numeros.lenth; i++){
+numeros = []
+for (i = 0; i < numeros.length; i++){
      numeros[i] = 999
 }
 

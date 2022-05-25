@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //Array vazio 
+        var carros = []
+
+        //Array pré inicializado 
+        var frutas = ['laranja', "morango", 'abacate', 10]
+
+        var frutasCitricas = frutas
+        for (let index = 0; index < frutasCitricas.length; index++) {
+            console.log(" -?-> " + frutasCitricas[index])
+        }
+
+        //Usando o construtor da classe Array 
+        var legumes = new Array('brócolis', 'cenoura', 'alface')
+
+        //Acessando posições especifica 
+        frutas[4] = "limão"
+        frutas[5] = "limão verde"
+        console.log(frutas[0]);
+        console.log(frutas[1]);
+        console.log(frutas[2]);
+        console.log(frutas[3]);
+        console.log(frutas[4]);
+        console.log(frutas[5]);
+
+        //Tamanho do Array
+        console.log("Tamanho do array " + frutas.length);
+
+        //Iterando um array
+        for (let index = 0; index < frutas.length; index++) {
+            console.log(" -> " + frutas[index])
+        }
+
+        //Inserindo um novo elemento no final do array
+        frutas[frutas.length] = 'Banana'
+        frutas.push("Amora")
+
+        for (let index = 0; index < frutas.length; index++) {
+            console.log(" --> " + frutas[index])
+        }
+
+         //Inserindo um novo elemento no inicio do array
+         frutas[frutas.length] = 'Banana'
+        frutas.unshift("Kiwi")
+
+        for (let index = 0; index < frutas.length; index++) {
+            console.log(" -*-> " + frutas[index])
+        }       
+
+        //Retira um elemento do começo array 
+        var fruta = frutas.shift()
+        console.log("=> Fruta: " + fruta);
+
+        for (let index = 0; index < frutas.length; index++) {
+            console.log(" -2-> " + frutas[index])
+        }
+
+        //Retira um elemento do final  array 
+        fruta = frutas.pop()
+        console.log("=> Fruta: " + fruta);
+
+        for (let index = 0; index < frutas.length; index++) {
+            console.log(" -3-> " + frutas[index])
+        }
+
+    </script>
+
+
+</body>
+
+</html>

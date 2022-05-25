@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="idIdade">Idade</label><br>
+            <input type="number" id="idIdade" name="nmIdade">
+            <br><br>
+            <input type="button" value="Enviar" onclick="enviar()">
+            <br><br>
+            <label for="idOutMediaIdades">Média de Idades: </label>
+            <output id="idOutMediaIdades"></output>
+            <br>
+            <label for="idQtdPessoasMaior18">Quantidade pessoas maiores de 18: </label>
+            <output id="idQtdPessoasMaior18"></output>
+            <br>
+            <label for="idQtdPessoasMenor5">Quantidade pessoas menores de 5: </label>
+            <output id="idQtdPessoasMenor5"></output>
+            <br>
+            <label for="idMaiorIdade">Maior Idade: </label>
+            <output id="idMaiorIdade"></output>
+            <br>
+        </form>
+
+        <script>
+
+            var somaIdades = 0 
+            var contIdade = 0 
+            var mediaIdades = 0
+            var contIdadeMaior18 = 0 
+            var contIdadeMenor5 = 0
+            var maiorIdade = -1
+
+            function enviar() {
+                //- Adquirir a idade digitada na tela
+                let idade = Number(document.getElementById("idIdade").value)
+                //- somar a idade em somaIdades  e incrementar contador de idades (contIdade)
+                somaIdades = somaIdades + idade
+                contIdade++ 
+                //- Calcular a média de idades 
+                mediaIdades = (somaIdades/contIdade).toFixed(2)
+                //- descobrir se a idade digitada é maior do 18 e incrementar contIdadeMaior18
+                if (idade > 18) {
+                    contIdadeMaior18++
+                }
+                //- descobrir se a idade digitada é menor do que 5 e incrementar contIdadeMenor5 
+                if (idade < 5) {
+                    contIdadeMenor5++
+                }
+                //- descobrir se a idade digitada é maior do que as idades digitadas anterirormente
+                if (idade > maiorIdade) {
+                    maiorIdade = idade
+                }
+                //- dar saída dos dados na tela 
+
+                document.getElementById("idOutMediaIdades").value = mediaIdades
+                document.getElementById("idQtdPessoasMaior18").value = contIdadeMaior18
+                document.getElementById("idQtdPessoasMenor5").value = contIdadeMenor5
+                document.getElementById("idMaiorIdade").value = maiorIdade
+                
+            }
+
+            /*
+            Entrada: Varias idades (1 input)
+            processamento: 
+                - Adquirir a idade digitada na tela
+                - somar a idade em somaIdades  e incrementar contador de idades (contIdade)
+                - Calcular a média de idades 
+                - descobrir se a idade digitada é maior do 18 e incrementar contIdadeMaior18
+                - descobrir se a idade digitada é menor do que 5 e incrementar contIdadeMenor5 
+                - descobrir se a idade digitada é maior do que as idades digitadas anterirormente
+                - dar saída dos dados na tela 
+
+            Saídas: mediaIdades
+                    qtdPessoasMaior18 
+                    qtdPessoasMenor5
+                    maiorIdade
+            */
+        </script>
+
+
+    </body>
+</html>

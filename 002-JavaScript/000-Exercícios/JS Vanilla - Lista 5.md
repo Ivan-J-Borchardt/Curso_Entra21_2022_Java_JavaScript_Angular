@@ -36,6 +36,7 @@ d) Qual foi a maior idade lida
 
 7. Em um jogo de adivinhação, o jogador deve descobrir um número entre 1 e 10 usando até três tentativas. A cada tentativa o jogador é informado se o número foi descoberto, ou se ele é maior ou menor do que a tentativa. Se após três tentativas o jogador não descobrir o número, então ele perde o jogo. Crie um algoritmo que implemente esse jogo.
 
+
 8. Ler uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit. A fórmula de conversão é: F=(9*C+160)/5, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius. 
 
 9. Crie um novo programa a partir do exercício anterior e permita que o usuário escolha em que unidade de medida ele deseja informar a temperatura (C, F ou K). O programa deverá converter deverá converter a temperatura para as outras unidades de medida. 
@@ -52,5 +53,4 @@ d) Qual foi a maior idade lida
 
 10. Elaborar um programa para a casa de câmbio que receba as cotações do dia e efetue a conversão de uma moeda para outra. O programa deverá permitir conversões entre Real, Dólar Americano, Euro, Libra Esterlina e Dólar Canadense. 
 - O usuário pode selecionar o tipo de moeda de entrada e selecionar o tipo para o qual ele deseja converter.
-
 

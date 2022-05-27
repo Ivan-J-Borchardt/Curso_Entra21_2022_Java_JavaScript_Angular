@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="button" onclick="name()">
+    <script>
+
+        console.log(calcularPesoIdeal('F', 1.75));
+        /*
+            Função Nomeada
+            Funções são "Tarefas"/"Ações" executadas assim que são chamadas ou em 
+            decorrencia de algum evento.
+            Uma função pode receber parâmetros e retornar um resultado. Veja um exemplo 
+            completo abaixo. 
+        */
+        function calcularPesoIdeal(genero, altura) {
+            let pesoIdeal = 0
+            if (genero == 'F') {
+                pesoIdeal = (62.1 * altura) - 44.7
+            } else if (genero == 'M') {
+                pesoIdeal = (72.7 * altura) - 58
+            }
+
+            return pesoIdeal
+        }
+
+
+        //linha 1
+        //linha 2
+        //Chamada da função: 
+        var pesoIdeal = calcularPesoIdeal('F', 1.60)
+        //linha 4
+        console.log(pesoIdeal);
+        let alturaDaTela = 1.60
+        console.log(calcularPesoIdeal('M', alturaDaTela));
+        console.log(calcularPesoIdeal('M', 1.82));
+
+        /*
+        Toda função pode ter: 
+        * Uma chamada (chamada para executar a função)
+        * Parametros (opcional) - No Exemplo acima, genero e altura são os parâmetros
+        * Ação (O processamento no interior da função) - No exemplo, o cálculo do peso ideal... 
+        * Retorno (opcional) - (O valor resultante do Processamento) - No exemplo, o pesoIdeal está sendo retornado
+        */
+
+        //------------------------------------------------------------------------------------------------------------
+
+        /* Funções Anônimas ou Funções de expressão (Functions expression)
+           ----------------
+            Como o próprio nome diz, são funções sem nome. 
+            O JavaScript é uma linguagem Funcional. Uma das caracteristicas do paradigma funcional 
+            é poder atribuir funções a variáveis.   
+        */
+        var pesoIdeal2 = function(genero, altura){
+            let pesoIdeal = 0
+            if (genero == 'F') {
+                pesoIdeal = (62.1 * altura) - 44.7
+            } else if (genero == 'M') {
+                pesoIdeal = (72.7 * altura) - 58
+            }
+
+            return pesoIdeal
+        }
+
+        console.log("Peso Ideal 2: " + pesoIdeal2("F", 1.82));
+
+        //------------------------------------------------------------------------------------------------------------
+        /* 
+           Funções Seta (Arrow Function) 
+           ----------------
+        */
+        var pesoIdeal3 = (genero, altura)=>{
+            let pesoIdeal = 0
+            if (genero == 'F') {
+                pesoIdeal = (62.1 * altura) - 44.7
+            } else if (genero == 'M') {
+                pesoIdeal = (72.7 * altura) - 58
+            }
+
+            return pesoIdeal
+        }
+
+        console.log("Peso Ideal 3: " + pesoIdeal3("F", 1.82));
+
+        //Outro exemplo: Caso o corpo da function tenha apenas uma linha,
+        //podemos omitir as chaves e a palavra return.
+
+        var dobro = num=>num * 2; 
+        
+        console.log("Dobro: " + dobro(3));
+        
+    </script>
+
+</body>
+
+</html>

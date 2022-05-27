@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function processar() {
+
+            while (numFibo < 10) {
+
+            }
+        }
+
+        var numeros = []
+
+        let eleAnterior = 0
+        let eleSeq = 1
+        let eleProx
+
+
+        for (let i = 0; i < 15; i++) {
+            //console.log(eleSeq)
+            numeros.push(eleSeq)
+
+            eleProx = eleSeq + eleAnterior
+            eleAnterior = eleSeq
+            eleSeq = eleProx
+    
+
+        }
+
+        console.log(numeros)
+
+    </script>
+
+</body>
+
+</html>

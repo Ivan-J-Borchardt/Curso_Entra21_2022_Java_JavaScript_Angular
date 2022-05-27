@@ -159,13 +159,18 @@
 - Correção L3E6 e L3E7
 
 ### Aula 19 - 2022.05.23 - 76h
-- Correção lista 5 
+- Correção L3E8, L3E9, L3E10
+- Correção lista 5 (até E7) 
+- ** A questao 7 ainda está com um erro de lógica, ficou como desafio para resolver em casa
+- ** As questoes 9 e 10 serão objeto de avaliação, prazo de entrega: 30.06.22
+
+### Aula 20 - 2022.05.24 - 80h 
 - Estrutura de dados
 -   Arrays 
 -   Pilhas e Filas
 - Lista de Exercícios 6
 
-### Aula 20 - 2022.05.24 - 80h 
+### Aula 21 - 2022.05.25 - 84h
 - Correção Lista 6
 - Funções Nomeadas 
 - Funções Anônimas 
@@ -175,45 +180,45 @@
 - Escopo das variaveis 
 - Lista de Exercícios 7 
 
-### Aula 21 - 2022.05.25 - 84h
+### Aula ID - 2022.05.26 
+- Profa. Maiara 
+
+### Aula 22 - 2022.05.27 - 88h
 - Desafio da calculadora
 - CSS - Sintaxe, Onde declarar, Comentários 
 - CSS - Seletores (Elemento, id, Classe, Universal)
-- CSS - Especificidade de seletores 
 - CSS - Propriedades Background, Color 
 - CSS - Formatação de texto e fontes   
 
 #### Materiais Complementares - CSS
 - https://www.w3schools.com/css/default.asp
 
-### Aula ID - 2022.05.26 
-- Profa. Maiara 
-
-### Aula 22 - 2022.05.27 - 88h
+### Aula 23 - 2022.05.30 - 92h
+- CSS - Especificidade de seletores 
 - CSS - Margens, Padding, Bordas, outline, Box Model 
 - CSS - Formatação de Formulários
 
-### Aula 23 - 2022.05.30 - 92h
+
+### Aula 24 - 2022.05.31 - 96h
 - CSS - CSS Reset e CSS Normalize
 - CSS - Margens, Padding, Bordas, outline, Box Model 
 - CSS - Formatação de Formulários 
 - CSS - Layout, Elementos de Bloco x Elementos de linha 
 - CSS - Responsividade (Media Query, viewport)
 
-
-### Aula 24 - 2022.05.31 - 96h
+### Aula 25 - 2022.06.01 - 100h
 - Correção Lista 7 
 - Funções para trabalhar com arrays (Map, Filter, Reduce, Concat)
 - JavaScript Object
-
-### Aula 25 - 2022.06.01 - 100h
-- Programação assíncrona com AJAX 
-- Consumo de uma API REST
 
 ### Aula ID - 2022.06.02 
 - Profa. Maiara 
 
 ### Aula 26 - 2022.06.03 - 104h
+- Programação assíncrona com AJAX 
+- Consumo de uma API REST
+
+### Aula 27 - 2022.06.06 - 108h
 - Programação assíncrona com Async/Await 
 
 ## Ferramentas (Setup) 

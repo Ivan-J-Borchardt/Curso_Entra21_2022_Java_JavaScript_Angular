@@ -1,0 +1,21 @@
+          /*Seletor universal*/
+          /*CSS Reset*/
+          * {
+              background: rgb(120, 4, 106);
+              color: yellowgreen;
+          }
+
+          /*Seletor de elemento */
+          p {
+              color: blue
+          }
+
+          /*Seletor de classe */
+          .clTexto {
+              text-align: center;
+          }
+
+          /*Seletor de id */
+          #idTexto {
+              background: yellow;
+          }

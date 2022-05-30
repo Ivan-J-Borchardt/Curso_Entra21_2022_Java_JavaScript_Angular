@@ -1,7 +1,7 @@
           /*Seletor universal*/
           /*CSS Reset*/
           * {
-              background: rgb(120, 4, 106);
+              background: rgb(245, 218, 241);
               color: yellowgreen;
           }
 
@@ -9,6 +9,7 @@
           p {
               color: blue
           }
+
 
           /*Seletor de classe */
           .clTexto {
@@ -18,4 +19,14 @@
           /*Seletor de id */
           #idTexto {
               background: yellow;
+          }
+
+          /*Seletor com Variaveis*/
+          input[type=text] {
+              background-color: aquamarine;
+          }
+
+          /*Seletor de pseudo-classe*/
+          input[type=text]:focus {
+              background-color: bisque;
           }

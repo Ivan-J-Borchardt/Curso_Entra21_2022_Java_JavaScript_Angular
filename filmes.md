@@ -1,3 +1,7 @@
+# Sérgio Tomio conta como surgiu o Entra21
+
+https://www.youtube.com/watch?v=v8YbrZb4DfY
+
 # Prof Pierluigi Piazzi
 ## Aprendendo Inteligência  
 

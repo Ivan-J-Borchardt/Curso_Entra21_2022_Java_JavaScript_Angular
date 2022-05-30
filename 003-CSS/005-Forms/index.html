@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+        
+
+            input[type=text] {
+                /*
+                border: 2px solid #555;
+                border-color: rgb(75, 44, 44);
+                border-style: solid;
+                background-position: 1px 1px;
+                */
+                border-radius: 5px;
+                width: 50vw;
+                background-color: white;
+                background-image: url('searchicon.png');
+                background-repeat: no-repeat;
+                padding-left: 25px;
+                
+
+            }
+
+            /*Seletor Pseudo-classe*/
+            input[type=text]:focus {
+                background-color: lightblue;
+            }
+
+        
+
+            input[type=number] {
+                border: 2px solid rgb(8, 26, 223);
+                /*
+                border-color: rgb(75, 44, 44);
+                border-style: solid;
+                */
+                width: 50vw;
+                background-color: white;
+
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <form action="">
+            <label for="idNome">Nome</label><br>
+            <input type="text" id="idNome" placeholder="Search...">
+            <br><br>
+
+            <label for="idIdade">Idade</label><br>
+            <input type="number" id="idIdade">
+            <br><br>
+
+            <label for="idSenha">Senha</label><br>          
+            <input type="password" id="idSenha">
+
+        </form>
+        
+    </body>
+</html>

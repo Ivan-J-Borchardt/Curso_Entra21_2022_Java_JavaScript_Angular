@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: darkgrey;
+            border-style: solid;
+            border-color: black;
+        }
+        p{
+            color: black; 
+        }
+
+        /*max-width, min-width, orientation */
+        @media screen and (min-width: 480px){
+             /* all, screen, print, speech*/
+            div {
+                background-color: coral; 
+                border-style: dotted;
+
+            }
+            p{
+                color: white; 
+            }
+        }
+
+        @media screen and (min-width: 600px){
+             /* all, screen, print, speech*/
+            div {
+                background-color: rgb(255, 208, 191); 
+                border-style: dotted;
+
+            }
+            p{
+                color: rgb(96, 92, 92); 
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Texto teste 123...</p>
+    </div>
+</body>
+</html>

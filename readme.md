@@ -197,10 +197,12 @@
 - CSS - Especificidade de seletores 
 - CSS - Margens, Padding, Bordas, outline, Box Model 
 - CSS - Formatação de Formulários
-- CSS - Formatação de Formulários 
-- CSS - Layout, Elementos de Bloco x Elementos de linha 
+- CSS - Display, Elementos de Bloco x Elementos de linha 
 
 ### Aula 24 - 2022.05.31 - 96h
+- Git Fetch e Git Pull
+- CSS - Formatação para Links, Listas e Tabelas 
+- CSS - Um pouco mais sobre formatação de textos, fontes e bordas
 - CSS - CSS Reset e CSS Normalize
 - CSS - Responsividade (Media Query, viewport)
 

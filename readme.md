@@ -197,13 +197,12 @@
 - CSS - Especificidade de seletores 
 - CSS - Margens, Padding, Bordas, outline, Box Model 
 - CSS - Formatação de Formulários
-
-
-### Aula 24 - 2022.05.31 - 96h
 - CSS - CSS Reset e CSS Normalize
-- CSS - Margens, Padding, Bordas, outline, Box Model 
 - CSS - Formatação de Formulários 
 - CSS - Layout, Elementos de Bloco x Elementos de linha 
+
+### Aula 24 - 2022.05.31 - 96h
+
 - CSS - Responsividade (Media Query, viewport)
 
 ### Aula 25 - 2022.06.01 - 100h

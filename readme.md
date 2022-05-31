@@ -214,6 +214,7 @@
 ### Aula ID - 2022.06.02 
 - Profa. Maiara 
 
+
 ### Aula 26 - 2022.06.03 - 104h
 - Programação assíncrona com AJAX 
 - Consumo de uma API REST

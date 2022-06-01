@@ -4,25 +4,49 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
+        .navBar{
+            list-style-type: none;
+            display: flex;
+          
+        }
+
+        .navBar li{
+            margin-left: 10px;
+        }
+
+        
+        /*
         ul{
-          /*  list-style-type: lower-greek; */
             list-style-image: url('img/index.gif');
             list-style-position: outside;
-            margin: 0;
+            margin: 10px;
             padding:25px;
             background-color: violet;
+          /* list-style-type: lower-roman; 
+           
         }
 
         ul li{
-            background-color: thistle;
+          background-color: thistle;
             padding: 3px;
-            margin:5px;
+            margin:5px; 
         
         }
-
+        */
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul class="navBar">
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Institucional</a></li>    
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <ul>
         <li>item 1</li>
         <li>item 2</li>

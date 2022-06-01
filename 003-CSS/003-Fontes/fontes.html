@@ -5,7 +5,12 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Comfortaa:wght@600&family=Metal+Mania&display=swap" rel="stylesheet"> 
-    <style>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,200&display=swap" rel="stylesheet">
+  
+  <style>
         h1{
             font-style: italic;
             font-variant: small-caps; /*coloca em maiusculo porém menor que a primeira letra*/
@@ -13,11 +18,7 @@
             font-size: 25px;
             font-family: Arial, Helvetica, sans-serif;            
         }
-
-        #titulo3{
-            font: italic small-caps lighter 25px/30px 'Shadows Into Light', cursive;
-        }
-
+        
         p{
             font-family: 'Shadows Into Light', cursive; /*fonte do repositório google fonts
                                                           - sempre que for necessário utilizar
@@ -27,6 +28,16 @@
                                                           online confiável*/
             font-weight: bold;
         }
+
+        .fonteGoogle{
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        #titulo3{
+            font: italic small-caps lighter 25px/30px 'Shadows Into Light', cursive;
+        }
+
+
 
         #titulo2{
             font-family: 'Metal Mania', cursive;
@@ -45,7 +56,7 @@
 <body>
 
     <h1>Titulo Principal Do Site</h1>
-    <p>
+    <p class="fonteGoogle">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad sapiente inventore quasi, veniam quam porro error dicta assumenda aliquid harum. Doloremque totam id amet quas dolorem neque iste deleniti!
     </p>
 

@@ -207,20 +207,75 @@
 - CSS - Responsividade (Media Query, viewport)
 
 ### Aula 25 - 2022.06.01 - 100h
-- Correção Lista 7 
-- Funções para trabalhar com arrays (Map, Filter, Reduce, Concat)
-- JavaScript Object
+- Tempo para resolver exercícios da lista 7 e desafio da calculadora
+
 
 ### Aula ID - 2022.06.02 
 - Profa. Maiara 
 
 
 ### Aula 26 - 2022.06.03 - 104h
-- Programação assíncrona com AJAX 
-- Consumo de uma API REST
+- Correção Lista 7
+- Funções para trabalhar com arrays (Map, Filter, Reduce, Concat)
+- Eventos em JavaScript
+- Projeto: Desafio da Pizza
 
 ### Aula 27 - 2022.06.06 - 108h
-- Programação assíncrona com Async/Await 
+- JavaScript Object
+- JSON e XML
+- Programação assíncrona com AJAX
+- Consumo de uma API REST
+- Entender a arquitetura Cliente/Servidor
+- Projeto: Conversor de moedas com base na API do banco central
+
+### Aula 28 - 2022.06.07 - 112h
+- Processamento Assíncrono com Async/Await
+- Projeto: Site Previsao do Tempo
+
+### Aula 29 - 2022.06.08 - 116h
+- Introducao ao NodeJs
+- Módulos
+- Criando o primeiro servidor http
+- Projeto:
+
+#### Materiais Complementares - Node
+
+### Aula ID - 2022.06.09
+- Profa. Maiara 
+
+### Aula 30 - 2022.06.10 - 120h
+- NPM e NPX
+- Instalando dependências no projeto Node
+- Criando uma API com o Framework Express
+- Projeto: 
+
+### Aula 31 - 2022.06.13 - 124h
+- Git e GitHub para trabalho em equipes
+- Criando um Readme.dm com Markdown
+- Introducao à medotologias ágeis na prática (Cerimônias, Papéis, Backlog, Quadro Kanban, Sprint e Daily)
+- Divisao da turma em equipes
+- Projeto Piloto: Backlog, Divisão de taréfas (Daily), quadro Kanban e Git/GitHub
+
+#### Materiais Complementares - Markdown
+
+
+### Aula 32 - 2022.06.14 - 128h
+- Execução do projeto Piloto
+
+### Aula 33 - 2022.06.14 - 132h
+- Finalização do projeto Piloto e apresentação de resultados
+- Desafio:
+
+### Feriado - 2022.06.16
+- Bom pra resolver o desafio da aula ;) 
+
+### Feriado - 2022.06.17
+- Feriado duplo??? :) - Perfeito para colocar as pendências da aula em dia hein ;)  
+
+### Aula 34 - 2022.06.20 - 136h
+- Introdução ao TypeScript
+
+#### Materiais Complementares - TypeScript
 
 ## Ferramentas (Setup) 
 

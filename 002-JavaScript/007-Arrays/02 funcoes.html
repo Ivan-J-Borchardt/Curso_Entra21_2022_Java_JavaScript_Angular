@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //
+        var array = []
+        array.push()
+        array.pop()
+        array.shift()
+        array.unshift()
+
+        //filter
+        var idades = [45, 3, 5, 12, 32, 1, 26]
+    
+        var over18 = []
+        for (let index = 0; index < idades.length; index++) {
+            if (idades[index] > 18) {
+                over18.push(idades[index])
+            }
+            
+        }
+        console.log(over18)
+
+        //-----------------------------------------------
+        console.log("============Filter=============");
+        //Passando uma Funcao Nomeada como parametro
+        var over18_2 = idades.filter(buscarMaiorQ18)
+        console.log(over18_2);
+
+        function buscarMaiorQ18(value, index, array) {
+            return value > 18
+        }
+
+        //Passando uma Funcao Anônima como parametro
+        var over18_3 = idades.filter(function(value, index, array){
+            return value > 18
+        })
+
+        console.log(over18_3);
+
+        //Passando uma Funcao Arrow como parametro
+        var over18_4 = idades.filter(value=>(value > 18))
+
+        console.log(over18_4);
+
+        //Map 
+        var numbers1 = [45, 4, 9, 16, 25];
+
+        var numbers2 = numbers1.map(dobrarValor)
+        console.log("============MAP=============");
+        console.log(numbers2);
+
+        function dobrarValor(value, index, array) {
+            return  value * 2 
+        }
+
+        //Reduce 
+        var numbers3 = [4, 3, 4, 1, 4]
+        //Passando uma Funcao Nomeada como parametro
+        var soma = numbers3.reduce(somarValores, 0)
+        console.log("==========Reduce============");
+        console.log(soma);
+
+        function somarValores(total, value, index, array) {
+            if(value % 2 == 0){
+                total = total + index
+            } 
+            return total 
+        }
+
+         //Passando uma Funcao Anônima como parametro
+         var soma2 = numbers3.reduce(function(total, value, index, array){
+            return total + value
+         }, 0)
+
+         //Concat 
+         console.log("==========Concat============");
+         var num1 = [2, 65, 3]
+         var num2 = [2, 7, 3]
+
+         var resultado = num1.concat(num2)
+         console.log(resultado);
+         
+       //-----------------------------
+
+         var num1 = [2, 65, 3]
+         var num2 = ['2', '7', '3']
+
+         num1 = num1.map(function(value){
+            return value.toString()
+         })
+
+         var resultado = num1.concat(num2)
+         console.log(resultado);
+
+
+    </script>
+</body>
+
+</html>

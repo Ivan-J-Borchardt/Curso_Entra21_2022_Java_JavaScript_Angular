@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <input type="number" id="idNota" placeholder="Nota" step="0.01">
+            <br><br>
+            <input type="button" value="Icluir" onclick="incluirNota()">
+            <input type="button" value="Questao A" onclick="questaoA2()">
+            <input type="button" value="Questao B" onclick="questaoB()">
+            <input type="button" value="Questao C" onclick="questaoC()">
+            <input type="button" value="Questao D" onclick="questaoD()">
+            <br><br>
+            <output id="idOutA"></output><br>
+            <output id="idOutB"></output><br>
+            <output id="idOutC"></output><br>
+            <output id="idOutD"></output>
+        </form>
+
+        <script>
+            var notas = []
+
+            function incluirNota() {
+                notas.push(Number(document.getElementById("idNota").value))
+                document.getElementById("idNota").value = ""
+            }
+
+            //Calcular a média da turma
+            function questaoA() {
+                let saida = document.getElementById("idOutA")
+                let somaNotas = 0
+                let media = 0 
+
+                notas.forEach(element => {
+                    somaNotas = somaNotas + element
+                });
+
+                media = somaNotas / notas.length
+
+                saida.value = "Média da turma: " + media
+
+            }
+
+            function questaoA2() {
+                console.log(notas);
+                let saida = document.getElementById("idOutA")
+
+                let media = (notas.reduce(function(acumulador, elemento, index, array){
+                    return  acumulador = acumulador + elemento
+                }, 0)) / notas.length
+            
+                saida.value = "Média da turma: " + media
+
+            }
+
+            function questaoA3() {
+                console.log(notas);
+                let saida = document.getElementById("idOutA")
+
+                let media = notas.reduce(function(acumulador, elemento, index, array){
+                    if (index == (notas.length - 1) ) {
+                        acumulador = acumulador + elemento
+                        return acumulador = acumulador / notas.length
+                    }else{
+                        return  acumulador = acumulador + elemento
+                    }
+                    //return acumulador = acumulador + elemento
+                }, 0)
+             
+
+                saida.value = "Média da turma: " + media
+
+            }
+
+            function questaoB() {
+                let saida = document.getElementById("idOutB")
+            }
+
+            //A maior nota 
+            function questaoC() {
+                let saida = document.getElementById("idOutC")
+                let maior = 0
+
+                notas.forEach(element => {
+                    if (element > maior) {
+                        maior = element
+                    }
+                });
+
+                saida.value = "A Maior nota é: " + maior
+
+                return maior 
+            }
+
+
+            //------------------------
+            function questaoD() {
+                let saida = document.getElementById("idOutD")
+
+                let indMaiorNota = notas.map(function(value, index, array) {
+                    if (value == 7) {
+                        return index
+                    }
+                })
+
+                indMaiorNota = indMaiorNota.filter(function(value, index, array) {
+                    return value != undefined
+                })
+
+                console.log(indMaiorNota);
+
+                /*
+                let indMaiorNota = notas.filter(maiorNota)
+
+                function maiorNota(elemento, inde) {
+                    return elemento == 10
+                }
+
+                console.log(indMaiorNota);
+                */
+            }
+            //---------------------------------
+        </script>
+    </body>
+</html>

@@ -216,11 +216,13 @@
 
 ### Aula 26 - 2022.06.03 - 104h
 - Correção Lista 7
+- Formas de iterar um Array
 - Funções para trabalhar com arrays (Map, Filter, Reduce, Concat)
-- Eventos em JavaScript
+- Passando uma função como parâmetro 
 - Projeto: Desafio da Pizza
 
 ### Aula 27 - 2022.06.06 - 108h
+- Eventos em JavaScript
 - JavaScript Object
 - JSON e XML
 - Programação assíncrona com AJAX
@@ -267,10 +269,10 @@
 - Desafio:
 
 ### Feriado - 2022.06.16
-- Bom pra resolver o desafio da aula ;) 
+- Feriado?? Bom pra resolver o desafio da aula ;) 
 
 ### Feriado - 2022.06.17
-- Feriado duplo??? :) - Perfeito para colocar as pendências da aula em dia hein ;)  
+- Feriado duplo??? :) - WoW - Perfeito para colocar as pendências da aula em dia, hein? ;)  
 
 ### Aula 34 - 2022.06.20 - 136h
 - Introdução ao TypeScript

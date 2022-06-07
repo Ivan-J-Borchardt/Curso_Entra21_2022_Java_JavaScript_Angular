@@ -14,7 +14,7 @@
         <br><br>
         <input type="button" value="Icluir" onclick="incluirNota()">
         <input type="button" value="Questao A" onclick="questaoA2()">
-        <input type="button" value="Questao B" onclick="questaoB1()">
+        <input type="button" value="Questao B" onclick="questaoB2()">
         <input type="button" value="Questao C" onclick="questaoC()">
         <input type="button" value="Questao D" onclick="questaoD()">
         <br><br>
@@ -38,7 +38,7 @@
             let somaNotas = 0
             let media = 0
 
-            notas.forEach(element => {
+            notas.forEach((element, index) => {
                 somaNotas = somaNotas + element
             });
 
@@ -53,7 +53,9 @@
             let saida = document.getElementById("idOutA")
 
             let media = (notas.reduce(function (acumulador, elemento, index, array) {
+
                 return acumulador = acumulador + elemento
+
             }, 0)) / notas.length
 
             saida.value = "Média da turma: " + media
@@ -65,12 +67,14 @@
             let saida = document.getElementById("idOutA")
 
             let media = notas.reduce(function (acumulador, elemento, index, array) {
+
                 if (index == (notas.length - 1)) {
                     acumulador = acumulador + elemento
                     return acumulador = acumulador / notas.length
                 } else {
                     return acumulador = acumulador + elemento
                 }
+
                 //return acumulador = acumulador + elemento
             }, 0)
 
@@ -85,6 +89,7 @@
             let taxa = 1/notas.length
             let media = 0
             let alunosAcimaMedia = []
+        
 
             notas.forEach(element => {
                 media = media + (element * taxa)
@@ -104,18 +109,21 @@
             let saida = document.getElementById("idOutB")
             let taxa = 1/notas.length
             console.log("QB taxa: " + taxa);
-
+           // 2 2 4 2  
+           // 2.5
             let media = notas.reduce(function(acc, valAtual, index, array){
                 return (acc + (valAtual * taxa))
             }, 0)
 
             console.log("QB Média: " + media);
+            //und  und  2 und 
             let alunosAcimaMedia = notas.map(function(value, index, array) {
                 if (value > media) {
                     return index
                 } 
             })
             console.log(alunosAcimaMedia);
+            //2 
             alunosAcimaMedia = alunosAcimaMedia.filter(function(value, index, array) {
                 return value != undefined
             })
@@ -126,7 +134,7 @@
         //A maior nota 
         function questaoC() {
             let saida = document.getElementById("idOutC")
-            let maior = 0
+            let maior = -Infinity
 
             notas.forEach(element => {
                 if (element > maior) {
@@ -143,20 +151,20 @@
         //Em que posições a maior nota aparece  
         function questaoD() {
             let saida = document.getElementById("idOutD")
-
+  
             let maxNota = notas.reduce(function (acc, value) {
                 return Math.max(acc, value)
             }, -Infinity)
 
             console.log("Maior Nota: " + maxNota)
-
+        
             let indMaiorNota = notas.map(function (elemento, index) {
                 if (elemento == maxNota) {
                     return index
                 }
             })
 
-            indMaiorNota = indMaiorNota.filter(function(value, index, array) {
+            indMaiorNota = indMaiorNota.filter(function(value) {
                 return value != undefined
             })
 

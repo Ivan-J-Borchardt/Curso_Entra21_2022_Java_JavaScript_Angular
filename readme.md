@@ -219,10 +219,21 @@
 - Formas de iterar um Array
 - Funções para trabalhar com arrays (Map, Filter, Reduce, Concat)
 - Passando uma função como parâmetro 
+
+
+### Aula 27 - 2022.06.06 - 108h (Instrutor sem Internet)
+- Tempo para resolver Lista 7 
+
+### Aula 28 - 2022.06.07 - 112h
+- Correção Lista 7
+- Debug do Chrome
+- Algoritmo de ordenação Buble Sort e função array.sort()
+- Eventos em JavaScript
+- Janelas de confirmação
 - Projeto: Desafio da Pizza
 
-### Aula 27 - 2022.06.06 - 108h
-- Eventos em JavaScript
+
+### Aula 29 - 2022.06.08 - 116h
 - JavaScript Object
 - JSON e XML
 - Programação assíncrona com AJAX
@@ -230,39 +241,39 @@
 - Entender a arquitetura Cliente/Servidor
 - Projeto: Conversor de moedas com base na API do banco central
 
-### Aula 28 - 2022.06.07 - 112h
-- Processamento Assíncrono com Async/Await
-- Projeto: Site Previsao do Tempo
 
-### Aula 29 - 2022.06.08 - 116h
-- Introducao ao NodeJs
-- Módulos
-- Criando o primeiro servidor http
-- Projeto:
-
-#### Materiais Complementares - Node
 
 ### Aula ID - 2022.06.09
 - Profa. Maiara 
 
 ### Aula 30 - 2022.06.10 - 120h
+- Processamento Assíncrono com Async/Await
+- Projeto: Site Previsao do Tempo
+
+#### Materiais Complementares - Node
+
+### Aula 31 - 2022.06.13 - 124h
+
+- Introducao ao NodeJs
+- Módulos
+- Criando o primeiro servidor http
+- Projeto:
+
 - NPM e NPX
 - Instalando dependências no projeto Node
 - Criando uma API com o Framework Express
 - Projeto: 
 
-### Aula 31 - 2022.06.13 - 124h
+
+### Aula 32 - 2022.06.14 - 128h
 - Git e GitHub para trabalho em equipes
 - Criando um Readme.dm com Markdown
 - Introducao à medotologias ágeis na prática (Cerimônias, Papéis, Backlog, Quadro Kanban, Sprint e Daily)
 - Divisao da turma em equipes
 - Projeto Piloto: Backlog, Divisão de taréfas (Daily), quadro Kanban e Git/GitHub
+- Execução do projeto Piloto
 
 #### Materiais Complementares - Markdown
-
-
-### Aula 32 - 2022.06.14 - 128h
-- Execução do projeto Piloto
 
 ### Aula 33 - 2022.06.14 - 132h
 - Finalização do projeto Piloto e apresentação de resultados

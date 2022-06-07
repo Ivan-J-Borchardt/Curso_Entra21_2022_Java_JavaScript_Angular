@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .borda{
+            border: 2px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        .margin5{
+            margin-left: 5px;
+            margin-top: 5px;
+
+        }
+
+        .quebraLinha{
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <div class="borda">
+            <div class="margin5">
+                <input type="radio" id="idChrome" name="nmNavegadores" >
+                <label for="idChrome">Chrome</label>
+            </div>
+            <div class="margin5">
+                <input type="radio" id="idFirefox" name="nmNavegadores"  >
+                <label for="idFirefox">Firefox</label>
+            </div>
+
+            <div class="margin5">
+                <input type="radio" id="idIE" name="nmNavegadores" >
+                <label for="idIE">Internet Explorer</label>
+            </div>
+            <div class="margin5">
+                <input type="radio" id="idOpera" name="nmNavegadores" >
+                <label for="idOpera">Opera</label>
+            </div>
+            <div class="margin5">
+                <input type="radio" id="idEdge" name="nmNavegadores" >
+                <label for="idEdge">Edge</label>
+            </div>
+            <div class="margin5">
+                <input type="radio" id="idSafari" name="nmNavegadores" >
+                <label for="idSafari">Safari</label>
+            </div>
+            <div class="margin5">
+                <input type="button" value="Pegar Nav" onclick="descobrirNav()" >
+            </div>
+        </div>
+        <div class="borda">
+            <input type="checkbox" id="idChromeCheck" name="nmNavegadores">
+            <label for="idChrome">Chrome</label>
+            <br>
+            <input type="checkbox" id="idFirefoxCheck" name="nmNavegadores">
+            <label for="idFirefox">Firefox</label>
+            <br>
+            <input type="checkbox" id="idIECheck" name="nmNavegadores">
+            <label for="idIE">Internet Explorer</label>
+            <br>
+            <input type="checkbox" id="idOperaCheck" name="nmNavegadores">
+            <label for="idOpera">Opera</label>
+            <br>
+            <input type="checkbox" id="idEdgeCheck" name="nmNavegadores">
+            <label for="idEdge">Edge</label>
+            <br>
+            <input type="checkbox" id="idSafariCheck" name="nmNavegadores">
+            <label for="idSafari">Safari</label>
+            <br><br>
+            <input type="button" value="Pegar Nav" onclick="descobrirNavCheckbox()">
+        </div>
+
+        <div class="borda">
+            <br><br>
+            <label for="idEstado">Estado</label><br>
+            <select name="nmSelect" id="idEstado">
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+            <input type="button" value="Pegar UF" onclick="descobrirEstado()">
+            <br><br>
+        </div>
+
+        <div class="borda">
+            <input type="radio" name="nmTranporte" id="idCarro">
+            <label for="idCarro">Carro</label>
+            <br>
+            <input type="radio" name="nmTranporte" id="idBicicleta">
+            <label for="idBicicleta">Bicicleta</label>
+            <br><br>
+
+            <input type="radio" name="nmClima" id="idSol">
+            <label for="idSol">Sol</label>
+            <br>
+            <input type="radio" name="nmClima" id="idChuva">
+            <label for="idChuva">Chuva</label>
+            <br>
+
+            <input type="button" value="Testar Caminho" onclick="pegarCondicoes()">
+
+            <output id="idOut"></output>
+        </div>
+    </form>
+
+    <script>
+
+        function pegarCondicoes() {
+            let isSol = document.getElementById("idSol").checked
+            let isChuva = document.getElementById("idChuva").checked
+            let isCarro = document.getElementById("idCarro").checked
+            let isBicicleta = document.getElementById("idBicicleta").checked
+            let clima
+            let transporte
+
+            if (isSol) {
+                clima = "sol"
+            } else {
+                clima = "chuva"
+            }
+
+            if (isCarro) {
+                transporte = "carro"
+            } else {
+                transporte = "bicicleta"
+            }
+
+            document.getElementById("idOut").value = testarCaminho(clima, transporte)
+        }
+
+
+
+        function descobrirNav() {
+            let isChrome = document.getElementById("idChrome").checked;
+            let isFirefox = document.getElementById("idFirefox").checked;
+            let isIe = document.getElementById("idIE").checked;
+            let isOpera = document.getElementById("idOpera").checked;
+            let isEdge = document.getElementById("idEdge").checked;
+            let isSafari = document.getElementById("idSafari").checked;
+
+            if (isChrome) {
+                console.log("Chrome");
+            } else if (isFirefox) {
+                console.log("Firefox");
+            } else if (isIe) {
+                console.log("IE");
+            } else if (isOpera) {
+                console.log("Opera");
+            } else if (isEdge) {
+                console.log("Edge");
+            } else if (isSafari) {
+                console.log("Safari");
+            }
+
+
+
+        }
+
+        function descobrirNavCheckbox() {
+            let isChrome = document.getElementById("idChromeCheck").checked;
+            let isFirefox = document.getElementById("idFirefoxCheck").checked;
+            let isIe = document.getElementById("idIECheck").checked;
+            let isOpera = document.getElementById("idOperaCheck").checked;
+            let isEdge = document.getElementById("idEdgeCheck").checked;
+            let isSafari = document.getElementById("idSafariCheck").checked;
+
+            if (isChrome) {
+                console.log("Chrome");
+            }
+
+            if (isFirefox) {
+                console.log("Firefox");
+            }
+
+            if (isIe) {
+                console.log("IE");
+            }
+
+            if (isOpera) {
+                console.log("Opera");
+            }
+
+            if (isEdge) {
+                console.log("Edge");
+            }
+
+            if (isSafari) {
+                console.log("Safari");
+            }
+
+
+
+        }
+
+        function descobrirEstado(params) {
+            let uf = document.getElementById("idEstado").value
+            let itemSelected = document.getElementById("idEstado")
+
+            let estado = itemSelected.options[itemSelected.selectedIndex].innerText
+
+            console.log(uf);
+            console.log(estado);
+
+            switch (uf) {
+                case "SC":
+                    console.log("Estado selecionado foi SC");
+                    break;
+
+                case "SP":
+                    console.log("Estado selecionado foi SP");
+                    break;
+
+                case "RS":
+                    console.log("Estado selecionado foi RS");
+                    break;
+
+                case "PR":
+                    console.log("Estado selecionado foi PR");
+                    break;
+
+                case "RJ":
+                    console.log("Estado selecionado foi RJ");
+                    break;
+
+                default:
+                    console.log("Nem um estado selecionado");
+                    break;
+            }
+
+
+        }
+
+        //transporte = bicicleta nao quero ir pela chuva 
+        //transporte = Carro entao clima indiferente, vou pelo caminho mais curto 
+        function testarCaminho(clima, transporte) {
+            let caminho
+            if (clima == "sol") {
+                //Caminho A
+                caminho = "Caminho A"
+                console.log("Caminho A");
+            } else {
+                if (transporte == "carro") {
+                    //Caminho A
+                    caminho = "Caminho A"
+                    console.log("Caminho A");
+                } else {
+                    //Caminho B 
+                    caminho = "Caminho B"
+                    console.log("Caminho B");
+                }
+            }
+            return caminho
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

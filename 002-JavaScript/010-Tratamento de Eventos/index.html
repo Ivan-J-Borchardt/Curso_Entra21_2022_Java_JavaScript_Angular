@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" method="get">
+        <input type="email"  name="nmEmail" id="idEmail">
+        <input type="button" id="idBotao" value="CLique Me" onclick="testarClique('teste')">
+        <input type="button" id="idBotao2" value="CLique Me 2">
+        <input type="button" id="idBotao3" value="CLique Me 3">
+        <input type="submit" id="idBotao4">
+    </form>
+
+    <script>
+
+        //função chamada em Event Handler Inline (má Prática)
+        function testarClique(params) {
+            console.log("Clicou " + params);
+        }
+
+
+        //Event Handler Nivel 1 
+        var botao = document.getElementById("idBotao2")
+
+        botao.onclick = tratamentoBotao
+           
+       
+        function tratamentoBotao() {
+            console.log("Botao Clicado");
+        }
+
+
+        //
+        botao.ondblclick = function() {
+            console.log("Botao Clicado com duplo clique");
+        } 
+
+        //Event Handler Nível 2 
+        var botao3 = document.getElementById("idBotao4")
+
+        botao3.addEventListener("click", function(event){
+            event.preventDefault() //Previne Comportamento padrao do Formulario
+            let email = document.getElementById("idEmail").value
+            console.log("Clicou Botao 3 " + email)
+        })
+
+
+        botao3.addEventListener("mouseover", function() {
+            console.log("Passou mouse por cima...");
+        })
+
+
+
+    </script>
+</body>
+
+</html>

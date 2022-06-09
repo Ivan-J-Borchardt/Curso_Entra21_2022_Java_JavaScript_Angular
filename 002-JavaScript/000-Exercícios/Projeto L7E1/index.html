@@ -12,11 +12,13 @@
     <form action="">
         <input type="number" id="idNota" placeholder="Nota" step="0.01">
         <br><br>
-        <input type="button" value="Icluir" onclick="incluirNota()">
+        <input type="button" value="Incluir" onclick="incluirNota()">
         <input type="button" value="Questao A" onclick="questaoA2()">
         <input type="button" value="Questao B" onclick="questaoB2()">
         <input type="button" value="Questao C" onclick="questaoC()">
         <input type="button" value="Questao D" onclick="questaoD()">
+
+        <input type="button" value="Excluir" onclick="excluirNota()">
         <br><br>
         <output id="idOutA"></output><br>
         <output id="idOutB"></output><br>
@@ -27,10 +29,19 @@
     <script>
         var notas = []
 
+
+
         function incluirNota() {
             notas.push(Number(document.getElementById("idNota").value))
             document.getElementById("idNota").value = ""
         }
+
+
+        function excluirNota() {
+            notas.unshift()
+            console.log(notas)
+        }
+
 
         //Calcular a média da turma
         function questaoA() {

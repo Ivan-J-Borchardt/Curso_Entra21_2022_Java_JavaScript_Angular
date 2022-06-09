@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+        <div>
+            <input type="number" id="idNum" placeholder="Número...">
+        </div>
+        <div>
+            <input type="button" id="idIncluir" value="Incluir">
+            <input type="button" id="idOrdemCres" value="Ordem Crescente Bubble">
+            <input type="button" id="idOrdemDecres" value="Ordem Decrescente Bubble">
+            <input type="button" id="idOrdemCresSort" value="Ordem Crescente Sort Met.">
+            <input type="button" id="idOrdemDecresSort" value="Ordem Decrescente Sort Met.">            
+        </div>
+        <div>
+            <output id="idOut"></output>
+        </div>
+
+
+    </form>
+
+    <script>
+        var numeros = []
+
+        var btIncluir = document.getElementById("idIncluir")
+        var btOrdemCres = document.getElementById("idOrdemCres")
+        var btOrdemDecres = document.getElementById("idOrdemDecres")
+        var btOrdemCresSort = document.getElementById("idOrdemCresSort")
+        var btOrdemDecresSort = document.getElementById("idOrdemDecresSort")     
+
+        var saida = document.getElementById("idOut")
+
+        btIncluir.onclick = function(){
+            numeros.push(Number(document.getElementById("idNum").value))
+            document.getElementById("idNum").value = ""
+            console.log(numeros);
+        }
+
+        btOrdemCres.onclick = function(){
+            saida.value =  "Ordem Crescente: " + bubbleSortCres(numeros).toString()
+        }
+
+        btOrdemDecres.onclick = function(){
+            saida.value =  "Ordem Decrescente: " + bubbleSortDecres(numeros).toString()
+        }
+
+
+        btOrdemCresSort.onclick = function(){
+            saida.value =  "Ordem Crescente: " + numeros.sort().toString()
+        }
+
+        btOrdemDecresSort.onclick = function(){
+            saida.value =  "Ordem Decrescente: " + numeros.reverse().toString()
+        }
+
+
+        //Bubble Sort - Ordenação pelo Método da bolha 
+        function bubbleSortCres(numeros) {
+            let isTrocou = true
+            while (isTrocou) {
+                isTrocou = false
+    
+                for (i = 0; i < numeros.length; i++) {
+                    if (numeros[i] > numeros[i + 1]) {
+                        isTrocou = true
+                        let aux = numeros[i]
+                        numeros[i] = numeros[i + 1]
+                        numeros[i + 1] = aux
+                    }
+                }
+            }   
+            return numeros
+        }
+
+        function bubbleSortDecres(numeros) {
+            let isTrocou = true
+            while (isTrocou) {
+                isTrocou = false
+    
+                for (i = 0; i < numeros.length; i++) {
+                    if (numeros[i] < numeros[i + 1]) {
+                        isTrocou = true
+                        let aux = numeros[i]
+                        numeros[i] = numeros[i + 1]
+                        numeros[i + 1] = aux
+                    }
+                }
+            } 
+            return numeros  
+        }
+ 
+    </script>
+
+</body>
+
+</html>

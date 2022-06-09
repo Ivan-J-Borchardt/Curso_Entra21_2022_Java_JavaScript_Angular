@@ -34,6 +34,7 @@ d) Em que posições a maior nota aparece
         -   Ordenar em ordem crescente                
         -   Ordenar em ordem decrescente 
 
+
 6. Crie um programa para gerenciar as notas dos alunos de uma escola. 
     - Crie um vetor para armazenar o nome dos alunos.
     - Crie um vetor para armazenar o endereço dos alunos. 

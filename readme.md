@@ -8,6 +8,16 @@
 "o mundo ama os talentosos, mas recompensa os disciplinados" (Autor Desconhecido)
 
 ---
+## Backlog 
+#### Deadline: 2022.06.12
+ - [ ] Exercícios da lista 7 
+ - [ ] Projeto Calculadora 
+
+#### Deadline: 2022.06.19
+ - [ ] Projeto Da Pizza 
+ - [ ] Análise da questão L5E7 (Usando Debugger)
+
+
 
 ## Aulas 
 ### Aula 1 - 2022.04.18 - 4h
@@ -234,6 +244,21 @@
 
 
 ### Aula 29 - 2022.06.08 - 116h
+- Correção L7E2 e L7E5
+- Revisão das aulas anteriores 
+- Reforço de lógica de programação
+
+
+
+### Aula ID - 2022.06.09
+- Profa. Maiara 
+
+### Aula 30 - 2022.06.10 - 120h
+- Tempo para resolver Lista 7, Projeto da calculadora,
+ Projeto da Pizza e Análise da questão L5E7 (Usando Debugger)
+
+
+### Aula 31 - 2022.06.13 - 124h
 - JavaScript Object
 - JSON e XML
 - Programação assíncrona com AJAX
@@ -242,42 +267,21 @@
 - Projeto: Conversor de moedas com base na API do banco central
 
 
-
-### Aula ID - 2022.06.09
-- Profa. Maiara 
-
-### Aula 30 - 2022.06.10 - 120h
+### Aula 32 - 2022.06.14 - 128h
 - Processamento Assíncrono com Async/Await
 - Projeto: Site Previsao do Tempo
 
-#### Materiais Complementares - Node
 
-### Aula 31 - 2022.06.13 - 124h
-
+### Aula 33 - 2022.06.14 - 132h
 - Introducao ao NodeJs
 - Módulos
 - Criando o primeiro servidor http
-- Projeto:
-
 - NPM e NPX
 - Instalando dependências no projeto Node
 - Criando uma API com o Framework Express
 - Projeto: 
 
-
-### Aula 32 - 2022.06.14 - 128h
-- Git e GitHub para trabalho em equipes
-- Criando um Readme.dm com Markdown
-- Introducao à medotologias ágeis na prática (Cerimônias, Papéis, Backlog, Quadro Kanban, Sprint e Daily)
-- Divisao da turma em equipes
-- Projeto Piloto: Backlog, Divisão de taréfas (Daily), quadro Kanban e Git/GitHub
-- Execução do projeto Piloto
-
-#### Materiais Complementares - Markdown
-
-### Aula 33 - 2022.06.14 - 132h
-- Finalização do projeto Piloto e apresentação de resultados
-- Desafio:
+#### Materiais Complementares - Node
 
 ### Feriado - 2022.06.16
 - Feriado?? Bom pra resolver o desafio da aula ;) 
@@ -286,6 +290,19 @@
 - Feriado duplo??? :) - WoW - Perfeito para colocar as pendências da aula em dia, hein? ;)  
 
 ### Aula 34 - 2022.06.20 - 136h
+- Git e GitHub para trabalho em equipes
+- Criando um Readme.dm com Markdown
+- Introducao à medotologias ágeis na prática (Cerimônias, Papéis, Backlog, Quadro Kanban, Sprint e Daily)
+- Divisao da turma em equipes
+- Projeto Piloto: Backlog, Divisão de taréfas (Daily), quadro Kanban e Git/GitHub
+- Execução do projeto Piloto
+#### Materiais Complementares - Markdown
+
+### Aula 35 - 2022.06.21 - 140h
+- Finalização do projeto Piloto e apresentação de resultados
+- Desafio:
+
+### Aula 35 - 2022.06.22 - 144h
 - Introdução ao TypeScript
 
 #### Materiais Complementares - TypeScript

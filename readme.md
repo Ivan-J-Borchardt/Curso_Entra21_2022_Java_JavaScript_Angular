@@ -282,6 +282,7 @@
 - Projeto: 
 
 #### Materiais Complementares - Node
+- https://nodejs.org/pt-br/docs/
 
 ### Feriado - 2022.06.16
 - Feriado?? Bom pra resolver o desafio da aula ;) 
@@ -296,7 +297,13 @@
 - Divisao da turma em equipes
 - Projeto Piloto: Backlog, Divisão de taréfas (Daily), quadro Kanban e Git/GitHub
 - Execução do projeto Piloto
+
 #### Materiais Complementares - Markdown
+- https://www.markdownguide.org/basic-syntax/
+
+#### Materiais Complementares - Scrum e Kanban 
+- 999-Biblioteca/EBOOK Guia do Método Kanban em Português.pdf
+- 999-Biblioteca/EBOOK Guia do Scrum em Português.pdf
 
 ### Aula 35 - 2022.06.21 - 140h
 - Finalização do projeto Piloto e apresentação de resultados

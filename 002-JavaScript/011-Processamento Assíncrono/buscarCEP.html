@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <input type="text" id="idCep" placeholder="CEP...">
+    <input type="button" value="Buscar CEP" id="idBtBuscarCep">
+    <body>
+        <Script>
+            //Assíncrono 
+            //Single Thread 
+            //IO Não Bloqueante 
+
+            var btBuscarCep = document.getElementById("idBtBuscarCep")
+
+            btBuscarCep.onclick = function(){
+                buscarCEP(document.getElementById("idCep").value)
+            
+            }
+
+            //API - Application Programing Interface
+            //Endpoint - Endereço dentro do servidor 
+            function buscarCEP(cep) {
+                //AJAX
+                var xhr = new XMLHttpRequest(); 
+
+                xhr.open("GET", "https://viacep.com.br/ws/" + cep + "/json/")
+
+                xhr.addEventListener("load", function(){
+                    var resposta = xhr.responseText;
+                    imprimirEndereco(resposta)
+                })
+                
+                xhr.send()
+
+            }
+
+            function imprimirEndereco(params) {
+                console.log(params);
+            }
+
+            //JavaScript Object 
+            var enderecoOBJ = {
+                rua : "Rua Das Palmeiras", 
+                cidade: "Blumenau", 
+                num: 1234,
+                vetor: [1, 3, 4]
+            }
+
+
+            console.log(enderecoOBJ.cidade)
+
+           //Transforma um objeto JS em JSON 
+            var enderecoJSON = JSON.stringify(enderecoOBJ)
+
+            console.log(enderecoOBJ);
+            console.log(enderecoJSON);
+
+
+
+
+        </Script>
+    </body>
+</html>

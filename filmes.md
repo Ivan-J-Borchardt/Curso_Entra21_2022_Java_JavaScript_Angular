@@ -33,6 +33,10 @@ https://www.youtube.com/watch?v=uMxPhSs_1O4
 
 https://www.youtube.com/watch?v=UZKNwP1YWBU
 
+## Gestão do tempo - 12 Regras que rapidamente lhe darão mais TEMPO e ENERGIA
+
+https://www.youtube.com/watch?v=JBostGKVv6A
+
 ---
 ---
 # A história dos computadores - Manual do Mundo 

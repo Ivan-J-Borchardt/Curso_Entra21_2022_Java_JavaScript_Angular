@@ -268,6 +268,8 @@
 
 
 ### Aula 32 - 2022.06.14 - 128h
+- Variaveis Let, Var e Const
+- JavaScript em arquivos externos e onde declarar 
 - Processamento Assíncrono com Async/Await
 - Projeto: Site Previsao do Tempo
 
@@ -279,10 +281,12 @@
 - NPM e NPX
 - Instalando dependências no projeto Node
 - Criando uma API com o Framework Express
-- Projeto: 
+- Exercícios: NodeJs - Lista 01
 
 #### Materiais Complementares - Node
 - https://nodejs.org/pt-br/docs/
+- Tutorial Node (Inglês)       : https://www.youtube.com/watch?v=TlB_eWDSMt4
+- Tutorial Node (Português)    : https://www.youtube.com/watch?v=gq9uGdZCKxI
 
 ### Feriado - 2022.06.16
 - Feriado?? Bom pra resolver o desafio da aula ;) 
@@ -302,8 +306,10 @@
 - https://www.markdownguide.org/basic-syntax/
 
 #### Materiais Complementares - Scrum e Kanban 
-- 999-Biblioteca/EBOOK Guia do Método Kanban em Português.pdf
 - 999-Biblioteca/EBOOK Guia do Scrum em Português.pdf
+- 999-Biblioteca/EBOOK Guia do Método Kanban em Português.pdf
+- Tutorial Trello            : https://www.youtube.com/watch?v=0Uqf_DLbAUU
+- Tutorial alternativo Trello: https://www.youtube.com/watch?v=ib7kWfbPuL0
 
 ### Aula 35 - 2022.06.21 - 140h
 - Finalização do projeto Piloto e apresentação de resultados

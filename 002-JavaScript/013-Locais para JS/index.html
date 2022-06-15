@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        alert("Bloqueio A")
+    </script>
+</head>
+<body>
+    <script>
+        alert("Bloqueio B")
+    </script>
+
+    <h1>Titulo da página</h1>    
+    <form action="" oninput="js_aqui">
+
+        <input type="text" id="idIn" value="Valor do Input">
+
+        <button onclick="js_aqui">Clique Aqui</button>
+    </form>
+    
+    <script>
+         console.log("teste " + document.querySelector("#idIn"))
+         /*
+            Atrinutos da Tag Script 
+            async : Define que o script será executado de forma assincrona 
+                    apenas para scripts externos 
+
+            charset :  Define o padrão de ceracteres usado.
+
+            defer   : Define que o script será executado depois da página ser carregada. Só funciona para scripts externos.
+
+            src     : Define a fonte externa do script 
+
+            type    : Define o tipo de mídia do script 
+        */
+
+    </script>
+      
+    <script src="meuJavaScript.js"></script>
+</body>
+</html>

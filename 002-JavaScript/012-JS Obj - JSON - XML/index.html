@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var cotacoes = {
+            value : [
+                     {paridade: 123, data: "14.06.2022"}, 
+                     {paridade: 564, data: "20.06.2022"}, 
+                     {paridade: 999, data: "21.06.2022"}
+                    ]
+
+        }
+
+       var teste = cotacoes.value[1].paridade
+            564
+        //JavaScript Object 
+        var enderecoOBJ = {
+            rua: "Rua Das Palmeiras",
+            cidade: "Blumenau",
+            num: 1234,
+            vetor: [1, 3, 4]
+        }
+
+
+        console.log(enderecoOBJ.cidade)
+
+        //Transforma um objeto JS em JSON 
+        var enderecoJSON = JSON.stringify(enderecoOBJ)
+
+        console.log(enderecoOBJ);
+        console.log(enderecoJSON);
+
+        //Transforma um objeto JSON em JS
+        var novoOBJ = JSON.parse(enderecoJSON)
+
+        console.log(novoOBJ);
+        console.log(novoOBJ.rua);
+    </script>
+</body>
+
+</html>

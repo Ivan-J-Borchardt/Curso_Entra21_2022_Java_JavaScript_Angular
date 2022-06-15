@@ -9,13 +9,13 @@
 
 ---
 ## Backlog 
-#### Deadline: 2022.06.12
- - [ ] Exercícios da lista 7 
- - [ ] Projeto Calculadora 
-
 #### Deadline: 2022.06.19
  - [ ] Projeto Da Pizza 
  - [ ] Análise da questão L5E7 (Usando Debugger)
+
+#### Deadline: 2022.06.26
+-  [ ] Projeto casa de cambio 
+-  [ ] Projeto site previsão do tempo
 
 
 
@@ -268,13 +268,24 @@
 
 
 ### Aula 32 - 2022.06.14 - 128h
-- Variaveis Let, Var e Const
-- JavaScript em arquivos externos e onde declarar 
-- Processamento Assíncrono com Async/Await
-- Projeto: Site Previsao do Tempo
+- Reforço processamento assíncrono e consumo de API
+- Tempo para Trabalhar no projeto Conversor de Moedas
 
 
 ### Aula 33 - 2022.06.14 - 132h
+- Variaveis Let, Var e Const
+- JavaScript em arquivos externos e onde declarar 
+- Processamento Assíncrono com Async/Await
+- Projeto: Site Previsao do Tempo (API: https://hgbrasil.com/status/weather)
+
+
+### Feriado - 2022.06.16
+- Feriado?? Bom pra resolver o desafio da aula ;) 
+
+### Feriado - 2022.06.17
+- Feriado duplo??? :) - WoW - Perfeito para colocar as pendências da aula em dia, hein? ;)  
+
+### Aula 34 - 2022.06.20 - 136h
 - Introducao ao NodeJs
 - Módulos
 - Criando o primeiro servidor http
@@ -288,13 +299,8 @@
 - Tutorial Node (Inglês)       : https://www.youtube.com/watch?v=TlB_eWDSMt4
 - Tutorial Node (Português)    : https://www.youtube.com/watch?v=gq9uGdZCKxI
 
-### Feriado - 2022.06.16
-- Feriado?? Bom pra resolver o desafio da aula ;) 
 
-### Feriado - 2022.06.17
-- Feriado duplo??? :) - WoW - Perfeito para colocar as pendências da aula em dia, hein? ;)  
-
-### Aula 34 - 2022.06.20 - 136h
+### Aula 35 - 2022.06.21 - 140h
 - Git e GitHub para trabalho em equipes
 - Criando um Readme.dm com Markdown
 - Introducao à medotologias ágeis na prática (Cerimônias, Papéis, Backlog, Quadro Kanban, Sprint e Daily)
@@ -311,15 +317,14 @@
 - Tutorial Trello            : https://www.youtube.com/watch?v=0Uqf_DLbAUU
 - Tutorial alternativo Trello: https://www.youtube.com/watch?v=ib7kWfbPuL0
 
-### Aula 35 - 2022.06.21 - 140h
+### Aula 35 - 2022.06.22 - 144h
 - Finalização do projeto Piloto e apresentação de resultados
 - Desafio:
-
-### Aula 35 - 2022.06.22 - 144h
 - Introdução ao TypeScript
 
 #### Materiais Complementares - TypeScript
 
+---
 ## Ferramentas (Setup) 
 
 **Visual Studio Code**

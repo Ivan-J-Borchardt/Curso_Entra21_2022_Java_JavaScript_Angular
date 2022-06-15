@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <label for="idMoeda">Moeda</label>
+            <select id="idMoeda">
+                <option value="AUD">Dólar australiano</option>
+                <option value="CAD">Dólar canadense</option>
+                <option value="CHF">Franco suíço</option>
+                <option value="DKK">Coroa dinamarquesa</option>
+                <option value="EUR">Euro</option>
+            </select>
+        </div>
+        <div>
+            <label for="idData">Data</label>
+            <input type="text" id="idData">
+        </div>
+        <div>
+            <button type="button" id="idBtRel">Boletins de Cotações</button>
+        </div>
+        <output id="idOut"></output>
+    </form>
+
+    <Script>
+
+
+        var btRel = document.getElementById("idBtRel")
+
+        btRel.onclick = function () {
+
+            let moeda = document.getElementById("idMoeda").value
+            let data = document.getElementById("idData").value
+
+            pegarCotacao(moeda, data)
+        }
+
+
+        function pegarCotacao(moeda, data) {
+
+            console.log(moeda);
+            console.log(data);
+            //AJAX
+            var xhr = new XMLHttpRequest();
+
+            xhr.open("GET", "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoMoedaDia(moeda=@moeda,dataCotacao=@dataCotacao)?@moeda='"+ moeda +"'&@dataCotacao='"+ data +"'&$top=100&$format=json&$select=paridadeCompra,paridadeVenda,cotacaoCompra,cotacaoVenda,dataHoraCotacao,tipoBoletim")
+
+            xhr.addEventListener("load", function () {
+                var resposta = xhr.responseText;
+                imprimirBoletinsCotacao(resposta)
+            })
+
+            xhr.send()
+        }
+
+        function imprimirBoletinsCotacao(boletinsCotacao) {
+            let boletinsCotacaoObj = JSON.parse(boletinsCotacao)
+
+            let msn = "("
+            boletinsCotacaoObj.value.forEach(function(boletim){
+                msn = msn + boletim.paridadeCompra + ";"
+            })
+            msn = msn + ")"
+
+            
+            console.log(boletinsCotacaoObj.value[boletinsCotacaoObj.value.length - 1].cotacaoVenda)
+
+            document.getElementById("idOut").value = msn
+        }
+
+
+
+    </Script>
+
+</body>
+
+</html>

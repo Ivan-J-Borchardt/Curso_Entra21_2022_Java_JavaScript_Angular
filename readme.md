@@ -270,6 +270,7 @@
 ### Aula 32 - 2022.06.14 - 128h
 - Reforço processamento assíncrono e consumo de API
 - Tempo para Trabalhar no projeto Conversor de Moedas
+https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios/resource/ae69aa94-4194-45a6-8bae-12904af7e176
 
 
 ### Aula 33 - 2022.06.14 - 132h

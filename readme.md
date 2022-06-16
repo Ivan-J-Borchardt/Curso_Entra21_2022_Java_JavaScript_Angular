@@ -273,7 +273,7 @@
 https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios/resource/ae69aa94-4194-45a6-8bae-12904af7e176
 
 
-### Aula 33 - 2022.06.14 - 132h
+### Aula 33 - 2022.06.15 - 132h
 - Variaveis Let, Var e Const
 - JavaScript em arquivos externos e onde declarar 
 - Processamento Assíncrono com Async/Await

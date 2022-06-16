@@ -20,8 +20,8 @@
 
         var btBuscarCep = document.getElementById("idBtBuscarCep")
 
-        btBuscarCep.onclick = function () {
-            var endereco = buscarCEP(document.getElementById("idCep").value)
+        btBuscarCep.onclick = async function () {
+            var endereco = await buscarCEP(document.getElementById("idCep").value)
             console.log(endereco);
         }
 
@@ -30,9 +30,9 @@
         async function buscarCEP(cep) {
 
             var resposta = await fetch("https://viacep.com.br/ws/" + cep + "/json/")
-            return resposta;
+            return resposta.json();
 
-        }
+        } 
 
     
     </script>

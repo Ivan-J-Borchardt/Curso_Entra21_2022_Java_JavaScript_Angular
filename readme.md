@@ -274,11 +274,9 @@ https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-di
 
 
 ### Aula 33 - 2022.06.15 - 132h
-- Variaveis Let, Var e Const
 - JavaScript em arquivos externos e onde declarar 
 - Processamento Assíncrono com Async/Await
 - Projeto: Site Previsao do Tempo (API: https://hgbrasil.com/status/weather)
-
 
 ### Feriado - 2022.06.16
 - Feriado?? Bom pra resolver o desafio da aula ;) 
@@ -287,6 +285,7 @@ https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-di
 - Feriado duplo??? :) - WoW - Perfeito para colocar as pendências da aula em dia, hein? ;)  
 
 ### Aula 34 - 2022.06.20 - 136h
+- Variaveis Let, Var e Const
 - Introducao ao NodeJs
 - Módulos
 - Criando o primeiro servidor http
@@ -409,8 +408,9 @@ Sala 1 no Teams (é onde temos as aulas):
 https://teams.microsoft.com/l/meetup-join/19%3ameeting_N2U1NDA0ZjEtNjYyNi00ZjY4LWI5NGUtYmQ1MDRmZTA2Yzg0%40thread.v2/0?context=%7b%22Tid%22%3a%2211bd213a-7403-4997-88b5-fa787aee4e78%22%2c%22Oid%22%3a%227a378a2b-683e-48dc-82bf-630c15f588e8%22%7d
 
 
-Sala 2 no Teams (Sala para reuniões sob demanda): 
+Sala 2 no Teams (Sala para troca de ideias sobre os projetos em desenvolvimento): 
 
+https://teams.microsoft.com/l/meetup-join/19%3ameeting_Njg1ZGM3YjktZThkZC00MDVhLTkwYWUtZTg0MGM0NDE2Njg3%40thread.v2/0?context=%7b%22Tid%22%3a%2211bd213a-7403-4997-88b5-fa787aee4e78%22%2c%22Oid%22%3a%227a378a2b-683e-48dc-82bf-630c15f588e8%22%7d
 
 
 ## Instrutor 

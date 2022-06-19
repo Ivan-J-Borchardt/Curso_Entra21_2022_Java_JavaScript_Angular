@@ -33,6 +33,7 @@ O relógio deverá ter seu próprio mecanismo de contagem de tempo (não deve pe
 O formato da hora, a escala de temperaturas e a cidade do usuário devem ser configuraveis. 
 As telas devem ser responsivas e se adaptar a celulares assim como à telas maiores. 
 
+---
 #### **Descrição Técnica**
 
 #### **Interface** 
@@ -73,9 +74,29 @@ https://www.figma.com/proto/tmxJZeUMoXlNqNq5Vxr2Tv/Despertador-E21?node-id=9%3A2
   b. Invocar o método getHoraCerta(), endpoint /horaCerta, a cada hora cheia e sincronizar o relógio.    
   c. Invocar o método getHoje(), endpoint /hoje, sempre que o relógio virar das 11:59:59 para as 12:00:00 e atualizar o campo na tela.  
   d. Invocar o método getMsn(), endpoint /msn, a cada hora cheia e atualizar a mensagem na tela conforme necessário.  
-  e. Atualizar o campo com o lembrete do alarme assim que o alarme correspondente disparar e limpar o campo quando o botão 'Turn Alarm Off' for clicado. O lembrete deve ser lido do vetor 'alarmes' (veja mais detalhes na descrição da tela 4).    
+  e. Ao disparar do alarme atualizar o campo com o lembrete do alarme correspondente e   
+  tocar um Ringtone pelo sistema de áudio do computador.   
+    
+     Ringtones podem ser obtidos nos sites:  
+~~~     
+      https://www.zedge.net/ringtones   
+~~~
+~~~
+      https://www.prokerala.com/downloads/ringtones/
+~~~ 
+  O lembrete deve ser lido do vetor 'alarmes' (veja mais detalhes na descrição da tela 4 .     
   f. Botão multi-funcional, quando o alarme estiver disparado o botão desliga o alarme, no restante do tempo o botão chama a tela 3 (Alarm).   
-  g. Link para a tela 2 (Config).  
+
+  Desligar Alarme:  
+    1. Limpar o campo lembrete;   
+    2. Desligar o ringtone;    
+    3. Trocar o texto do botão para "Set Alarm".  
+
+  
+  g. Link para a tela 2 (Config). 
+
+
+   
 
 ![Tela 1](assets/Telas/tela1.png)  
 
@@ -249,8 +270,9 @@ https://www.figma.com/proto/tmxJZeUMoXlNqNq5Vxr2Tv/Despertador-E21?node-id=9%3A2
 
   d. getMsn()
       
-    1. Adquirir a hora do pôr do sol através da API abaixo
-    2. O servidor deverá responder com uma das seguintes mensagens:   
+    1. Adquirir a hora do pôr do sol através da função getClima(cidade).
+    2. Adquirir o nome do usuário no cadastro do sistema, função getConfig(). 
+    3. Determinar qual das seguintes mensagens será retornada:   
 
       Das 00:00:00h até às 11:59:00h responder "God Morning 'name',  its ??:??:?? 'hourStand'"   
       Das 12:00:00h até 4 horas antes do pôr do sol, responder "God Afternoon 'name', its ??:??:?? 'hourStand'"   
@@ -309,6 +331,7 @@ https://www.figma.com/proto/tmxJZeUMoXlNqNq5Vxr2Tv/Despertador-E21?node-id=9%3A2
   }
   ~~~
 
+---
   #### **Backlog**
 
   O Backlog abaixo já está devidamente priorizado, no entanto, pode ser necessário um maior detalhamento dos tópicos ou mesmo quebrar alguma tarefa em tarefas menores (A Equipe deverá analisar o Backlog. Caso decida fazer ajustes, alinhar préviamente com o Product Owner).   

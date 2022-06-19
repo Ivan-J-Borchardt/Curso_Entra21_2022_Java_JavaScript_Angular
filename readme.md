@@ -384,6 +384,11 @@ https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-di
         https://www.postgresql.org/
 ~~~
 
+**Lightshot**
+~~~
+        https://app.prntscr.com/pt-br/download.html
+~~~
+
 
 ## Links úteis 
 

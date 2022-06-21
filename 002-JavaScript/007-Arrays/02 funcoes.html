@@ -101,6 +101,37 @@
          var resultado = num1.concat(num2)
          console.log(resultado);
 
+         //Array multidimensionais (Array de Array)
+         //Ordenação 
+         var nomes = ["Broto", "Media", "grande", "Gigante"]
+         var precos = [1.50, 2.45, 1.35, 1, 0.65]
+
+         var frutas = [["tangerina", 3.50, "Kg", 1],
+                       ["Kiwi", 5.60, "Kg", 2.5], 
+                       ["maça", 2.50, "Kg", 0.8]]
+
+         var fruta = ["Morango", 7.00, "Kg", 0.50]
+
+         console.log(frutas[2][3]);
+
+         frutas.push(fruta)
+    
+         console.log(frutas);
+         
+         frutas = frutas.sort(ordenar)
+
+         console.log(frutas);
+
+         function ordenar(a, b) {
+             if (a[3] < b[3]) {
+                 return 1
+             }
+             if (a[3] > b[3]) {
+                return -1
+             }
+             return 0   
+         }
+
 
     </script>
 </body>

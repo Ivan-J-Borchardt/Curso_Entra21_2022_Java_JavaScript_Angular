@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /*
+         1   34    45    5
+         4   25    11    5 
+         6   2     35    6 
+         7   4     7     8 
+
+         x(3,2)
+        */
+
+        //j=    0    1       2     3      i
+        var matriz = [[1, 34, 45, 5],//  0
+        [4, 25, 11, 5],//  1 
+        [6, 2, 35, 6],//  2
+        [7, 4, 7, 8]]//  3
+
+        var x = matriz[3][2]
+        console.log(x);
+        console.log("------------------------")
+        /*
+            i = 1
+            j = 1
+            matriz.length = 4
+            matriz[0].length = 4
+        */
+        for (let i = 0; i < matriz.length; i++) {
+            for (let j = 0; j < matriz[i].length; j++) {
+                console.log(matriz[i][j]);
+                matriz[i][j] = matriz[i][j] * 2
+                console.log(" - ");
+            }
+        }
+
+        //pizza = ["media", 25, 25.00]
+
+        var pizzas = []
+
+
+        var pizza4 = []
+        pizza4[0] = "Gigante" //dados qu vem da tela....
+        pizza4[1] = 50
+        pizza4[2] = 50.00
+        pizzas.push(pizza4)
+
+
+        var pizza1 = []
+        pizza1[0] = "media" //dados qu vem da tela....
+        pizza1[1] = 25
+        pizza1[2] = 25.00
+        pizzas.push(pizza1)
+
+        var pizza3 = []
+        pizza3[0] = "Grande" //dados qu vem da tela....
+        pizza3[1] = 35
+        pizza3[2] = 35.00
+        pizzas.push(pizza3)
+
+        var pizza2 = []
+        pizza2[0] = "pequena" //dados qu vem da tela....
+        pizza2[1] = 15
+        pizza2[2] = 15.00
+        pizzas.push(pizza2)
+
+
+
+
+
+
+        pizzas.forEach(pizza => {
+            let raio = pizza[1] / 2
+            let area = Math.PI * (raio * raio)
+            pizza.push(area)
+
+            let precoRel = pizza[2] / area
+            pizza.push(precoRel)
+        });
+
+        pizzas = pizzas.sort(function (a, b) {
+            if (a[4] > b[4]) {
+                return 1
+            }
+            if (a[4] < b[4]) {
+                return -1
+            }
+            return 0
+        })
+
+
+
+        console.table(pizzas)
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

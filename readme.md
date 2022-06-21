@@ -9,6 +9,10 @@
 
 ---
 ## Backlog 
+
+#### Deadline: 2022.06.12
+ - [x] Projeto Calculadora
+
 #### Deadline: 2022.06.19
  - [ ] Projeto Da Pizza 
  - [ ] Análise da questão L5E7 (Usando Debugger)
@@ -53,7 +57,7 @@
 
 
 
-### Aula 6 - 2022.04.27 - 24h
+### Aula 6 - 2022.04.27 - 24h*
 - HTML (Formulários - TAG input e seus vários tipos e atributos) 
 
 
@@ -65,7 +69,7 @@
 
 - HTML (Formulários - Textarea, fieldset, button, select, datalist, output)
 
-### Aula 8 - 2022.04.29 - 32h
+### Aula 8 - 2022.04.29 - 32h*
 - Revisão dos conceitos introdutórios de HTML
 - Correcão do Exercício 1 (E1L1)
 - Exercícios HTML

@@ -248,8 +248,6 @@
 - Revisão das aulas anteriores 
 - Reforço de lógica de programação
 
-
-
 ### Aula ID - 2022.06.09
 - Profa. Maiara 
 
@@ -285,7 +283,16 @@ https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-di
 - Feriado duplo??? :) - WoW - Perfeito para colocar as pendências da aula em dia, hein? ;)  
 
 ### Aula 34 - 2022.06.20 - 136h
-- Variaveis Let, Var e Const
+- Dicas off topic: 
+- Trabalhando com a data do sistema 
+- Vetor de vetores (Matrizes)
+- Ordenando uma matriz tomando uma coluna como critério de ordenação
+- Capturando elementos da tela pelo formulário e a propriedade name dos elementos
+- Criando elementos HTML através da propriedade innerHTML
+- Criando elementos HTML através da função document.write()
+- Criando elementos HTML através da dunção document.createElement() e appendChield() 
+
+### Aula 35 - 2022.06.21 - 140h
 - Introducao ao NodeJs
 - Módulos
 - Criando o primeiro servidor http
@@ -299,8 +306,7 @@ https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-di
 - Tutorial Node (Inglês)       : https://www.youtube.com/watch?v=TlB_eWDSMt4
 - Tutorial Node (Português)    : https://www.youtube.com/watch?v=gq9uGdZCKxI
 
-
-### Aula 35 - 2022.06.21 - 140h
+### Aula 35 - 2022.06.22 - 144h
 - Git e GitHub para trabalho em equipes
 - Criando um Readme.dm com Markdown
 - Introducao à medotologias ágeis na prática (Cerimônias, Papéis, Backlog, Quadro Kanban, Sprint e Daily)
@@ -317,7 +323,11 @@ https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-di
 - Tutorial Trello            : https://www.youtube.com/watch?v=0Uqf_DLbAUU
 - Tutorial alternativo Trello: https://www.youtube.com/watch?v=ib7kWfbPuL0
 
-### Aula 35 - 2022.06.22 - 144h
+### Aula ID - 2022.06.23
+- Profa. Maiara 
+
+### Aula 36 - 2022.06.24 - 148h
+
 - Finalização do projeto Piloto e apresentação de resultados
 - Desafio:
 - Introdução ao TypeScript

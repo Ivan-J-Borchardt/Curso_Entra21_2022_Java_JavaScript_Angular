@@ -296,7 +296,9 @@ https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-di
 - Criando elementos HTML através da função document.write()
 - Criando elementos HTML através da dunção document.createElement() e appendChield() 
 
-### Aula 35 - 2022.06.21 - 140h
+### Aula 35 - 2022.06.21 - 140h - Instrutor com problemas de internet
+* Por conta dos problemas de internet metade da aula foi 
+redirecionada para resolução de exercícios e trabalhos
 - Introducao ao NodeJs
 - Módulos
 - Criando o primeiro servidor http

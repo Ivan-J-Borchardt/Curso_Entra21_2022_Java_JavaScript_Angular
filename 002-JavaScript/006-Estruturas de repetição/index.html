@@ -38,7 +38,24 @@
                 console.log("For " + ind)  
             }
 
+            //Variações do For... 
+
+            var array = [1, 3, 5, 7, 9, 11, 13]
+            
+            //forEach 
+            array.forEach(element => {
+                console.log("forEach " + element);
+            });
          
+            //forOf
+            for (let iterator of array) {
+                console.log("forOf " + iterator);
+            }
+
+            //forIn
+            for (const key in array) {
+                console.log("ForIn " + array[key]);
+            }
 
         </script>        
     </body>

@@ -1,0 +1,14 @@
+{
+  "name": "004-servidor-express",
+  "version": "1.0.0",
+  "description": "primeiro servidor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan J. Borchardt",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

@@ -23,5 +23,58 @@ app.get("/livros", function (req, resp) {
             </html>
         `
     )
+})
+
+app.get("/hora", function (req, resp) {
+    let horaCerta = new Date()
+    resp.send(
+        `
+            <html>
+                <head>
+                    <meta charset="utf-8">
+                </head>
+                <body>
+                    <h1> Hora certa ${horaCerta} </h1>
+                </body>
+            </html>
+        `
+    )
+})
+
+app.get("/usuarios", function (req, resp) {
+
+    //const users = ['Felisberto', 'Albertina', 'Annabella']
+
+    const user = {
+        nome: "Ivan", 
+        cpf: "000.000.000-12", 
+        email: "ivan.borchardt.cobol@gmail.com"
+    }
+    resp.json(user)
 
 })
+
+app.get("/sobre", function (req, resp) {
+
+    resp.sendFile(__dirname + "/html/sobre.html")
+
+})
+
+//Rota dinâmica
+app.get("/ws/:cep", function (req, resp) {
+
+    var cep = req.params.cep 
+    console.log(cep);
+    resp.json({cep})
+
+})
+
+//Rota dinâmica
+app.get("/endereco/:cep", function (req, resp) {
+
+    var cep = req.params.cep 
+
+    resp.json({cep})
+
+})
+

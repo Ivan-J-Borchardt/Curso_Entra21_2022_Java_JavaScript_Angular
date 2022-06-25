@@ -313,6 +313,13 @@ redirecionada para resolução de exercícios e trabalhos
 - Tutorial Node (Português)    : https://www.youtube.com/watch?v=gq9uGdZCKxI
 
 ### Aula 35 - 2022.06.22 - 144h
+- Continuação aula de NODE
+
+### Aula ID - 2022.06.23
+- Profa. Maiara 
+
+### Aula 36 - 2022.06.24 - 148h
+
 - Git e GitHub para trabalho em equipes
 - Criando um Readme.dm com Markdown
 - Introducao à medotologias ágeis na prática (Cerimônias, Papéis, Backlog, Quadro Kanban, Sprint e Daily)
@@ -321,24 +328,26 @@ redirecionada para resolução de exercícios e trabalhos
 - Execução do projeto Piloto
 
 #### Materiais Complementares - Markdown
-- https://www.markdownguide.org/basic-syntax/
+- https://www.markdownguide.org/basic-syntax/  
 
+#### Materiais Complementares - GitHub  
+- https://docs.github.com/pt/get-started/quickstart/github-flow  
+  
 #### Materiais Complementares - Scrum e Kanban 
 - 999-Biblioteca/EBOOK Guia do Scrum em Português.pdf
 - 999-Biblioteca/EBOOK Guia do Método Kanban em Português.pdf
 - Tutorial Trello            : https://www.youtube.com/watch?v=0Uqf_DLbAUU
 - Tutorial alternativo Trello: https://www.youtube.com/watch?v=ib7kWfbPuL0
 
-### Aula ID - 2022.06.23
-- Profa. Maiara 
 
-### Aula 36 - 2022.06.24 - 148h
+### Aula 36 - 2022.06.27 - 152h
 
 - Finalização do projeto Piloto e apresentação de resultados
 - Desafio:
 - Introdução ao TypeScript
 
 #### Materiais Complementares - TypeScript
+
 
 ---
 ## Ferramentas (Setup) 
@@ -432,6 +441,10 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_N2U1NDA0ZjEtNjYyNi00ZjY4L
 Sala 2 no Teams (Sala para troca de ideias sobre os projetos em desenvolvimento): 
 
 https://teams.microsoft.com/l/meetup-join/19%3ameeting_Njg1ZGM3YjktZThkZC00MDVhLTkwYWUtZTg0MGM0NDE2Njg3%40thread.v2/0?context=%7b%22Tid%22%3a%2211bd213a-7403-4997-88b5-fa787aee4e78%22%2c%22Oid%22%3a%227a378a2b-683e-48dc-82bf-630c15f588e8%22%7d
+
+
+Workspace do Trello: 
+https://trello.com/invite/entra2120221/d1a1649d47aecbd6a7d05ce3500a0342
 
 
 ## Instrutor 

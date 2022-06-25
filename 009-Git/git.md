@@ -2,10 +2,15 @@
 ## Fluxo 
 1. Criar Repositório remoto no GitHub 
 2. Clonar o repositório remoto 
+3. Criar uma nova branch
+4. Dar Checkout na nova branch 
 3. Trabalhar/Desenvolver o projeto 
 4. Git add 
 5. Git commit 
-6. Git push 
+6. Git push origin <nomeDaBranch>
+7. Criar pull request (No GitHub)
+8. Validar a qualidade do código 
+9. Dar Merge da Branch trabalhada na Branch Master 
 
 
 ## Command Guide

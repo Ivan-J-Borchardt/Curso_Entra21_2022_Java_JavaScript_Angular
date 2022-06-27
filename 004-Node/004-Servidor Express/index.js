@@ -1,8 +1,18 @@
 //O módulo express retorna uma função que instancia o express
 const express = require("express")
+const cors = require("cors")
 
 //A função express cria uma instância de todo o framework express em app
 const app = express()
+
+app.use(function(req, resp, next){
+    resp.header("Access-Control-Allow-Origin", "*")
+    //resp.header("Access-Control-Allow-Origin", "http://localhost:8080")
+
+    app.use(cors())
+    next()
+})
+
 
 const porta = 3001
 app.listen(porta, function () {
@@ -57,6 +67,12 @@ app.get("/usuarios", function (req, resp) {
 app.get("/sobre", function (req, resp) {
 
     resp.sendFile(__dirname + "/html/sobre.html")
+
+})
+
+app.get("/index", function (req, resp) {
+
+    resp.sendFile(__dirname + "/html/index.html")
 
 })
 

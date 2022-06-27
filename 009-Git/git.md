@@ -10,7 +10,7 @@
 6. Git push origin <nomeDaBranch>
 7. Criar pull request (No GitHub)
 8. Validar a qualidade do código 
-9. Dar Merge da Branch trabalhada na Branch Master 
+9. Dar Merge da Branch trabalhada na Branch Master (No)
 
 
 ## Command Guide
@@ -65,3 +65,15 @@ git push --force
 9. Clonando um repositório remoto 
 
 git clone "http://...url do rep remoto..."
+
+10. Criar nova Branch 
+
+git branch <nomeDaNovaBranch>
+
+11. Apontando para a nova Branch 
+
+git checkout <nomeDaNovaBranch>
+
+* Use git status para verificar se vc está mesmo trabalhando na 
+branch correta...
+

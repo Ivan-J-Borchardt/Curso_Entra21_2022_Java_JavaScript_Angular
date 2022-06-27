@@ -10,6 +10,7 @@
         <div>
             <input type="text" id="idCep" placeholder="CEP...">
             <input type="button" value="Buscar CEP" id="idBtBuscarCep">
+            <input type="button" value="Buscar Clima" onclick="buscarClima()">
         </div>
         <Script>
             //Assíncrono 
@@ -50,8 +51,26 @@
                 console.log("Logradouro " + enderecoObj.logradouro);
             }
 
-           
+            //API - Application Programing Interface
+            //Endpoint - Endereço dentro do servidor 
+            function buscarClima() {
+                //AJAX
+                var xhr = new XMLHttpRequest(); 
 
+                //xhr.open("GET", "https://api.hgbrasil.com/weather?format=json-cors&key=48157b1a")
+                xhr.open("GET", "https://api.hgbrasil.com/weather?format=json-cors&key=df53fd23&city_name=Campinas,SP")
+                //xhr.open("GET", "https://api.hgbrasil.com/weather?format=json-cors&woeid=455827")
+                
+                xhr.addEventListener("load", function(){
+                    var resposta = xhr.responseText;
+                    imprimirEndereco(resposta)
+                  
+                })
+                
+                xhr.send()
+
+            }           
+            
 
         </Script>
     </body>

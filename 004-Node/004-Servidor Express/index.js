@@ -105,3 +105,5 @@ app.get("/vars", function (req, resp) {
     resp.json({cpf, nome})
 })
 
+
+

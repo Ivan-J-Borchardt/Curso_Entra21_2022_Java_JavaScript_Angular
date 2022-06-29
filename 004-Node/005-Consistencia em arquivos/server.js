@@ -11,7 +11,6 @@ salvar(JSON.stringify(config))
 
 lerArquivo()
 
-
 async function salvar(dado) {
     await fs.writeFile('config.txt', dado)
 }

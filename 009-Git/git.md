@@ -1,7 +1,7 @@
 # Git e GitHub
 ## Fluxo 
 1. Criar Repositório remoto no GitHub 
-2. Clonar o repositório remoto 
+2. Clonar o repositório remoto (Branch Master/main)
 3. Criar uma nova branch
 4. Dar Checkout na nova branch 
 3. Trabalhar/Desenvolver o projeto 
@@ -11,6 +11,7 @@
 7. Criar pull request (No GitHub)
 8. Validar a qualidade do código 
 9. Dar Merge da Branch trabalhada na Branch Master (No)
+10. Deletar a Branch trabalhada 
 
 
 ## Command Guide

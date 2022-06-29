@@ -41,6 +41,9 @@ https://www.youtube.com/watch?v=JBostGKVv6A
 ---
 # A história dos computadores - Manual do Mundo 
 
+#Entendendo o sistema binário 
+    https://www.youtube.com/watch?v=YgSjnLXM2Ts
+
 #SagaDosComputadores Ep.1 
     https://www.youtube.com/watch?v=xajcV4lwY3Q
 
@@ -49,6 +52,9 @@ https://www.youtube.com/watch?v=JBostGKVv6A
 
 #SagaDosComputadores Ep.3
     https://www.youtube.com/watch?v=c5lugpYQLD8
+
+#SagaDosComputadores Ep.4 
+    https://www.youtube.com/watch?v=DhodsmIm3LE
 
 ---
 ---

@@ -94,3 +94,14 @@ app.get("/endereco/:cep", function (req, resp) {
 
 })
 
+//Capturando parametros pelo metodo GET
+app.get("/vars", function (req, resp) {
+    let cpf  = req.query.nmCPF
+    let nome = req.query.nmNome
+
+    console.log(cpf);
+    console.log(nome);
+
+    resp.json({cpf, nome})
+})
+

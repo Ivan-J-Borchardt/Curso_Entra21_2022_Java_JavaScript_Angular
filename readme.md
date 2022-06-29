@@ -228,7 +228,7 @@
 - Profa. Maiara 
 
 
-### Aula 26 - 2022.06.03 - 104h
+### Aula 26 - 2022.06.03 - 104h*
 - Correção Lista 7
 - Formas de iterar um Array
 - Funções para trabalhar com arrays (Map, Filter, Reduce, Concat)

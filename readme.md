@@ -312,20 +312,19 @@ redirecionada para resolução de exercícios e trabalhos
 - Tutorial Node (Inglês)       : https://www.youtube.com/watch?v=TlB_eWDSMt4
 - Tutorial Node (Português)    : https://www.youtube.com/watch?v=gq9uGdZCKxI
 
-### Aula 35 - 2022.06.22 - 144h
+### Aula 36 - 2022.06.22 - 144h
 - Continuação aula de NODE
 
 ### Aula ID - 2022.06.23
 - Profa. Maiara 
 
-### Aula 36 - 2022.06.24 - 148h
+### Aula 37 - 2022.06.24 - 148h
 
 - Git e GitHub para trabalho em equipes
-- Criando um Readme.dm com Markdown
 - Introducao à medotologias ágeis na prática (Cerimônias, Papéis, Backlog, Quadro Kanban, Sprint e Daily)
 - Divisao da turma em equipes
 - Projeto Piloto: Backlog, Divisão de taréfas (Daily), quadro Kanban e Git/GitHub
-- Execução do projeto Piloto
+
 
 #### Materiais Complementares - Markdown
 - https://www.markdownguide.org/basic-syntax/  
@@ -340,15 +339,42 @@ redirecionada para resolução de exercícios e trabalhos
 - Tutorial alternativo Trello: https://www.youtube.com/watch?v=ib7kWfbPuL0
 
 
-### Aula 36 - 2022.06.27 - 152h
+### Aula 38 - 2022.06.27 - 152h
 
-- Finalização do projeto Piloto e apresentação de resultados
-- Desafio:
+
+
+### Aula 39 - 2022.06.28 - 156h
+- Execução do projeto Piloto
+- 
+
+### Aula 40 - 2022.06.29 - 160h
+- Execução do projeto Piloto
+- Pegando parametros no Endpoint pelo método GET (req.query.xxx) 
+- Consistindo dados em arquivos (módulo fs do NODE)
+- Consumo de API no Backende com Axios
+
+### Aula ID - 2022.06.30
+- Profa. Maiara 
+
+### Aula 41 - 2022.07.01 - 164h
+- Finalização do projeto Piloto
+
+
+
+
+### Aula 42 - 2022.07.04 - 168h
 - Introdução ao TypeScript
+- Como adicionar TypeScript a um projeto
+- Tipagem de variáveis
+
 
 #### Materiais Complementares - TypeScript
 
 
+
+
+- Criando um Readme.dm com Markdowne
+- .gitignore
 ---
 ## Ferramentas (Setup) 
 

@@ -9,7 +9,7 @@
 - Estruturas de dados, arrays, estruturas de repetição, estruturas de seleção
 ---
 ### Instruções Adicionais 
-- Resolva os exercícios propostos usando HTML e JavaScript.
+- Resolva os exercícios propostos usando Java
 
 ---
 ### Exercícios 

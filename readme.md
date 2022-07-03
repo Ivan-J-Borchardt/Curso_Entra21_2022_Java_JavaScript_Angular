@@ -14,13 +14,15 @@
  - [x] Projeto Calculadora
 
 #### Deadline: 2022.06.19
- - [ ] Projeto Da Pizza 
- - [ ] Análise da questão L5E7 (Usando Debugger)
+ - [x] Projeto Da Pizza 
+ - [x] Análise da questão L5E7 (Usando Debugger)
 
 #### Deadline: 2022.06.26
 -  [ ] Projeto casa de cambio 
 -  [ ] Projeto site previsão do tempo
 
+#### Deadline: 2022.07.10
+-  [ ] Projeto Piloto - Despertador
 
 
 ## Aulas 
@@ -359,22 +361,68 @@ redirecionada para resolução de exercícios e trabalhos
 ### Aula 41 - 2022.07.01 - 164h
 - Finalização do projeto Piloto
 
-
-
-
 ### Aula 42 - 2022.07.04 - 168h
 - Introdução ao TypeScript
 - Como adicionar TypeScript a um projeto
-- Tipagem de variáveis
-
+- Como compilar/transpilar o TS 
+- Tipos de Dados primitivos 
+- Tipagem de variáveis por inferência e por anotation
+- Tipos de Dados Object 
+    - Arrays (coleções de dados homogêneos, coleções de dados heterogêneos(tuplas))
+    - Literal Object
+- Tipo de dados Any 
+- Union Type
+- Type Alias
+- Literal Types
+- Tipagem dos parâmetros das funções
+- Tipagem do retorno das funções 
+- Funções com parâmetros opcionais 
+- Exercícios
 
 #### Materiais Complementares - TypeScript
+https://www.typescriptlang.org/
 
 
+### Aula 43 - 2022.07.05 - 172h
+- Correção dos Exercícios 
+- Interfaces
+- Narrowing
+- Generics 
+- Classes (introdução à OO)
+    - Atributos 
+    - Métodos 
+    - Construtores 
+- Exercícios (Definir classes e Instanciar Objetos)
+
+### Aula 44 - 2022.07.06 - 176h
+- Correção dos Exercícios 
+- Interfaces para Classes
+- Encapsulamento 
+    - modificadores de acesso 
+    - Métodos Getter e Setter 
+    - Métodos de Trabalho  
+
+- Herança 
+- Atributos e Métodos Estáticos 
+- Exercícios
+
+### Aula ID - 2022.07.07
+- Profa. Maiara 
+
+### Aula 45 - 2022.07.06 - 180h
+- Correção de exercícios 
+- Novos Exercícios
+
+### Aula 46 - 2022.07.06 - 184h
+- Introdução ao Angular
 
 
-- Criando um Readme.dm com Markdowne
+### Aula ?? - 2022.??.??  
+- Criando um Readme.md com Markdown
 - .gitignore
+- boostrap
+- npm vs. yarn 
+
 ---
 ## Ferramentas (Setup) 
 

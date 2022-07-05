@@ -377,7 +377,8 @@ redirecionada para resolução de exercícios e trabalhos
 - Tipagem dos parâmetros das funções
 - Tipagem do retorno das funções 
 - Funções com parâmetros opcionais 
-- Exercícios
+
+- Exercícios: L5E9 
 
 #### Materiais Complementares - TypeScript
 https://www.typescriptlang.org/
@@ -420,6 +421,7 @@ https://www.typescriptlang.org/
 ### Aula ?? - 2022.??.??  
 - Criando um Readme.md com Markdown
 - .gitignore
+- Tratamento de conflito no GitHub
 - boostrap
 - npm vs. yarn 
 

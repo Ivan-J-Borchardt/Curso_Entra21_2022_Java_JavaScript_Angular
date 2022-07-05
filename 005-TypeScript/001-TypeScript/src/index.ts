@@ -75,16 +75,41 @@ function gravarLog(msn: string):void {
 
 //funções com parâmetros opcionais 
 function saudar(nome: string, saudacao?: string):void {
-
     if (saudacao) {
         console.log(`Olá ${saudacao} ${nome}`);
     } else {
         console.log(`Olá ${nome}`); 
     }
-    
-    
 }
 
 saudar("Fulano", "Sr.")
 saudar("Joana")
+
+//Tipagem de elementos da tela (usando a interface HTML...Element)
+//Input 
+var entradaTela = document.getElementById("idIn") as HTMLInputElement; 
+console.log(entradaTela.value);
+entradaTela.value = "34"; 
+
+//Botao
+var botao = document.getElementById("idBt") as HTMLButtonElement;
+
+botao.onclick = function(){
+    console.log(entradaTela.value);   
+}
+
+//Botao com input 
+var botaoInput = document.getElementById("idBt2") as HTMLInputElement; 
+
+botaoInput.onclick = function(){
+    if (opcao1.checked) {
+        console.log("Opcao 1");
+    } else {
+        console.log("Opcao 2");   
+    }
+}
+
+//Radio Button
+var opcao1 = document.getElementById("idOp1") as HTMLInputElement; 
+var opcao2 = document.getElementById("idOp2") as HTMLInputElement; 
 

@@ -64,3 +64,26 @@ function saudar(nome, saudacao) {
 }
 saudar("Fulano", "Sr.");
 saudar("Joana");
+//Tipagem de elementos da tela (usando a interface HTML...Element)
+//Input 
+var entradaTela = document.getElementById("idIn");
+console.log(entradaTela.value);
+entradaTela.value = "34";
+//Botao
+var botao = document.getElementById("idBt");
+botao.onclick = function () {
+    console.log(entradaTela.value);
+};
+//Botao com input 
+var botaoInput = document.getElementById("idBt2");
+botaoInput.onclick = function () {
+    if (opcao1.checked) {
+        console.log("Opcao 1");
+    }
+    else {
+        console.log("Opcao 2");
+    }
+};
+//Radio Button
+var opcao1 = document.getElementById("idOp1");
+var opcao2 = document.getElementById("idOp2");

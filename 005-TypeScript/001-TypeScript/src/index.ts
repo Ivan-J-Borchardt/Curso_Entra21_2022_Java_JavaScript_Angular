@@ -52,6 +52,107 @@ var userId: userIdType;
 userId = 10; 
 userId = "10"; 
 
+//Literal Types
+let estadoUser : "autenticado" | null | "deslogado"; 
+
+estadoUser = null; 
+estadoUser = "autenticado"; 
+//estadoUser = "teste"; <--- isso gera erro... 
+
+//Enum  <--- uma espécie de coleção de constantes que são aceitas em um determinado domínio
+enum Tamanho {
+    P = "Pequeno", 
+    M = "Médio", 
+    G = "Grande"
+};
+
+const camisa = {
+    desc: "Camisa basica preta", 
+    size: Tamanho.P
+}; 
+
+
+//Interfaces 
+interface ParametrosFuncoesMatematicas{
+    n1 : number; 
+    n2 : number; 
+}
+function somaNum(nums: ParametrosFuncoesMatematicas): number {
+    return nums.n1 + nums.n2; 
+}
+
+var nums = {n1: 3, n2: 4}
+
+console.log(somaNum(nums));
+
+function subtraiNum(nums: ParametrosFuncoesMatematicas): number {
+    return nums.n1 - nums.n2; 
+}
+
+nums = {n1: 8, n2: 2}
+console.log(subtraiNum(nums));
+
+
+//Narrowing 
+function facaAlgo(info: number | boolean): void{
+
+    if (typeof info === "number") {
+        console.log("O dado é numérico");
+    } else {
+        console.log("O dado é lógico");
+    }
+}
+
+facaAlgo(6)
+facaAlgo(true)
+
+
+//Generics 
+function exibirItensArray<T>(vetor: T[]){
+
+    vetor.forEach(element => {
+        console.log(`Item: ${element}`);
+    });
+
+}
+
+var x1 = [0, 2, 4, 6]; 
+var x2 = ["a", "b", "c"];
+
+exibirItensArray(x1); 
+exibirItensArray(x2);
+
+//Classes
+class Pessoa {
+    nome: string; 
+    idade: number;
+
+    constructor(nome: string, idade: number){
+        this.nome = nome; 
+        this.idade = idade; 
+    }
+
+    mostrarNomeUsuario(): void{
+        console.log(`O Nome do usuário é ${this.nome}`);  
+    }
+
+}
+
+
+const userNovo = new Pessoa("José", 23); 
+
+console.log("-------------------------------");
+console.log(userNovo.nome);
+userNovo.idade = 24; 
+console.log(userNovo.idade);
+console.log(userNovo.mostrarNomeUsuario());
+console.log("-------------------------------");
+
+
+
+
+
+
 //Funções
 //tipagem dos parâmetros
 function soma(num1: number, num2: number) {
@@ -77,6 +178,7 @@ function gravarLog(msn: string):void {
 function saudar(nome: string, saudacao?: string):void {
     if (saudacao) {
         console.log(`Olá ${saudacao} ${nome}`);
+     // console.log("Olá" + saudacao +" " + nome);
     } else {
         console.log(`Olá ${nome}`); 
     }
@@ -112,4 +214,7 @@ botaoInput.onclick = function(){
 //Radio Button
 var opcao1 = document.getElementById("idOp1") as HTMLInputElement; 
 var opcao2 = document.getElementById("idOp2") as HTMLInputElement; 
+
+
+
 

@@ -410,11 +410,11 @@ https://www.typescriptlang.org/
 ### Aula ID - 2022.07.07
 - Profa. Maiara 
 
-### Aula 45 - 2022.07.06 - 180h
+### Aula 45 - 2022.07.08 - 180h
 - Correção de exercícios 
 - Novos Exercícios
 
-### Aula 46 - 2022.07.06 - 184h
+### Aula 46 - 2022.07.11 - 184h
 - Introdução ao Angular
 
 

@@ -38,6 +38,71 @@ id = "200";
 var userId;
 userId = 10;
 userId = "10";
+//Literal Types
+let estadoUser;
+estadoUser = null;
+estadoUser = "autenticado";
+//estadoUser = "teste"; <--- isso gera erro... 
+//Enum  <--- uma espécie de coleção de constantes que são aceitas em um determinado domínio
+var Tamanho;
+(function (Tamanho) {
+    Tamanho["P"] = "Pequeno";
+    Tamanho["M"] = "M\u00E9dio";
+    Tamanho["G"] = "Grande";
+})(Tamanho || (Tamanho = {}));
+;
+const camisa = {
+    desc: "Camisa basica preta",
+    size: Tamanho.P
+};
+function somaNum(nums) {
+    return nums.n1 + nums.n2;
+}
+var nums = { n1: 3, n2: 4 };
+console.log(somaNum(nums));
+function subtraiNum(nums) {
+    return nums.n1 - nums.n2;
+}
+nums = { n1: 8, n2: 2 };
+console.log(subtraiNum(nums));
+//Narrowing 
+function facaAlgo(info) {
+    if (typeof info === "number") {
+        console.log("O dado é numérico");
+    }
+    else {
+        console.log("O dado é lógico");
+    }
+}
+facaAlgo(6);
+facaAlgo(true);
+//Generics 
+function exibirItensArray(vetor) {
+    vetor.forEach(element => {
+        console.log(`Item: ${element}`);
+    });
+}
+var x1 = [0, 2, 4, 6];
+var x2 = ["a", "b", "c"];
+exibirItensArray(x1);
+exibirItensArray(x2);
+//Classes
+class Pessoa {
+    constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+    mostrarNomeUsuario() {
+        console.log(`O Nome do usuário é ${this.nome}`);
+    }
+}
+const userNovo = new Pessoa("José", 23);
+console.log("-------------------------------");
+console.log(userNovo.nome);
+userNovo.idade = 24;
+console.log(userNovo.idade);
+console.log(userNovo.mostrarNomeUsuario());
+console.log("-------------------------------");
 //Funções
 //tipagem dos parâmetros
 function soma(num1, num2) {
@@ -57,6 +122,7 @@ function gravarLog(msn) {
 function saudar(nome, saudacao) {
     if (saudacao) {
         console.log(`Olá ${saudacao} ${nome}`);
+        // console.log("Olá" + saudacao +" " + nome);
     }
     else {
         console.log(`Olá ${nome}`);

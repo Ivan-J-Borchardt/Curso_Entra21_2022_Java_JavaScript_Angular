@@ -417,6 +417,26 @@ https://www.typescriptlang.org/
 ### Aula 46 - 2022.07.11 - 184h
 - Introdução ao Angular
 
+### Aula 47 - 2022.07.12 - 188h
+- Angular
+
+### Aula 48 - 2022.07.13 - 192h
+- Angular
+
+### Aula ID - 2022.07.14
+- Profa. Maiara
+
+### Aula CF - 2022.07.15
+- Prof. Sergio
+
+### Aula 56 - 2022.07.18 - 196h
+- Angular
+
+### Aula 60 - 2022.07.19 - 200h
+- Angular
+
+### Aula XX - 2022.07.20 - Férias
+
 
 ### Aula ?? - 2022.??.??  
 - Criando um Readme.md com Markdown

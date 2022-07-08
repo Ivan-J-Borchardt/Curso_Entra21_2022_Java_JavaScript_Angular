@@ -127,8 +127,8 @@ class Pessoa {
     nome: string; 
     idade: number;
 
-    constructor(nome: string, idade: number){
-        this.nome = nome; 
+    constructor(nome1: string, idade: number){
+        this.nome = nome1; 
         this.idade = idade; 
     }
 

@@ -17,6 +17,7 @@ class Calculadora {
     multiplicar(num1, num2) {
         return num1 * num2;
     }
+    //Métodos Getter e Setter 
     getMemoria() {
         return this.memoria;
     }
@@ -25,5 +26,3 @@ class Calculadora {
     }
 }
 exports.Calculadora = Calculadora;
-var calc = new Calculadora(0);
-console.log(calc.getMemoria());

@@ -7,7 +7,8 @@ export class Calculadora{
     }
 
     public somar(num1: number, num2: number): number{
-        return num1 + num2; 
+        this.memoria = num1 + num2;
+        return this.memoria; 
     }
 
     public subtrair(num1: number, num2: number): number{
@@ -22,7 +23,7 @@ export class Calculadora{
         return num1 * num2; 
     }
 
-
+    //Métodos Getter e Setter 
     public getMemoria():number{
         return this.memoria; 
     }

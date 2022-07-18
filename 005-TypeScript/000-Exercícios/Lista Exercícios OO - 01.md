@@ -20,3 +20,6 @@
 **Métodos:**
 - Getters e Setters de todos os atributos
 - getEnderecoCompleto(): retorna o endereço completo concatenado em uma String. 
+
+
+3. Altere a classe Pessoa incluindo um atributo do tipo Endereco. 

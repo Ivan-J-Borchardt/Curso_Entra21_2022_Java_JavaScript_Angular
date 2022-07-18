@@ -5,7 +5,7 @@ export class Calculadora{
     //Modificadores de Acesso: public, private, protected, readonly 
 
     //Método construtor 
-    constructor(memoria: number){
+    public constructor(memoria: number){
         this.memoria = memoria; 
     }
 

@@ -412,16 +412,19 @@ https://www.typescriptlang.org/
 
 ### Aula 45 - 2022.07.08 - 180h
 - Correção de exercícios 
+- Reforço Classes, OO, Encapsulamento
 - Novos Exercícios
 
 ### Aula 46 - 2022.07.11 - 184h
-- Introdução ao Angular
+- Correção Exercícios TypeScript - OO
+- Finalização Trabalhos e Exercícios 
+
 
 ### Aula 47 - 2022.07.12 - 188h
-- Angular
+- Finalização Trabalhos e Exercícios 
 
 ### Aula 48 - 2022.07.13 - 192h
-- Angular
+- Finalização Trabalhos e Exercícios 
 
 ### Aula ID - 2022.07.14
 - Profa. Maiara
@@ -429,21 +432,61 @@ https://www.typescriptlang.org/
 ### Aula CF - 2022.07.15
 - Prof. Sergio
 
-### Aula 56 - 2022.07.18 - 196h
-- Angular
+### Aula 49 - 2022.07.18 - 196h
+- Criando um Readme.md com Markdown
+- .gitignore
+- Tratamento de conflito no GitHub
+- bootstrap
 
-### Aula 60 - 2022.07.19 - 200h
-- Angular
+#### Materiais Complementares - Markdown
+- https://www.markdownguide.org/getting-started/
+- https://daringfireball.net/projects/markdown
+
+
+### Aula 50 - 2022.07.19 - 200h
+- bootstrap 
+- Prototopagem de tela
+    - Figma 
+    - Icones 
+    - Palheta de cores    
+- Inicio do projeto de conclusão de curso
+    - Equipes
+    - Concepção da ideia 
+    - Descrição Funcional 
+    - Mockup das Telas  
 
 ### Aula XX - 2022.07.20 - Férias
 
 
+### Aula 51 - 2022.08.01 - 204h
+- Apresentação Projeto Despertador (Live Demo)
+- Introdução Angular
+
+#### Materiais Complementares - Angular 
+- https://github.com/angular/angular-cli
+- https://angular.io/cli
+
+- https://www.youtube.com/c/loianegroner
+
+
+### Aula 52 - 2022.08.02 - 208h
+
+### Aula 53 - 2022.08.03 - 212h
+
+### Aula ID - 2022.08.04 
+- Profa. Maiara
+
+### Aula 54 - 2022.08.05 - 216h
+
+### Aula 55 - 2022.08.08 - 220h
+- Apresentação Protótipo Projeto Final 
+
+### Aula 56 - 2022.08.09 - 224h
+
+
+
 ### Aula ?? - 2022.??.??  
-- Criando um Readme.md com Markdown
-- .gitignore
-- Tratamento de conflito no GitHub
-- boostrap
-- npm vs. yarn 
+
 
 ---
 ## Ferramentas (Setup) 

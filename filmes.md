@@ -79,6 +79,9 @@ https://www.youtube.com/watch?v=vVlmgbXR9zs
 
 https://www.youtube.com/watch?v=kjWywVwXXc0
 
+## HIstória do Yahoo - Eles tiveram a chance de comprar o Google... 
+
+https://www.youtube.com/watch?v=KICtBMjTv78
 
 ## História do Google - O Jeito Google de Trabalhar [Documentário Completo] 
 

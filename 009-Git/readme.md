@@ -5,6 +5,7 @@ Nas plataformas de repositórios remotos, como o GitHub, a função desse arquiv
 - Como os usuários podem utilizá-lo;
 - Onde os usuários podem encontrar ajuda sobre seu projeto;
 - Autores do projeto.
+- Lincença 
 
 Itens de um bom Readme: 
 

@@ -52,10 +52,10 @@ combinar configurações __*negrito e itálico*__
 
 ### Listas Não Ordenadas
 
-* item 1
-* item 2
-   * sub item 
-* item 3
+- item 1
+- item 2
+   - sub item 
+- item 3
 
 <ul>
     <li>item 1</li>
@@ -130,10 +130,11 @@ isso é um comando javaScript `console.log('exemplo')`
 ---
 ***
 
+
 ### Tabelas 
 
 Cod | Nome  | Nota
---- |---    |---
+--- |:-----:|---
 1   |João   |10
 2   |Augusto|7,3
 

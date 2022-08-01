@@ -459,7 +459,25 @@ https://www.typescriptlang.org/
 
 
 ### Aula 51 - 2022.08.01 - 204h
+- Auto-Avaliação
 - Apresentação Projeto Despertador (Live Demo)
+- Apresentação Projeto Site Previsão do tempo (Live Demo)
+- Revisão TypeScript 
+
+
+### Aula DH - 2022.08.02 
+- Profa. Natali
+
+
+### Aula 52 - 2022.08.03 - 208h
+- Revisão TypeScript 
+
+
+### Aula ID - 2022.08.04 
+- Profa. Clara
+
+### Aula 53 - 2022.08.05 - 212h
+- Revisão TypeScript
 - Introdução Angular
 
 #### Materiais Complementares - Angular 
@@ -469,23 +487,24 @@ https://www.typescriptlang.org/
 - https://www.youtube.com/c/loianegroner
 
 
-### Aula 52 - 2022.08.02 - 208h
+### Aula 54 - 2022.08.08 - 216h
+- Angular
 
-### Aula 53 - 2022.08.03 - 212h
+### Aula DH - 2022.08.09 
+- Profa. Natali
 
-### Aula ID - 2022.08.04 
-- Profa. Maiara
+### Aula 55 - 2022.08.10 - 220h
+- Angular
 
-### Aula 54 - 2022.08.05 - 216h
+### Aula ID - 2022.08.11
+- Profa. Clara
 
-### Aula 55 - 2022.08.08 - 220h
+### Aula 56 - 2022.08.12 - 224h
+- Angular
+
+### Aula 57 - 2022.08.15 - 228h
 - Apresentação Protótipo Projeto Final 
-
-### Aula 56 - 2022.08.09 - 224h
-
-
-
-### Aula ?? - 2022.??.??  
+- Angular 
 
 
 ---

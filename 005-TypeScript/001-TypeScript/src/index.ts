@@ -1,7 +1,11 @@
 console.log("Olá TypeScript");
 
+
+
 //Tipos primitivos 
 // string, boolean, number, ...
+let data = "10.12.2022"; 
+
 let idade: number;
 var nome: string  = "Joao Da Silva"; 
 idade = 10;
@@ -15,11 +19,13 @@ let idadeAluno = 10
 //Array 
 const idades: number[] = [10, 14, 20, 5, 24];
 
+
+
 console.log(idades);
 console.log(typeof(idades));
 console.log(idades.length);
 idades.push(23);
-//console.log(idades.toUppesCase());// <-- Gera erro de compilação 
+//console.log(idades.toUpperCase());// <-- Gera erro de compilação 
 
 //tupla (tuple)
 let minhaTupla: [number, string, string[], number];
@@ -31,6 +37,7 @@ const user: {nome: string; idade: number} = {
     nome: "Joana", 
     idade: 18 
 }
+user.idade = 20; 
 
 console.log(user);
 
@@ -45,6 +52,7 @@ var id: string | number;
 id = 200; 
 id = "200"; 
 
+
 //Type Alias 
 type userIdType = string | number; 
 
@@ -53,7 +61,7 @@ userId = 10;
 userId = "10"; 
 
 //Literal Types
-let estadoUser : "autenticado" | null | "deslogado"; 
+let estadoUser : "autenticado" | null | "deslogado" | boolean; 
 
 estadoUser = null; 
 estadoUser = "autenticado"; 
@@ -71,17 +79,41 @@ const camisa = {
     size: Tamanho.P
 }; 
 
+console.log(camisa.size);
+
+
+enum Operacao {
+    debitoCC = 5038,
+    creditoCC  = 5039, 
+    debidoP = 6038
+}
+
+let op = 5038; // <-- recebendo do BD ou API 
+
+
+if (op == Operacao.debitoCC) {
+    
+}
 
 //Interfaces 
 interface ParametrosFuncoesMatematicas{
     n1 : number; 
     n2 : number; 
 }
+
+let teste: ParametrosFuncoesMatematicas; 
+
+teste = {n1: 3, n2: 6}
+
+let obj: {n1: number, n2: number} = {n1: 3, n2: 6}; 
+
+let obj2: ParametrosFuncoesMatematicas = {n1: 3, n2: 6};
+
 function somaNum(nums: ParametrosFuncoesMatematicas): number {
     return nums.n1 + nums.n2; 
 }
 
-var nums = {n1: 3, n2: 4}
+var nums: ParametrosFuncoesMatematicas  = {n1: 3, n2: 4}
 
 console.log(somaNum(nums));
 
@@ -118,39 +150,10 @@ function exibirItensArray<T>(vetor: T[]){
 
 var x1 = [0, 2, 4, 6]; 
 var x2 = ["a", "b", "c"];
+var x3 = [true, false, true]
 
 exibirItensArray(x1); 
-exibirItensArray(x2);
-
-//Classes
-class Pessoa {
-    nome: string; 
-    idade: number;
-
-    constructor(nome1: string, idade: number){
-        this.nome = nome1; 
-        this.idade = idade; 
-    }
-
-    mostrarNomeUsuario(): void{
-        console.log(`O Nome do usuário é ${this.nome}`);  
-    }
-
-}
-
-
-const userNovo = new Pessoa("José", 23); 
-
-console.log("-------------------------------");
-console.log(userNovo.nome);
-userNovo.idade = 24; 
-console.log(userNovo.idade);
-console.log(userNovo.mostrarNomeUsuario());
-console.log("-------------------------------");
-
-
-
-
+exibirItensArray(x3);
 
 
 //Funções
@@ -175,7 +178,7 @@ function gravarLog(msn: string):void {
 }
 
 //funções com parâmetros opcionais 
-function saudar(nome: string, saudacao?: string):void {
+function saudar(nome: string, saudacao?: string):void{
     if (saudacao) {
         console.log(`Olá ${saudacao} ${nome}`);
      // console.log("Olá" + saudacao +" " + nome);
@@ -216,5 +219,61 @@ var opcao1 = document.getElementById("idOp1") as HTMLInputElement;
 var opcao2 = document.getElementById("idOp2") as HTMLInputElement; 
 
 
+//Classes
+class Pessoa {
+    nome: string; 
+    idade: number;
+
+    constructor(nome1: string, idade: number){
+        this.nome = nome1; 
+        this.idade = idade; 
+    }
+
+    mostrarNomeUsuario(): void{
+        console.log(`O Nome do usuário é ${this.nome}`);  
+    }
+
+}
 
 
+const userNovo = new Pessoa("José", 23); 
+
+console.log("-------------------------------");
+console.log(userNovo.nome);
+userNovo.idade = 24; 
+console.log(userNovo.idade);
+console.log(userNovo.mostrarNomeUsuario());
+console.log("-------------------------------");
+
+//Interfaces em Classes 
+interface IVeiculo {
+    marca: string;
+    motor: string; 
+    isLigado: boolean; 
+
+    ligarMotor(): void;   
+
+}
+
+class Car implements IVeiculo {
+    marca: string;
+    motor: string;
+    isLigado: boolean;
+
+    constructor(marca: string, motor: string){
+        this.marca = marca;
+        this.motor = motor; 
+        this.isLigado = false; 
+    } 
+
+    ligarMotor(): void {
+        this.isLigado = true; 
+    }
+    
+}
+
+
+//herança 
+class fusca extends Car {
+
+}

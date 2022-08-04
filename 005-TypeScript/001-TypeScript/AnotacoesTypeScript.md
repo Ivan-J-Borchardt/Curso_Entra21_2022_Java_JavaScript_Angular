@@ -27,3 +27,5 @@
         $ tsc -v 
 
         $ tsc --init 
+
+        $ tsc -w 

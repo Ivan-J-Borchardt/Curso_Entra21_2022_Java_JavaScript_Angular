@@ -86,23 +86,6 @@ var x1 = [0, 2, 4, 6];
 var x2 = ["a", "b", "c"];
 exibirItensArray(x1);
 exibirItensArray(x2);
-//Classes
-class Pessoa {
-    constructor(nome, idade) {
-        this.nome = nome;
-        this.idade = idade;
-    }
-    mostrarNomeUsuario() {
-        console.log(`O Nome do usuário é ${this.nome}`);
-    }
-}
-const userNovo = new Pessoa("José", 23);
-console.log("-------------------------------");
-console.log(userNovo.nome);
-userNovo.idade = 24;
-console.log(userNovo.idade);
-console.log(userNovo.mostrarNomeUsuario());
-console.log("-------------------------------");
 //Funções
 //tipagem dos parâmetros
 function soma(num1, num2) {
@@ -153,3 +136,38 @@ botaoInput.onclick = function () {
 //Radio Button
 var opcao1 = document.getElementById("idOp1");
 var opcao2 = document.getElementById("idOp2");
+//Classes
+class Pessoa {
+    nome;
+    idade;
+    constructor(nome1, idade) {
+        this.nome = nome1;
+        this.idade = idade;
+    }
+    mostrarNomeUsuario() {
+        console.log(`O Nome do usuário é ${this.nome}`);
+    }
+}
+const userNovo = new Pessoa("José", 23);
+console.log("-------------------------------");
+console.log(userNovo.nome);
+userNovo.idade = 24;
+console.log(userNovo.idade);
+console.log(userNovo.mostrarNomeUsuario());
+console.log("-------------------------------");
+class Car {
+    marca;
+    motor;
+    isLigado;
+    constructor(marca, motor) {
+        this.marca = marca;
+        this.motor = motor;
+        this.isLigado = false;
+    }
+    ligarMotor() {
+        this.isLigado = true;
+    }
+}
+//herança 
+class fusca extends Car {
+}

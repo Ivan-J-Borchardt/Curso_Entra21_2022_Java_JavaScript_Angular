@@ -1,6 +1,7 @@
 import { Calculadora } from "./calculadora"
 
 var calc: Calculadora
+
 calc = new Calculadora(0); 
 
 var resultado = calc.somar(5, 3)

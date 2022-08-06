@@ -35,7 +35,7 @@ minhaTupla = [12, "Mariana", ["a", "c", "a"], 45];
 //Objetos literais (Object Literals)
 const user: {nome: string; idade: number} = {
     nome: "Joana", 
-    idade: 18 
+    idade: 18
 }
 user.idade = 20; 
 
@@ -223,10 +223,12 @@ var opcao2 = document.getElementById("idOp2") as HTMLInputElement;
 class Pessoa {
     nome: string; 
     idade: number;
+    cpf?: string; 
 
-    constructor(nome1: string, idade: number){
-        this.nome = nome1; 
+    constructor(nome: string, idade: number, cpf?: string){
+        this.nome = nome; 
         this.idade = idade; 
+        this.cpf = cpf; 
     }
 
     mostrarNomeUsuario(): void{
@@ -242,7 +244,7 @@ console.log("-------------------------------");
 console.log(userNovo.nome);
 userNovo.idade = 24; 
 console.log(userNovo.idade);
-console.log(userNovo.mostrarNomeUsuario());
+userNovo.mostrarNomeUsuario();
 console.log("-------------------------------");
 
 //Interfaces em Classes 
@@ -259,6 +261,7 @@ class Car implements IVeiculo {
     marca: string;
     motor: string;
     isLigado: boolean;
+  
 
     constructor(marca: string, motor: string){
         this.marca = marca;
@@ -269,11 +272,22 @@ class Car implements IVeiculo {
     ligarMotor(): void {
         this.isLigado = true; 
     }
+
     
 }
 
 
 //herança 
-class fusca extends Car {
+class Suv extends Car {
+    volumePortaMalas: number;
+
+    constructor(vol: number, marca: string, motor: string){
+        super(marca, motor);
+        this.volumePortaMalas = vol; 
+    }
 
 }
+
+var ecoSport = new Suv(23, 'Ford', '2.0'); 
+
+ecoSport.ligarMotor(); 

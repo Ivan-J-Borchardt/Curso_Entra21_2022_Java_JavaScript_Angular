@@ -478,7 +478,23 @@ https://www.typescriptlang.org/
 
 ### Aula 53 - 2022.08.05 - 212h
 - Revisão TypeScript
+
+
+### Aula 54 - 2022.08.08 - 216h
+- Coreção Exercício OO TypeScript
 - Introdução Angular
+- Instalação
+- Angular CLI 
+- Criando uma nova Aplicação
+- Entendendo a estrutura da aplicação Angular
+- Componentes e sua estrutura
+- Comunicação entre HTML e JS
+    - Angular Expression (Interpolação)
+    - One Way Data Binding
+    - Event Binding 
+     
+
+
 
 #### Materiais Complementares - Angular 
 - https://github.com/angular/angular-cli
@@ -487,22 +503,20 @@ https://www.typescriptlang.org/
 - https://www.youtube.com/c/loianegroner
 
 
-### Aula 54 - 2022.08.08 - 216h
-- Angular
-
 ### Aula DH - 2022.08.09 
 - Profa. Natali
 
-### Aula 55 - 2022.08.10 - 220h
-- Angular
+### Aula CP - 2022.08.10 
+- Ciclo de Palestras
 
 ### Aula ID - 2022.08.11
 - Profa. Clara
 
-### Aula 56 - 2022.08.12 - 224h
-- Angular
+### Aula 55 - 2022.08.12 - 220h
+- Adicionando Bootstrap ao Angular 
+- Criando o Primeiro Componente Angular 
 
-### Aula 57 - 2022.08.15 - 228h
+### Aula 56 - 2022.08.15 - 224h
 - Apresentação Protótipo Projeto Final 
 - Angular 
 

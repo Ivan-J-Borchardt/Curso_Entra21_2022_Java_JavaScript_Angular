@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/app.js" defer></script>
+
+    <style>
+        .row {
+            display:flex;
+            margin-top: 10px;
+            
+        }
+        .col40{
+            width: 40vw;
+        }
+        .col20{
+            width: 20vw;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+    </style>
+    <title>Pedido</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col40">
+            <p>Pedido<p>
+        </div>
+        <div class="col20">
+            
+        </div>
+        <div class="col40">
+            <label for="idNumPedido">N.</label>
+            <input type="Number" id="idNumPedido">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col40">
+            <label for="idClienteNome">Cliente</label>
+            <input type="text" id="idClienteNome">
+        </div>
+
+        <div class="col20">
+
+        </div>
+
+        <div class="col40">
+            <label for="idClienteTel">Tel</label>
+            <input type="text" id="idClienteTel">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col40">
+            <label for="idClienteCpf">CPF</label>
+            <input type="text" id="idClienteCpf">
+        </div>
+
+        <div class="col20">
+
+        </div>
+
+        <div class="col40">
+            <label for="idClienteRg">RG</label>
+            <input type="text" id="idClienteRg">
+        </div>
+
+    </div>
+    <div class="row">
+        <button id="idBtSalvar">Salvar</button>
+    </div>
+
+    <p>Itens Do Pedido</p>
+    <div class="row">
+        <div>
+            <label for="idItemCod">Cod</label>
+            <input type="number" id="idItemCod">
+        </div>
+        <div>
+            <label for="idItemDescricao">Descricao</label>
+            <input type="text" id="idDescricao">
+        </div>
+        <div>
+            <label for="idItemQtd">Qtd</label>
+            <input type="number" id="idItemQtd">
+        </div>
+        <div>
+            <label for="idItemValor">Valor</label>
+            <input type="number" id="idItemValor" step="0.01" >
+        </div>
+
+    </div>
+    <div class="row">
+        <button id="idAddItem">Add Item</button>
+    </div>
+
+
+    
+</body>
+</html>

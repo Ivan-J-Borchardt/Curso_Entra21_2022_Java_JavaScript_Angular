@@ -481,7 +481,8 @@ https://www.typescriptlang.org/
 
 
 ### Aula 54 - 2022.08.08 - 216h
-- Coreção Exercício OO TypeScript
+- Correção Exercício OO TypeScript
+
 - Introdução Angular
 - Instalação
 - Angular CLI 
@@ -492,8 +493,6 @@ https://www.typescriptlang.org/
     - Angular Expression (Interpolação)
     - One Way Data Binding
     - Event Binding 
-     
-
 
 
 #### Materiais Complementares - Angular 
@@ -514,6 +513,7 @@ https://www.typescriptlang.org/
 
 ### Aula 55 - 2022.08.12 - 220h
 - Adicionando Bootstrap ao Angular 
+- Two way Data Binding
 - Criando o Primeiro Componente Angular 
 
 ### Aula 56 - 2022.08.15 - 224h

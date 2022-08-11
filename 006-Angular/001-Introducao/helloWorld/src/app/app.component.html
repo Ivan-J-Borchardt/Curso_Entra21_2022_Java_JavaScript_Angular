@@ -2,7 +2,24 @@
 
 <img [src]="imagem" [alt]="alt">
 
-<input type="text" [value]="nome" (keyup)="onKeyUp($event)">
+<input type="text" 
+    [value]="nome" 
+    (keyup)="onKeyUp($event)"
+    (keyup.enter)="onKeyUpEnter($event)"
+    (blur)="onBlur(campoInput.value)"
+    #campoInput>
+
+<input type="text"
+       [value] = "idade"
+       (input) = "idade = campoInput2.value"
+       #campoInput2>
 
 <button (click)="cliqueBotao()">Clique Aqui!</button>
+
+<div>
+    <p>Campo Nome, Evento onKeyUp: {{valorAtual}}</p>
+    <p>Campo Nome, Evento onKeyUp.Enter: {{valorSalvo}}</p> 
+    <p>Campo Nome, Evento onKeyUp.Enter: {{valorSalvoBlur}}</p> 
+    <p>Campo Idade, Evento onInput: {{idade}}</p> 
+</div>
 

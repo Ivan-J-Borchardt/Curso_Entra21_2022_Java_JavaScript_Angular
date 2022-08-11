@@ -58,7 +58,7 @@
     
     - Todos os componentes devem ter uma margem superior de 10px. Os botões devem ter ainda uma margem esquerda e direita de 5px. Os componentes devem estar alinhados ao centro da tela.  
 
-    - Ao clicar no botão salvar o componente h1 dever=a receber seu texto a partir do que foi digitado no componente input. 
+    - Ao clicar no botão salvar o componente h1 deverá receber seu texto a partir do que foi digitado no componente input. 
     - Ao clicar em "Limpar" o campo Input deve ser limpo, mas o h1 deve permanecer com seu texto. 
 
 9. Crie um arquivo respostas.md no raíz de seu projeto e adicione as suas respostas das questões 1, 5 e 6. 

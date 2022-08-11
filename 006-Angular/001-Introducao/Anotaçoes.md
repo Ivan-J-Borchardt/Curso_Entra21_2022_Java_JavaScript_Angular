@@ -1,3 +1,7 @@
+# Resumo Angular 
+## Aula 1
+---
+
 ### Instalando o Angular CLI
 ~~~
 $ npm install -g @angular/cli
@@ -17,6 +21,7 @@ $ ng serve --open
   - Sua Apresentação (CSS)
   - A Marcação HTML 
 
+
   **O Componente <app-root>**
 
    O comportamento do componente app-root está descrito em ./src/app/app.component.ts   
@@ -32,17 +37,15 @@ $ ng serve --open
 
 ### Comunicação entre o Objeto e a Tela
 
-#### **Angular Expression** Interpolação
+#### **Angular Expression** 
  
  na Classe : Atributo titulo = helloWorld
- 
  no HTML : {{ titulo }}
 
  Exemplo:
- ~~~
+~~~
   <h1>{{ titulo }}</h1>
 ~~~
-
  #### **One way Data Binding** 
 
  Os dados fluem do componente para o template 
@@ -56,7 +59,8 @@ $ ng serve --open
 <img [src]="url" [alt]="alt">
  ~~~
 
- #### **Event Binding**
+
+#### **Event Binding**
 
 no HTML: 
 ~~~
@@ -64,3 +68,4 @@ no HTML:
 ~~~
 
 na classe: Declarar o método cliqueBotao()
+

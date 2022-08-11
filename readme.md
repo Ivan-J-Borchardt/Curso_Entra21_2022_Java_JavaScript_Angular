@@ -500,7 +500,7 @@ https://www.typescriptlang.org/
 - https://angular.io/cli
 
 - https://www.youtube.com/c/loianegroner
-
+- https://www.youtube.com/watch?v=Yf0rC7dERjg
 
 ### Aula DH - 2022.08.09 
 - Profa. Natali
@@ -512,14 +512,58 @@ https://www.typescriptlang.org/
 - Profa. Clara
 
 ### Aula 55 - 2022.08.12 - 220h
+- Revisão aula anteriror 
+- Mais detalhes sobre Event Binding 
+- Exercícios 
+
+- Onde declarar CSS
 - Adicionando Bootstrap ao Angular 
+
 - Two way Data Binding
+- Convenção de nomenclaturas no Angular
 - Criando o Primeiro Componente Angular 
+- Inbound properties 
+- Exercícios 
 
 ### Aula 56 - 2022.08.15 - 224h
-- Apresentação Protótipo Projeto Final 
-- Angular 
+- Apresentação Protótipo Projeto Final  
+**Angular**
 
+- Interfaces
+- Feature Module - Organizando os Módulos
+- ng generate ...   https://angular.io/cli/generate
+- Diretiva ngFor
+- Diretiva ngIf
+- Diretiva ngSwich 
+- Diretiva ngStyle
+- Diretiva ngClass
+- Exercícios   
+
+### Aula DH - 2022.08.16 
+- Profa. Natali
+
+### Aula 57 - 2022.08.17 - 228h
+- Arquitetura Cliente-Servidor 
+- Services 
+- Consumindo uma REST API
+- Angular DevTools
+    https://chrome.google.com/webstore/detail/angular-devtools/ienfalfjdbdpebioblfackkekamfmbnh/related
+
+### Aula ID - 2022.08.18
+- Profa. Clara
+
+### Aula 58 - 2022.08.19 - 232h
+- Conceito de Single Page Aplication (SPA)
+
+---
+## Onde Encontrar mais...
+
+- Chrome DevTools 
+
+        Segredos do Chrome DevTools - Ep. 1: Elements (Portuguese)
+
+- Canal do Google 
+        https://www.youtube.com/googlecode
 
 ---
 ## Ferramentas (Setup) 

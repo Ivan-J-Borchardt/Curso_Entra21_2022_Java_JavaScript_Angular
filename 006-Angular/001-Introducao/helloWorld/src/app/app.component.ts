@@ -10,6 +10,7 @@ export class AppComponent {
 
   nome: string = 'Joao'; 
   idade: string = ""; 
+  cidade: string = "Blumenau"; 
   
   imagem: string = 'https://github.com/Ivan-J-Borchardt/imagens/blob/master/discursando.jpg?raw=true'; 
   alt: string = 'Emotion Toquinho'; 

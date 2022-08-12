@@ -1,7 +1,11 @@
+<!-- Exemplo de Interpolação/Angular Expression -->
 <h1> Olá {{ nome }}!!!</h1>
 
-<img [src]="imagem" [alt]="alt">
+<!--Exemplo de Data Binding -->
+<img class="img-thumbnail" [src]="imagem" [alt]="alt">
 
+
+<!-- Exemplos de One Way Data Binding e Event Binding-->
 <input type="text" 
     [value]="nome" 
     (keyup)="onKeyUp($event)"
@@ -14,12 +18,21 @@
        (input) = "idade = campoInput2.value"
        #campoInput2>
 
-<button (click)="cliqueBotao()">Clique Aqui!</button>
+<button class="btn btn-primary" (click)="cliqueBotao()">Clique Aqui!</button>
 
+<!-- Exemplo de Two Way Data Binding  -->
 <div>
-    <p>Campo Nome, Evento onKeyUp: {{valorAtual}}</p>
-    <p>Campo Nome, Evento onKeyUp.Enter: {{valorSalvo}}</p> 
-    <p>Campo Nome, Evento onKeyUp.Enter: {{valorSalvoBlur}}</p> 
-    <p>Campo Idade, Evento onInput: {{idade}}</p> 
+    <input type="text"  [(ngModel)]="cidade">
 </div>
 
+
+<!-- Exemplos de Interpolação/Angular Expression -->
+<div>
+    <p class="corVermelho">Campo Nome, Evento onKeyUp: {{valorAtual}}</p>
+    <p class="corAzul">Campo Nome, Evento onKeyUp.Enter: {{valorSalvo}}</p> 
+    <p>Campo Nome, Evento onKeyUp.Enter: {{valorSalvoBlur}}</p> 
+    <p>Campo Idade, Evento onInput: {{idade}}</p> 
+    <p>Campo Cidade {{cidade}}</p>
+</div>
+
+<app-photo src="https://github.com/Ivan-J-Borchardt/imagens/blob/master/autolah.jpg?raw=true" alt="Olá Turma!"></app-photo>

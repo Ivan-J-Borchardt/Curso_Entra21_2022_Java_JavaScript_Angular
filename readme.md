@@ -222,7 +222,7 @@
 - CSS - CSS Reset e CSS Normalize
 - CSS - Responsividade (Media Query, viewport)
 
-### Aula 25 - 2022.06.01 - 100h
+### Aula 25 - 2022.06.01 - 100h*
 - Tempo para resolver exercícios da lista 7 e desafio da calculadora
 
 
@@ -230,7 +230,7 @@
 - Profa. Maiara 
 
 
-### Aula 26 - 2022.06.03 - 104h*
+### Aula 26 - 2022.06.03 - 104h
 - Correção Lista 7
 - Formas de iterar um Array
 - Funções para trabalhar com arrays (Map, Filter, Reduce, Concat)
@@ -358,7 +358,7 @@ redirecionada para resolução de exercícios e trabalhos
 ### Aula ID - 2022.06.30
 - Profa. Maiara 
 
-### Aula 41 - 2022.07.01 - 164h
+### Aula 41 - 2022.07.01 - 164h*
 - Finalização do projeto Piloto
 
 ### Aula 42 - 2022.07.04 - 168h
@@ -432,7 +432,7 @@ https://www.typescriptlang.org/
 ### Aula CF - 2022.07.15
 - Prof. Sergio
 
-### Aula 49 - 2022.07.18 - 196h
+### Aula 49 - 2022.07.18 - 196h *
 - Criando um Readme.md com Markdown
 - .gitignore
 - Tratamento de conflito no GitHub

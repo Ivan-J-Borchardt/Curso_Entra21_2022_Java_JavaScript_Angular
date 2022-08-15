@@ -23,7 +23,7 @@
 
     - O Projeto deverá seguir/clonar o seguinte layout: 
 
-    [![Login](./assets/Login3.png)]
+    [![Login](./assets/Login3.png)
 
     - Abaixo do botão login deverá ser implementado um parágrafo que servirá para exibir mensagens de alerta ao usuário. Criar um atributo "msn" e exibir seu conteúdo no parágrafo.  
 
@@ -39,7 +39,7 @@
 
     - Os links "Forgot Password" e "Create One" serão implementados em exercícios futuros.  
 
-4. Faça o push de suas alterações para o GitHub.   
+4. Faça o push de suas alterações para o GitHub. 
 **Importante:**
 - **Não faça o merge** da branch lista2 na master! Neste ponto, seu GitHub deverá ter três ramificações (master, lista1 e lista2). 
 

@@ -529,6 +529,8 @@ https://www.typescriptlang.org/
 - Apresentação Protótipo Projeto Final  
 **Angular**
 
+- Trabalhando One Way Data Binding com Inbound Properties
+
 - Interfaces
 - Feature Module - Organizando os Módulos
 - ng generate ...   https://angular.io/cli/generate
@@ -539,10 +541,12 @@ https://www.typescriptlang.org/
 - Diretiva ngClass
 - Exercícios   
 
+
 ### Aula DH - 2022.08.16 
 - Profa. Natali
 
 ### Aula 57 - 2022.08.17 - 228h
+- LifeCycle Hooks (Ciclo de Vida do Componente)
 - Arquitetura Cliente-Servidor 
 - Services 
 - Consumindo uma REST API
@@ -554,6 +558,7 @@ https://www.typescriptlang.org/
 
 ### Aula 58 - 2022.08.19 - 232h
 - Conceito de Single Page Aplication (SPA)
+- Pipe operator 
 
 ---
 ## Onde Encontrar mais...

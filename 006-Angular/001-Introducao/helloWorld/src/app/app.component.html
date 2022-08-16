@@ -1,5 +1,8 @@
 <!-- Exemplo de Interpolação/Angular Expression -->
-<h1> Olá {{ nome }}!!!</h1>
+<div class="container p-5 my-5 border">
+    <p class="alert alert-info">Exemplo de Interpolação</p>
+    <app-interpolacao></app-interpolacao>
+</div>
 
 <!--Exemplo de Data Binding -->
 <img class="img-thumbnail" [src]="imagem" [alt]="alt">
@@ -35,4 +38,4 @@
     <p>Campo Cidade {{cidade}}</p>
 </div>
 
-<app-photo src="https://github.com/Ivan-J-Borchardt/imagens/blob/master/autolah.jpg?raw=true" alt="Olá Turma!"></app-photo>
+<app-photo [src]="imagem" [alt]="alt"></app-photo>

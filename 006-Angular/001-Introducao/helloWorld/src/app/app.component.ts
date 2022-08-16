@@ -12,7 +12,7 @@ export class AppComponent {
   idade: string = ""; 
   cidade: string = "Blumenau"; 
   
-  imagem: string = 'https://github.com/Ivan-J-Borchardt/imagens/blob/master/discursando.jpg?raw=true'; 
+  imagem: string = 'https://github.com/Ivan-J-Borchardt/imagens/blob/master/toquinho.jpg?raw=true'; 
   alt: string = 'Emotion Toquinho'; 
 
   valorAtual: string = ""; 

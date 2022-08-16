@@ -209,3 +209,130 @@ passaremos a URL diretamente na TAG app-photo.
 ~~~
     import { Component, Input } from "@angular/core";
 ~~~
+
+## Aula 3
+---
+### ng generate 
+*Referência: https://angular.io/cli/generate*
+
+- Gera e/ou modifica arquivos com base em um esquema. 
+
+~~~
+  ng generate <schematic>
+
+  ng generate component exemplos/interpolacao
+~~~
+
+
+### Interfaces
+
+- Em Angular, apesar de não ser obrigatório, é um padrão de desenvolvimento que toda 
+entidade tenha uma interface. Exemplos de entidades: Usuario, Endereco, Veiculo... 
+
+- A Interface serve para "tipar" as entidades, obrigando o desenvolvedor a seguir a estrutura da interface ao trabalhar com as entidades. 
+
+
+### **Feature Module - Organizando os Módulos**
+
+- Serve para agrupar os módulos que tem caracteristicas a fins. 
+
+1. Dentro da pasta App, crie uma pasta "photos". Essa pasta irá agrupar todos os 
+componentes que tem haver com fotos.
+
+2. Mover o componente photo para dentro da pasta photos. 
+
+3. Retirar a declaração de PhotoComponent do arquivo app.module.ts
+
+4. Criar um arquivo photos.module.ts dentro da pasta photos, este será nosso Feature Module. 
+
+5. Importar o novo Feature Module no app.module.ts. 
+
+~~~
+
+    @NgModule({
+      declarations: [
+        AppComponent
+      ],
+      imports: [
+        BrowserModule, 
+        FormsModule, 
+        PhotosModule  <--------------------
+      ],
+      providers: [],
+      bootstrap: [AppComponent]
+    })
+    export class AppModule { }
+
+~~~
+
+6. Exportar o componente PhotoComponent em photos.module.ts. 
+
+- Os componentes exportados podem ser enxergados por componentes externos
+  ou seja, quem importar o módulo PhotosModule conseguirá enxergar os 
+  componentes aqui listados.   
+
+~~~
+    @NgModule({
+
+        declarations: [  
+            PhotoComponent
+        ], 
+
+        exports: [
+            PhotoComponent   <----------------
+        ]
+    })
+    export class PhotosModule{ }
+~~~
+
+
+## **Diretivas**
+
+### __Diretiva *ngFor__
+
+- Serve para renderizar várias instâncias de um componente com base em um array 
+
+1. Criar um array de photos no app.component.ts 
+
+~~~
+      photos = [
+        {
+          src: 'https://github.com/Ivan-J-Borchardt/imagens/blob/master/discursando.jpg?raw=true',
+          alt: 'Discursando'
+        }, 
+        {
+          src: 'https://github.com/Ivan-J-Borchardt/imagens/blob/master/toquinho.jpg?raw=true',
+          alt: 'Toquinho'
+        }
+      ]
+~~~
+
+2. Instanciar o componente evu-photo usando a diretiva *ngFor para exibir todas as 
+fotos do array photos
+
+~~~
+    <!-- Diretiva *ngFor -->
+    <evu-photo 
+        *ngFor="let photo of photos" 
+        [src]="photo.src"
+        [alt]="photo.alt">
+    </evu-photo>    
+~~~
+
+### __Diretiva *ngIf__
+
+- Serve para exibir um componente de forma condicional (Renderização condicional). Declaração básica de um 'if' que permite mostrar um elemento se a condição for verdadeira.
+
+~~~
+   <h1 *ngIf="cidade === 'BNU'">Cidade: Blumenau</h1>
+~~~
+
+
+### __Diretiva *ngSwich __
+
+- Instancia um template, em uma lista de escolhas, dependendo do valor obtido pela expressão.
+
+
+### __Diretiva ngStyle__ 
+
+- Serve para aplicar um estilo inline com parametros dinâmicos. 

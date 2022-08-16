@@ -4,11 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { PhotoComponent } from './photo/photo.component';
+import { InterpolacaoComponent } from './exemplos/interpolacao/interpolacao.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
-    PhotoComponent
+    PhotoComponent, InterpolacaoComponent
   ],
   imports: [
     BrowserModule,

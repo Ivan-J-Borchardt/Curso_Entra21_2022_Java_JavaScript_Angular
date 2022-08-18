@@ -1,0 +1,13 @@
+<div>
+    <p *ngIf="apresentar; else outroParagrafo">Parágrafo 1</p>
+
+    <ng-template #outroParagrafo>
+        <p>Parágrafo 2</p>
+    </ng-template>
+
+</div>
+
+
+<div>
+    <button (click)="onClickBtn()" class="btn btn-primary">Inverter</button>
+</div>

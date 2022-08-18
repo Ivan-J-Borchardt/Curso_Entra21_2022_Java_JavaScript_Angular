@@ -18,12 +18,24 @@
  - [x] Análise da questão L5E7 (Usando Debugger)
 
 #### Deadline: 2022.06.26
--  [ ] Projeto casa de cambio 
--  [ ] Projeto site previsão do tempo
+-  [x] Projeto casa de cambio 
+-  [x] Projeto site previsão do tempo
 
 #### Deadline: 2022.07.10
--  [ ] Projeto Piloto - Despertador
+-  [x] Projeto Piloto - Despertador
 
+#### Deadline: 2022.08.15
+-  [x] Apresentação Projeto Final - Fase 1  
+    **Fase 1:** Concepção da ideia e primeiro esboço das telas
+
+#### Deadline: 2022.08.?? 
+-  [ ] Apresentação Projeto Final - Fase 2  
+    **Fase 2:**   
+    - Aprimoramento do mokup das telas, todas as telas deverão estar definidas com devido fluxo/relacionamento entre telas;
+    - Descrição funcional do sistema (descrever cada funcionalidade do sistema com o máximo de detalhes possível); 
+    - Preparar a apresentação como se fosse vender o sistema para o cliente;
+
+---
 
 ## Aulas 
 ### Aula 1 - 2022.04.18 - 4h

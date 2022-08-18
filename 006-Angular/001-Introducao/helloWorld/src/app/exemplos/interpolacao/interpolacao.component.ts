@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Endereco } from 'src/app/interfaces/endereco';
 
 @Component({
   selector: 'app-interpolacao',

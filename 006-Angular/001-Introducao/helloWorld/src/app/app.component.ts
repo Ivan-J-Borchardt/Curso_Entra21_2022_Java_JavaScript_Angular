@@ -17,7 +17,24 @@ export class AppComponent {
 
   valorAtual: string = ""; 
   valorSalvo: string = ""; 
-  valorSalvoBlur: string = ""; 
+  valorSalvoBlur: string = "";
+  
+  photos = [
+    {
+      src: 'https://github.com/Ivan-J-Borchardt/imagens/blob/master/discursando.jpg?raw=true',
+      alt: 'Discursando'
+    }, 
+    {
+      src: 'https://github.com/Ivan-J-Borchardt/imagens/blob/master/toquinho.jpg?raw=true',
+      alt: 'Toquinho'
+    }, 
+    {
+      src: 'https://github.com/Ivan-J-Borchardt/imagens/blob/master/discursando.jpg?raw=true',
+      alt: 'Toquinho'
+    }
+  ]
+
+
 
   public cliqueBotao(){
     alert("O botao foi clicado!"); 

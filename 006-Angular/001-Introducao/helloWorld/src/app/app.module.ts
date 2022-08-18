@@ -3,17 +3,18 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { PhotoComponent } from './photo/photo.component';
-import { InterpolacaoComponent } from './exemplos/interpolacao/interpolacao.component';
+import { ExemplosModule } from './exemplos/exemplos.module';
+import { PhotosModule } from './photos/photos.module';
 
 @NgModule({
   declarations: [
-    AppComponent, 
-    PhotoComponent, InterpolacaoComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ExemplosModule,
+    PhotosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

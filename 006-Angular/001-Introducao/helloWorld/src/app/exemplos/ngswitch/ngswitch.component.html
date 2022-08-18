@@ -1,0 +1,15 @@
+<div class="row">
+    <label for="idOpcao1" class="radio-inline">
+        <input type="radio" name="nmOpcao" id="idOpcao1" checked (click)="setOpcao1()">  Opção 1
+    </label>
+
+    <label for="idOpcao2" class="radio-inline">
+        <input type="radio" name="nmOpcao" id="idOpcao2" (click)="setOpcao2()"> Opção 2
+    </label>
+</div>
+
+<div [ngSwitch]="opcao">
+    <p *ngSwitchCase="1"> Opção 1 </p>
+    <p *ngSwitchCase="2"> Opção 2 </p>
+    <p *ngSwitchDefault> Nem uma Opção Selecionada</p>
+</div>

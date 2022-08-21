@@ -336,3 +336,158 @@ fotos do array photos
 ### __Diretiva ngStyle__ 
 
 - Serve para aplicar um estilo inline com parametros dinâmicos. 
+
+## Aula 4
+---
+### LifeCycle Hooks 
+
+*Referência Adicional: https://warcontent.com/angular-lifecycle-hooks/*
+
+São métodos especiais que são disparados automáticamente quando determinados eventos acontecem. 
+
+**Os métodos são:** 
+
+- **ngOnChanges:** chamado uma vez na criação do componente e sempre que houver alteração em uma de suas propriedades de entrada. Ou seja, mudanças no Input() decorator e no property binding.
+
+- **ngOnInit:** chamado uma única vez quando o componente é inicializado (logo após o primeiro ngOnChanges).
+
+- **ngDoCheck:** chamado a cada ciclo de detecção de alterações (processo que percorre o componente atrás de mudanças). Portanto use ao invés do ngOnChanges para alterações que o Angular não detecta.
+
+- **ngOnDestroy:** chamado antes do Angular destruir o componente.
+* Exemplos de Uso:* para ações de limpeza ou para deslogar o usuário antes de deixar o componente. 
+
+
+Além disso existem outros 4 ganchos dentro do **ngDoCheck:**
+
+- **ngAfterContentInit:** chamado depois que o conteúdo externo é inserido no componente (por exemplo, vindo do ng-content).
+
+- **ngAfterContentChecked:** invocado após a verificação do conteúdo externo.
+
+- **ngAfterViewInit:** chamado logo após o conteúdo do próprio componente e de seus filhos ser inicializado.
+
+- **ngAfterViewChecked:** chamado cada vez que o conteúdo do componente é verificado pelo mecanismo de detecção de alterações do Angular.
+
+
+
+1. Implementar a interface do respectivo gancho;
+2. E criar o método especial com seu nome.
+
+
+### **Services**
+
+- É onde geralmente ficam as requisições para as APIs que utilizamos no projeto
+
+
+1. criar o service com: ng generate service [pasta/nome]
+
+2. Criar os métodos que irão acessar a API na classe do novo service. 
+
+3. Declarar a nova dependência no construtor da classe Model correspondente, como no exemplo abaixo:
+
+~~~
+    export class EnderecoComponent implements OnInit {
+
+      constructor(private endercoService: EnderecoService) { }
+
+      ngOnInit(): void {
+      }
+
+    }
+~~~
+
+
+### **Requisições HTTP - Consumo de API**
+
+
+1. Importar o módulo HttpClientModule no arquivo app.modules.ts.
+
+~~~
+    import { HttpClientModule } from '@angular/common/http';
+
+      imports: [
+        BrowserModule, 
+        FormsModule,
+        PhotosModule, 
+        HttpClientModule <-----------------
+      ],
+
+~~~
+
+2. Importar os módulos HttpClient e HttpHeadres no arquivo [ model ].service.ts. 
+
+~~~
+    import { HttpClient, HttpHeaders } from '@angular/common/http'; 
+~~~
+
+3. Fazer a injeção de dependência do módulo HttpClient no contructor. 
+
+~~~
+    constructor(private http: HttpClient) { }
+~~~
+
+4. Importar o módulo Observable no arquivo [ model ].service.ts
+
+~~~
+    import { Observable } from 'rxjs'; 
+~~~
+
+5. Criar o método get para fazer a requisição HTTP. 
+
+~~~
+    public getEndereco(cep: string): Observable<Endereco>{
+      return this.http.get<Endereco>("https://viacep.com.br/ws/"+cep+"/json/")
+    }
+~~~
+
+
+6. Na classe Model (endereco.component.ts), adicionar o subscribe() à chamada do método getEndereco().
+
+~~~
+    getEndereco(){
+      this.endercoService.getEndereco(this.cep).subscribe((endereco) => (this.endereco = endereco)); 
+      console.log(this.endereco);
+    }
+~~~
+
+### Tópico Especial: JSON Server
+
+- É um sevidor para testes/mokup, usado durante a fase de desenvolvimento para simular o backend. 
+
+1. Instalação
+~~~
+  $ npm init 
+  $ npm i json-server 
+~~~
+
+2. Criar arquivo db.json no raiz do projeto adicionando um Json que simulará o Banco de Dados. 
+
+~~~
+  {
+    "usuarios": [
+        {
+            "userId": "XPTO-01", 
+            "password": "Trocar@123", 
+            "tipo": "dev"
+        }
+    ]
+  }
+~~~
+
+3. No arquivo package.json, criar um script para chamar o json-server: 
+~~~
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "server": "json-server --watch db.json"  <------------------------
+  },
+~~~
+
+4. Rodar o server: 
+~~~
+  $ npm run server
+~~~
+
+- Para Acessar os dados: 
+~~~
+    Resources:
+    http://localhost:3000/usuarios
+~~~

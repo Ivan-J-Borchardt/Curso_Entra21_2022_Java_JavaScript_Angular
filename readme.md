@@ -28,12 +28,16 @@
 -  [x] Apresentação Projeto Final - Fase 1  
     **Fase 1:** Concepção da ideia e primeiro esboço das telas
 
-#### Deadline: 2022.08.?? 
+#### Deadline: 2022.09.05 
 -  [ ] Apresentação Projeto Final - Fase 2  
     **Fase 2:**   
     - Aprimoramento do mokup das telas, todas as telas deverão estar definidas com devido fluxo/relacionamento entre telas;
     - Descrição funcional do sistema (descrever cada funcionalidade do sistema com o máximo de detalhes possível); 
     - Preparar a apresentação como se fosse vender o sistema para o cliente;
+
+#### Deadline: 2022.09.12 
+-  [ ] Exercícios guiados Angular 
+
 
 ---
 
@@ -514,6 +518,8 @@ https://www.typescriptlang.org/
 - https://www.youtube.com/c/loianegroner
 - https://www.youtube.com/watch?v=Yf0rC7dERjg
 
+- https://www.youtube.com/watch?v=vJt_K1bFUeA&list=PLnDvRpP8Bnex2GQEN0768_AxZg_RaIGmw
+
 ### Aula DH - 2022.08.09 
 - Profa. Natali
 
@@ -538,39 +544,116 @@ https://www.typescriptlang.org/
 - Exercícios 
 
 ### Aula 56 - 2022.08.15 - 224h
-- Apresentação Protótipo Projeto Final  
+- Apresentação Protótipo Projeto Final 
+
 **Angular**
-
 - Trabalhando One Way Data Binding com Inbound Properties
-
-- Interfaces
 - Feature Module - Organizando os Módulos
 - ng generate ...   https://angular.io/cli/generate
-- Diretiva ngFor
-- Diretiva ngIf
-- Diretiva ngSwich 
-- Diretiva ngStyle
-- Diretiva ngClass
-- Exercícios   
+
 
 
 ### Aula DH - 2022.08.16 
 - Profa. Natali
 
 ### Aula 57 - 2022.08.17 - 228h
-- LifeCycle Hooks (Ciclo de Vida do Componente)
-- Arquitetura Cliente-Servidor 
-- Services 
-- Consumindo uma REST API
-- Angular DevTools
-    https://chrome.google.com/webstore/detail/angular-devtools/ienfalfjdbdpebioblfackkekamfmbnh/related
+- Interfaces
+- Diretiva ngFor
+- Diretiva ngIf
+- Diretiva ngSwich 
+- Diretiva ngStyle
+- Diretiva ngClass
+ 
 
 ### Aula ID - 2022.08.18
 - Profa. Clara
 
 ### Aula 58 - 2022.08.19 - 232h
+- Exercícios  
+
+
+
+### Aula 59 - 2022.08.22 - 236h
+- Angular DevTools
+
+    https://chrome.google.com/webstore/detail/angular-devtools/ienfalfjdbdpebioblfackkekamfmbnh/related
+
+- LifeCycle Hooks (Ciclo de Vida do Componente)
+- Arquitetura Cliente-Servidor 
+- Services 
+- Consumindo uma REST API (Método GET)
+- Exercícios
+
+
+### Aula DH - 2022.08.23 
+- Profa. Natali
+
+
+### Aula 60 - 2022.08.24 - 240h
 - Conceito de Single Page Aplication (SPA)
-- Pipe operator 
+- Angular Router
+- Página Erro 404 
+- Passando parâmentros entre rotas (rota dinâmica) 
+- Navegando entre componentes (router.navigate())
+- Protegendo rotas  
+
+
+### Aula ID - 2022.08.25
+- Profa. Clara
+
+### Aula 61 - 2022.08.26 - 244h
+- Trabalhando com formulários no Angular
+
+
+### Aula 62 - 2022.08.29 - 248h
+- Introdução Java 
+    - Instalação do Java SDK 
+    - INstalação da IDE Eclipse 
+
+- Morfologia de um projeto Java 
+- Tipos de dados
+- Escrevendo no console 
+- Lendo dados do console
+- Sintaxe dásica das estruturas de seleção 
+- Sintaxe dásica das estruturas de repetição
+- Exercícios 
+
+### Aula DH - 2022.08.30 
+- Profa. Natali
+
+### Aula 63 - 2022.08.31 - 252h
+- Vetores e Matrizes em Java 
+- Exercícios 
+
+### Aula ID - 2022.09.01
+- Profa. Clara
+
+### Aula 64 - 2022.09.02 - 256h
+- Introdução à Orientação à Objeto 
+- Declarando uma classe 
+    -  Atributos da Classe 
+    -  Métodos 
+    -  Construtor 
+
+- Diagrama de Classes 
+
+### Aula 65 - 2022.09.05 - 260h
+- Apresentação Projeto Final - Fase 2
+- OOP - Encapsulamento 
+
+### Aula DH - 2022.09.06 
+- Profa. Natali
+
+### Feriado - 2022.09.07 
+- Independência do Brasil 
+
+### Aula ID - 2022.09.08
+- Profa. Clara
+
+### Aula 66 - 2022.09.09 - 264h
+- OOP Composição 
+- OOP Notação Ponto 
+- OOP Herança
 
 ---
 ## Onde Encontrar mais...

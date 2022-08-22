@@ -35,7 +35,7 @@
     - Descrição funcional do sistema (descrever cada funcionalidade do sistema com o máximo de detalhes possível); 
     - Criar o quadro kanban no trello com as tarefas relativas a construção do Frontend (use o quadro já pronto como base);  
     - Preparar a apresentação como se fosse vender o sistema para o cliente;
-    - A partir desse ponto iremos seguir Scrumm! 
+    - A partir desse ponto iremos seguir Scrum! 
 
 #### Deadline: 2022.09.12 
 -  [ ] Exercícios guiados Angular 
@@ -48,7 +48,7 @@
 -  [ ] Status das atividades do projeto final
 
 #### Deadline: 2022.10.03
--  [ ] Apresentação Projeto Final - Fase 3 
+-  [ ] Apresentação Projeto Final - Fase 3   
     **Fase 3:** 
     - Frontent Pronto
     - Documentação e aderência à metodologia ágil 

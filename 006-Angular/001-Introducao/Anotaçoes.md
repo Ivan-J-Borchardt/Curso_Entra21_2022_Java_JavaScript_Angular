@@ -337,6 +337,7 @@ fotos do array photos
 
 - Serve para aplicar um estilo inline com parametros dinâmicos. 
 
+
 ## Aula 4
 ---
 ### LifeCycle Hooks 
@@ -455,7 +456,7 @@ Além disso existem outros 4 ganchos dentro do **ngDoCheck:**
 
 1. Instalação
 ~~~
-  $ npm init 
+  $ npm init -y
   $ npm i json-server 
 ~~~
 

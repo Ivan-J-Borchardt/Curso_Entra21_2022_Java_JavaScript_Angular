@@ -11,6 +11,7 @@ import { NgifelseComponent } from './ngifelse/ngifelse.component';
 import { NgstyleComponent } from './ngstyle/ngstyle.component';
 import { NgclassComponent } from './ngclass/ngclass.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { NgswitchComponent } from './ngswitch/ngswitch.component';
         NgifelseComponent,  
         NgstyleComponent, 
         NgclassComponent, 
-        NgswitchComponent
+        NgswitchComponent, 
+        LifecycleComponent
     ], 
     imports: [
         PhotosModule, 
@@ -37,7 +39,8 @@ import { NgswitchComponent } from './ngswitch/ngswitch.component';
         NgifelseComponent, 
         NgstyleComponent, 
         NgclassComponent, 
-        NgswitchComponent
+        NgswitchComponent, 
+        LifecycleComponent
     ]
 })
 export class ExemplosModule{ }

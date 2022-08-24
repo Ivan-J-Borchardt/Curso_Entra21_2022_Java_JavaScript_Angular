@@ -8,5 +8,6 @@ import { Component, Input } from "@angular/core";
 export class PhotoComponent{
     @Input() src: string = '';
     @Input() alt: string = '';
+    @Input() width: string = '100';
     title: string = 'Emotion Toquinho'; 
 }

@@ -492,3 +492,164 @@ Além disso existem outros 4 ganchos dentro do **ngDoCheck:**
     Resources:
     http://localhost:3000/usuarios
 ~~~
+
+## Aula 5 
+---
+### **Angular Router**
+
+- Serve para fazer o roteamento entre páginas do aplicativo.  
+
+*Referência:* https://medium.com/angularbr/angular-5-trabalhando-com-rotas-8335617fcdbc
+
+*Importante:* Compreender o que é uma SPA
+
+1. Criar o arquivo app-routing.module.ts na pasta app
+
+~~~
+    ng generate module app-routing --flat --module=app
+~~~
+
+2. Adicionar os imports de NgModule, RouterModule e Routes ao arquivo app-routing.module.ts
+
+~~~
+    import { NgModule } from "@angular/core";
+    import { RouterModule, Routes } from "@angular/router"; 
+~~~
+
+3. Adicionar a variavel routes como mapeamento das rotas. 
+
+~~~
+    const routes: Routes = [
+        {path: '', component: EnderecoComponent}, 
+        {path: 'fotos', component: NgforComponent}
+    ]
+~~~
+
+4. Adicionar a classe AppRoutingModule com a anotation @NgModule.
+
+~~~
+    @NgModule({
+        declarations: [], 
+        imports: [RouterModule.forRoot(routes)], 
+        exports: [RouterModule]
+    })
+    export class AppRoutingModule {}
+~~~
+
+5. Importar o AppRoutingModule no app.module.ts
+
+~~~
+  import { AppRoutingModule } from './app-routing.module';
+  ...
+  imports: [
+    BrowserModule, 
+    FormsModule,
+    PhotosModule, 
+    HttpClientModule,
+    AppRoutingModule <-------------------------
+  ],
+~~~
+
+6. Adicionar o componente router-outlet no app-component.html e criar os links para as rotas usando o atributo routerLink. 
+
+~~~
+    <p>Header</p>
+    <nav>
+        <a routerLink="/">Home</a>  <---------------------------
+        <a routerLink="/fotos">Fotos</a>
+    </nav>
+    <router-outlet></router-outlet>   <-------------------------
+    <p>Footer</p>
+~~~
+
+
+### **Rota 404** 
+
+1. Crie uma página de erro 404 
+
+~~~
+    ng g c error404
+~~~
+
+2. Adicione a nova rota no arquivo app-routing.module.ts
+
+~~~
+    path: '**', component: Error404Component
+~~~
+
+
+### **Passando parâmentros entre rotas (rota dinâmica)** 
+
+1. Adicione uma rota dinâmica ao app-routing.module.ts
+
+~~~
+  { path: 'endereco/:cep', component: EnderecoComponent },
+~~~
+
+2. No componente mapeado pela rota dinâmica, injete a dependência do módulo ActivateRoute no construtor 
+
+~~~
+  constructor(private route: ActivatedRoute) { 
+  }
+~~~
+
+3. Capture os parâmetors enviados através do método route.params.subscribe()
+~~~
+  constructor(private route: ActivatedRoute) { 
+    this.route.params.subscribe(res => console.log(res.cep));
+  }
+~~~
+
+### **Navegando entre componentes** 
+ 
+1. Injete a dependência ao módulo Router no componente de origem: 
+
+~~~
+  constructor(private router: Router) { }
+~~~
+
+2. Chame a página de destino usando o método router.navigate()
+
+~~~
+  this.router.navigate(['home']);
+~~~
+
+
+### **Guarda de Rotas** 
+
+1. Crie um arquivo auth.guard.ts no seguinte caminho src/app/services/auth/auth.guard.ts e adicione o seguinte código: 
+
+~~~
+import { Observable } from 'rxjs/Observable';
+import { Injectable } from '@angular/core';
+import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from "@angular/router";
+
+@Injectable()
+export class AuthGuard implements CanActivate {
+
+    constructor(private router: Router) { }
+
+    canActivate(
+        route: ActivatedRouteSnapshot,
+        state: RouterStateSnapshot): Observable<boolean> | boolean {
+
+        if (localStorage['token'] != null) {
+            return true;
+        } else {
+            this.router.navigate(['/login']);
+        }
+    }
+}
+~~~
+
+2. Adicione a importação da classe AuthGuard no arquivo app-routing.module.ts
+
+~~~
+    import { AuthGuard } from './services/auth/auth.guard';
+~~~
+
+3. Adicione o atributo canActivate nas rotas a serem protegidas: 
+
+~~~
+
+~~~

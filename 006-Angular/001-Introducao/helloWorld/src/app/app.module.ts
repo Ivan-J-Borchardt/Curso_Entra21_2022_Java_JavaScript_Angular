@@ -7,20 +7,31 @@ import { AppComponent } from './app.component';
 import { ExemplosModule } from './exemplos/exemplos.module';
 import { PhotosModule } from './photos/photos.module';
 import { EnderecoComponent } from './endereco/endereco.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ExemploComponent } from './exemplo/exemplo.component';
+import { CabecalhoComponent } from './cabecalho/cabecalho.component';
+import { Error404Component } from './error404/error404.component';
+import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './services/auth/auth.guard';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EnderecoComponent
+    EnderecoComponent,
+    ExemploComponent,
+    CabecalhoComponent,
+    Error404Component,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ExemplosModule,
     PhotosModule, 
-    HttpClientModule
+    HttpClientModule, 
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

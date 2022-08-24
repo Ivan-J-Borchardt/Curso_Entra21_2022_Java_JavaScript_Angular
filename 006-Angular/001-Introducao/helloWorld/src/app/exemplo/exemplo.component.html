@@ -1,0 +1,99 @@
+<!-- Exemplo de Interpolação/Angular Expression -->
+<div class="container p-5 my-5 border">
+    <p class="alert alert-info">Exemplo de Interpolação</p>
+    <app-interpolacao></app-interpolacao>
+</div>
+
+<!--Exemplo de Data Binding -->
+<img class="img-thumbnail" [src]="imagem" [alt]="alt">
+
+
+<!-- Exemplos de One Way Data Binding e Event Binding-->
+<input type="text" 
+    [value]="nome" 
+    (keyup)="onKeyUp($event)"
+    (keyup.enter)="onKeyUpEnter($event)"
+    (blur)="onBlur(campoInput.value)"
+    #campoInput>
+
+<input type="text"
+       [value] = "idade"
+       (input) = "idade = campoInput2.value"
+       #campoInput2>
+
+<button class="btn btn-primary" (click)="cliqueBotao()">Clique Aqui!</button>
+
+<!-- Exemplo de Two Way Data Binding  -->
+<div>
+    <input type="text"  [(ngModel)]="cidade">
+</div>
+
+
+<!-- Exemplos de Interpolação/Angular Expression -->
+<div>
+    <p class="corVermelho">Campo Nome, Evento onKeyUp: {{valorAtual}}</p>
+    <p class="corAzul">Campo Nome, Evento onKeyUp.Enter: {{valorSalvo}}</p> 
+    <p>Campo Nome, Evento onKeyUp.Enter: {{valorSalvoBlur}}</p> 
+    <p>Campo Idade, Evento onInput: {{idade}}</p> 
+    <p>Campo Cidade {{cidade}}</p>
+</div>
+
+<app-photo [src]="imagem" [alt]="alt"></app-photo>
+
+
+<!-- Exemplo de Interface + Interpolação  -->
+<div class="container p-5 my-5 border">
+    <p class="alert alert-info">Exemplo de Interface</p>
+    <app-interfaces></app-interfaces>
+</div>
+
+<!-- Exemplo de Diretiva ngFor -->
+<div class="container p-5 my-5 border">
+    <p class="alert alert-info">Exemplo de Diretiva ngFor</p>
+    <app-ngfor></app-ngfor>
+</div>
+
+<!-- Exemplo de Diretiva ngIf -->
+<div class="container p-5 my-5 border">
+    <p class="alert alert-info">Exemplo de Diretiva ngIf</p>
+    <app-ngif></app-ngif>
+</div>
+
+<!-- Exemplo de Diretiva ngIf com else-->
+<div class="container p-5 my-5 border">
+    <p class="alert alert-info">Exemplo de Diretiva ngIf com else</p>
+    <app-ngifelse></app-ngifelse>
+</div>
+
+<!-- Exemplo de Diretiva ngSwitch-->
+<div class="container p-5 my-5 border">
+    <p class="alert alert-info">Exemplo de Diretiva Switch</p>
+    <app-ngswitch></app-ngswitch>
+</div>
+
+<!-- Exemplo de Diretiva ngStyle-->
+<div class="container p-5 my-5 border">
+    <p class="alert alert-info">Exemplo de Diretiva ngStyle</p>
+    <app-ngstyle></app-ngstyle>
+</div>
+
+<!-- Exemplo de Diretiva ngClass-->
+<div class="container p-5 my-5 border">
+    <p class="alert alert-info">Exemplo de Diretiva ngClass</p>
+    <app-ngclass></app-ngclass>
+</div>
+
+
+<!-- Exemplo de Life Cycle-->
+<div class="container p-5 my-5 border">
+    <p class="alert alert-info">Exemplo de Life Cycle</p>
+    <app-lifecycle [size]="12"></app-lifecycle>
+</div>
+
+
+<!-- Exemplo de Service-->
+<div class="container p-5 my-5 border">
+    <p class="alert alert-info">Exemplo de Service</p>
+    <app-endereco></app-endereco>
+</div>
+

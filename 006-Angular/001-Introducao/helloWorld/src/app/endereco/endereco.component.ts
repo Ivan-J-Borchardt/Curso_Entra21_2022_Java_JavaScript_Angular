@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
 import { Endereco } from '../interfaces/endereco';
 import { EnderecoService } from '../services/endereco.service';
 
@@ -14,7 +16,9 @@ export class EnderecoComponent implements OnInit {
   endereco?: Endereco; 
   
 
-  constructor(private enderecoService: EnderecoService) { }
+  constructor(private enderecoService: EnderecoService, private route: ActivatedRoute, private router: Router) {
+     this.route.params.subscribe(param => (this.cep = param['cep']));
+   }
 
   ngOnInit(): void {
   }
@@ -22,6 +26,12 @@ export class EnderecoComponent implements OnInit {
   getEndereco(): void{
     this.enderecoService.getEndereco(this.cep).subscribe((end) => (this.endereco = end))
     console.log(this.endereco);
+  }
+
+  testarCep(): void{
+    if (this.cep === "") {
+      this.router.navigate(['exemplos']);
+    }
   }
 
 }

@@ -620,7 +620,7 @@ Além disso existem outros 4 ganchos dentro do **ngDoCheck:**
 1. Crie um arquivo auth.guard.ts no seguinte caminho src/app/services/auth/auth.guard.ts e adicione o seguinte código: 
 
 ~~~
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from "@angular/router";
 
@@ -633,7 +633,7 @@ export class AuthGuard implements CanActivate {
         route: ActivatedRouteSnapshot,
         state: RouterStateSnapshot): Observable<boolean> | boolean {
 
-        if (localStorage['token'] != null) {
+        if (localStorage['token'] == "um token qualquer") {
             return true;
         } else {
             this.router.navigate(['/login']);
@@ -651,5 +651,32 @@ export class AuthGuard implements CanActivate {
 3. Adicione o atributo canActivate nas rotas a serem protegidas: 
 
 ~~~
+    {path: '', component: EnderecoComponent, canActivate: [AuthGuard]}, 
+~~~
 
+4. Adicione o serviço AuthGuard ao providers do app.module.ts
+
+~~~
+    imports: [
+    BrowserModule,
+    FormsModule,
+    ExemplosModule,
+    PhotosModule, 
+    HttpClientModule, 
+    AppRoutingModule
+  ],
+  providers: [AuthGuard],  <---------------
+  bootstrap: [AppComponent]
+~~~
+
+5. Crie seu componente de Login para alterar o conteúdo do token em localStorage e redirecione para a rota desejada. 
+
+~~~
+Componente Login: 
+
+    logar(): void{
+      localStorage['token'] = 'ptoh26410x5=50x';
+      this.router.navigate(['/fotos']);
+    }
+    
 ~~~

@@ -32,7 +32,15 @@
 
 7. Construa um guarda de rotas e proteja as rotas raíz e contato. Estas rotas só devem ficar acessíveis quando o usuário estiver logado. 
 
-8. Inclua um botão no canto direito da Navbar para deslogar o usuário. ~~Este botão deverá ficar desativado quando o usuário estiver deslogado e ativado quando o usuário estiver logado.~~ 
+8. Inclua um botão no canto direito da Navbar para deslogar o usuário. Este botão deverá ficar desativado quando o usuário estiver deslogado e ativado quando o usuário estiver logado. 
+
+    **Dica:**
+    - Crie uma função readLocalStorageToken() no app.component.ts   
+    ![readLocalStorage](./assets/L6E8Funcao.png)
+
+    - Atribua o inverso do retorno da funcao à propriedade disabled do botão
+    ![appHtml](./assets/L6E8Html.png)
+
 
 9. Consolide as alterações em seu repositório local e sincronize o GitHub (push). 
 

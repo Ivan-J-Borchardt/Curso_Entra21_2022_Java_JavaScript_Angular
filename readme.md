@@ -620,6 +620,8 @@ https://www.typescriptlang.org/
 
 ### Aula 61 - 2022.08.26 - 244h
 - Trabalhando com formulários no Angular
+- Correção bug na requisição HTTP
+- Estudo de caso erro ao ler modulo rxjs
 
 
 ### Aula 62 - 2022.08.29 - 248h

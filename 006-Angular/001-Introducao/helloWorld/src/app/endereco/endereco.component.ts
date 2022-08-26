@@ -13,7 +13,18 @@ export class EnderecoComponent implements OnInit {
 
   cep: string = ''; 
 
-  endereco?: Endereco; 
+  endereco: Endereco = {
+    cep: '',
+    logradouro: '',
+    complemento: '',
+    bairro: '',
+    localidade: '',
+    uf: '',
+    ibge: '',
+    gia: '',
+    ddd: '',
+    siafi: ''
+  } 
   
 
   constructor(private enderecoService: EnderecoService, private route: ActivatedRoute, private router: Router) {
@@ -24,7 +35,8 @@ export class EnderecoComponent implements OnInit {
   }
 
   getEndereco(): void{
-    this.enderecoService.getEndereco(this.cep).subscribe((end) => (this.endereco = end))
+    this.enderecoService.getEndereco(this.cep).subscribe((end) => (this.endereco = end), (erro) => (console.log(erro)));
+
     console.log(this.endereco);
   }
 

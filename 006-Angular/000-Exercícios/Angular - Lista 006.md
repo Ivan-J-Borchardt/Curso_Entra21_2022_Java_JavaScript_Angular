@@ -32,7 +32,7 @@
 
 7. Construa um guarda de rotas e proteja as rotas raíz e contato. Estas rotas só devem ficar acessíveis quando o usuário estiver logado. 
 
-8. Inclua um botão no canto direito da Navbar para deslogar o usuário. Este botão tembém deverá ficar desativado quando o usuário estiver deslogado e ativado quando o usuário estiver logado. 
+8. Inclua um botão no canto direito da Navbar para deslogar o usuário. ~~Este botão deverá ficar desativado quando o usuário estiver deslogado e ativado quando o usuário estiver logado.~~ 
 
 9. Consolide as alterações em seu repositório local e sincronize o GitHub (push). 
 

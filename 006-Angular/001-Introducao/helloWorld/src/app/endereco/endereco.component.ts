@@ -35,9 +35,12 @@ export class EnderecoComponent implements OnInit {
   }
 
   getEndereco(): void{
-    this.enderecoService.getEndereco(this.cep).subscribe((end) => (this.endereco = end), (erro) => (console.log(erro)));
+    this.enderecoService.getEndereco(this.cep).subscribe((end) => {
+      this.endereco = end; 
+      console.log(this.endereco);
+    });
 
-    console.log(this.endereco);
+    
   }
 
   testarCep(): void{

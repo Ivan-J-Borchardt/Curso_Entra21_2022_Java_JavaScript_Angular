@@ -33,7 +33,7 @@
     - assunto (preenchimento obrigatório, aceita no máximo 50 caracteres) 
     - mensagem (preenchimento obrigatório, aceita no máximo 500 caracteres)
 
-4. O botão de submissão do formulário deverá ficar desabilitado até que todos os requisitos estejam satisfeitos. 
+4. O botão de submissão do formulário deverá ficar desabilitado até que todos os requisitos estejam satisfeitos/validos. 
 
 5. Ao submeter o formulário, exiba o conteúdo de todos os campos no console.log. 
 

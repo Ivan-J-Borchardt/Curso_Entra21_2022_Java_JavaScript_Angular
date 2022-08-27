@@ -680,3 +680,131 @@ Componente Login:
     }
     
 ~~~
+
+## Aula 6 
+---
+### **Validação de Formulário** 
+
+1. Adicione a importação dos módulos FormsModule e ReactiveFormsModule ao arquivo app.module.ts
+
+~~~
+import { ReactiveFormsModule } from '@angular/forms';  <--------------------
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule <--------------------------
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+
+export class AppModule { }
+~~~
+
+
+2. No [model].component.ts, crie uma variável do tipo FormGroup  
+
+
+~~~
+import { FormGroup } from '@angular/forms';
+
+formulario: FormGroup;
+
+~~~
+
+3. A abordagem que vamos utilizar para criar nosso formulário é através da injeção de dependência do service FormBuilder. Esse serviço fornece métodos para gerar controles de formulários e evita a criação manual de instâncias de controle. Para isso vamos ter que:
+
+  - Importar a classe FormBuilder;
+  - Injetar o service FormBuilder;
+  - Gerar o conteúdo do formulário.
+  
+  Vamos criar um formulário com 3 campos:
+
+  - UserId
+  - Password
+  - tipo 
+
+~~~
+import { Component } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+
+@Component({
+  selector: 'app-usuario',
+  templateUrl: './usuario.component.html',
+  styleUrls: ['./usuario.component.css']
+})
+export class UsuarioComponent {
+
+  formulario: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) { }
+
+  ngOnInit(): void {
+    this.formulario = this.formBuilder.group({
+      userId: [''],
+      password: [''],
+      tipo: ['']
+    });
+  }
+}
+~~~
+
+4. No [model].component.html, Criar o formulário com os 3 campos. 
+
+~~~
+<input id="userid" type="text" formControlName="userid" >
+<input id="password" type="text" formControlName="password" >
+<input id="tipo" type="email" formControlName="tipo" >
+~~~
+
+5. Aplicando as validacoes
+
+- Importe a classe validators no componente [model].component.ts. 
+
+    Essa classe já traz vários métodos de validação prontos e fáceis de usar como por exemplo:
+
+    required() - campo de preenchimento obrigatório;
+    maxLength() - quantidade máxima de caracteres permitido;
+    minLength() - quantidade mínima de caracteres permitido;
+    email() - valida o formato de e-mail;
+
+~~~
+  import { Validators } from '@angular/forms';
+~~~
+
+6. Implementar as validações no formulário, passando os métodos de validação como segundo parâmetro do array criado no component.ts.
+
+~~~
+ngOnInit(): void {
+    this.formulario = this.formBuilder.group({
+      nome: ['', [Validators.required]],
+      username: ['',  [Validators.required]],
+      email: ['', [Validators.required, Validators.email]],
+      senha: ['', [Validators.required, Validators.minLength(6)]]
+    });
+}
+
+~~~
+
+7. Exibindo Mensagem de erro
+
+  Para exibir mensagens referentes às validações, vamos incluir no html, abaixo do input, uma div com a diretiva *ngIf, passando o formulário e pegando os erros do campo passado como parâmetro, e incluindo a mensagem que queremos apresentar:
+
+~~~
+<div *ngIf="formulario.get('nome')?.errors>
+    Nome obrigatório
+</div>
+~~~
+
+Ok, agora as mensagens estão aparecendo, mas já no carregamento inicial da aplicação. Será que existe uma forma mais amigável de apresentá-las? Apenas quando o campo for acessado? Sim!! Podemos fazer isso através de uma propriedade do FormControl chamada touched. Seu valor inicial é false e sempre que o input dispara o evento onBlur, ou seja, quando o campo é acessado e perde o foco, a propriedade recebe o valor true.
+
+~~~
+<div *ngIf="formulario.get('nome')?.errors?.['required'] && formulario.get('nome')?.touched>
+    Nome obrigatório
+</div>
+~~~

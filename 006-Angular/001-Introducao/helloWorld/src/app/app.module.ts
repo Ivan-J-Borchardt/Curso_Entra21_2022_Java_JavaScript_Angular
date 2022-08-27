@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -13,6 +13,7 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { Error404Component } from './error404/error404.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './services/auth/auth.guard';
+import { FormularioComponent } from './formulario/formulario.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AuthGuard } from './services/auth/auth.guard';
     ExemploComponent,
     CabecalhoComponent,
     Error404Component,
-    LoginComponent
+    LoginComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { AuthGuard } from './services/auth/auth.guard';
     ExemplosModule,
     PhotosModule, 
     HttpClientModule, 
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

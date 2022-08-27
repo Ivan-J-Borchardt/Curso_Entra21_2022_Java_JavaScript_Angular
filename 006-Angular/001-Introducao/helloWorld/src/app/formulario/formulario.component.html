@@ -1,0 +1,23 @@
+<form [formGroup]="formulario" >
+
+    <div>
+        <input type="text" id="idNome" formControlName="nome">
+    </div>
+    <div *ngIf="formulario.get('nome')?.errors?.['required'] && formulario.get('nome')?.touched">
+        Nome obrigatório
+    </div>
+
+    <div>
+        <input type="text" id="idCpf" formControlName="cpf">
+    </div>
+    <div *ngIf="formulario.get('cpf')?.errors?.['required'] && formulario.get('cpf')?.touched">
+        CPF obrigatório
+    </div>
+    <div *ngIf="formulario.get('cpf')?.errors?.['minlength'] && formulario.get('cpf')?.touched">
+        Tamanho minimo 11 caracteres
+    </div>
+
+
+    <button (click)="cadastrar()" [disabled]="!formulario.valid">Cadastrar</button>
+
+</form>

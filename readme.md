@@ -5,7 +5,9 @@
 
 "A simplicidade é o mais alto grau de sofisticação" (Leonardo da Vinci)
 
-"o mundo ama os talentosos, mas recompensa os disciplinados" (Autor Desconhecido)
+"O mundo ama os talentosos, mas recompensa os disciplinados" (Autor Desconhecido)
+
+"Sorte é o que acontece quando a preparação encontra a oportunidade" (Sêneca)
 
 ---
 ## Backlog 
@@ -633,8 +635,8 @@ https://www.typescriptlang.org/
 - Tipos de dados
 - Escrevendo no console 
 - Lendo dados do console
-- Sintaxe dásica das estruturas de seleção 
-- Sintaxe dásica das estruturas de repetição
+- Sintaxe básica das estruturas de seleção 
+- Sintaxe básica das estruturas de repetição
 - Exercícios 
 
 ### Aula DH - 2022.08.30 

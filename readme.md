@@ -643,13 +643,14 @@ https://www.typescriptlang.org/
 - Profa. Natali
 
 ### Aula 63 - 2022.08.31 - 252h
-- Vetores e Matrizes em Java 
+ 
 - Exercícios 
 
 ### Aula ID - 2022.09.01
 - Profa. Clara
 
 ### Aula 64 - 2022.09.02 - 256h
+- Vetores e Matrizes em Java
 - Introdução à Orientação à Objeto 
 - Declarando uma classe 
     -  Atributos da Classe 

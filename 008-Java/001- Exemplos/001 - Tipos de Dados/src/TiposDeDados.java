@@ -29,6 +29,24 @@ public class TiposDeDados {
 		tamanhosVariaveis(); 
 		
 		String texto = "isso é uma string"; 
+		
+		//Casting 
+		inteiroNormal = (int)inteiroLongo; 
+		
+		inteiroNormal = (int)pontoFlutuanteDuplo; 
+	
+		inteiroNormal = 129; 
+		caracteresASCII = (byte)inteiroNormal; 
+				
+		System.out.println("---> " + caracteresASCII);
+		
+		//Promotion 
+		inteiroNormal = inteiroCurto; 
+		
+		//Conversao para Objeto String 
+		String teste = Integer.toString(inteiroNormal); 
+		
+		inteiroLongo = Integer.valueOf(teste) ; 
 
 	}
 

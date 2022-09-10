@@ -31,7 +31,7 @@
     **Fase 1:** Concepção da ideia e primeiro esboço das telas
 
 #### Deadline: 2022.09.05 
--  [ ] Apresentação Projeto Final - Fase 2  
+-  [x] Apresentação Projeto Final - Fase 2  
     **Fase 2:**   
     - Aprimoramento do mokup das telas, todas as telas deverão estar definidas com devido fluxo/relacionamento entre telas;
     - Descrição funcional do sistema (descrever cada funcionalidade do sistema com o máximo de detalhes possível); 
@@ -673,10 +673,42 @@ https://www.typescriptlang.org/
 - Profa. Clara
 
 ### Aula 66 - 2022.09.09 - 264h
+- Correção Exercícios Java Arrays 
+- Arrays multi-dimensionais 
+- Reunião de planejamento da Sprint do trabalho final 
+
+### Aula 67 - 2022.09.12 - 268h
+- OO Diagrama de Classes
 - OOP Encapsulamento 
 - OOP Composição 
 - OOP Notação Ponto 
+
+
+### Aula 68 - 2022.09.13 - 272h
 - OOP Herança
+- Polimorfismo 
+- Abstração 
+
+### Aula 69 - 2022.09.14 - 276h
+- Conceitos OO
+    - Acoplamento 
+    - Coesão 
+    - Associação 
+    - Agregação 
+    - Composição
+
+- Enum 
+- Interfaces
+
+### Aula ID - 2022.09.15 
+- Profa. Clara
+
+### Aula 70 - 2022.09.16 - 280h
+- Exceções e tratamento de erros 
+- Trabalhando com Datas
+
+### Aula 71 - 2022.09.19 - 284h
+
 
 ---
 ## Onde Encontrar mais...

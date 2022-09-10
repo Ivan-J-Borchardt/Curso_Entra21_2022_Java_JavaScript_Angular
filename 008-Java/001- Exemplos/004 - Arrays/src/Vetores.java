@@ -45,8 +45,42 @@ public class Vetores {
 		
 		char letra = nome.charAt(0); 
 		
+		//Matriz 
+		
+		int numeros[][][] = new int[4][4][5];
+		
+		String agenda[][] = new String[7][24]; 
+		
+		agenda[2][14] = "dentista"; 
+		agenda[2][15] = "Cliente XPTO"; 
+		
+		System.out.println("Agenda dias " + agenda.length);
+		System.out.println("Agenda horas " + agenda[0].length);
+		
+		for (int dia = 0; dia < agenda.length; dia++) {
+			for (int hora = 0; hora < agenda[dia].length; hora++) {
+				System.out.println("Dia: " + dia + " Hora: " + hora + "Compromisso: " + agenda[dia][hora]);
+			}
+		}
+		
 		
 
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

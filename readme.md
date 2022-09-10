@@ -661,7 +661,7 @@ https://www.typescriptlang.org/
 
 ### Aula 65 - 2022.09.05 - 260h
 - Apresentação Projeto Final - Fase 2
-- OOP - Encapsulamento 
+- Arrays 
 
 ### Aula DH - 2022.09.06 
 - Profa. Natali
@@ -673,6 +673,7 @@ https://www.typescriptlang.org/
 - Profa. Clara
 
 ### Aula 66 - 2022.09.09 - 264h
+- OOP Encapsulamento 
 - OOP Composição 
 - OOP Notação Ponto 
 - OOP Herança

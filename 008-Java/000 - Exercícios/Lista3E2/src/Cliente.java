@@ -3,7 +3,7 @@ public class Cliente {
 	
 	private final double PI = 3.1415; //Exemplo de Constante
 	
-	static int contCli = 0; //Exemplo de Variavel de Classe  
+	private static int contCli = 0; //Exemplo de Variavel de Classe  
 	
 	private String nome; 
 	private String cpf; 

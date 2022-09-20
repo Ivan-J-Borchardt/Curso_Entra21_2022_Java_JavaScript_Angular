@@ -639,6 +639,12 @@ https://www.typescriptlang.org/
 - Sintaxe básica das estruturas de repetição
 - Exercícios 
 
+#### Materiais Complementares - Java
+- https://docs.oracle.com/en/java/
+- https://www.w3schools.com/java/default.asp
+- https://www.cursoemvideo.com/cursos/
+- https://www.youtube.com/playlist?list=PLGxZ4Rq3BOBq0KXHsp5J3PxyFaBIXVs3r
+
 ### Aula DH - 2022.08.30 
 - Profa. Natali
 
@@ -685,11 +691,26 @@ https://www.typescriptlang.org/
 
 
 ### Aula 68 - 2022.09.13 - 272h
-- OOP Herança
-- Polimorfismo 
-- Abstração 
+- Exercícios (Lista 3 E2)
+- Correção Exercícios
 
 ### Aula 69 - 2022.09.14 - 276h
+- Correção exercícios
+- Sobrecarga de métodos 
+- Constantes 
+- Variáveis e Métodos estáticos 
+
+### Aula ID - 2022.09.15 
+- Profa. Clara
+
+### Aula 70 - 2022.09.16 - 280h
+- OOP Herança
+    - extends 
+    - this vs. super
+    - subclasse vs. Superclasse
+    - final class 
+- Polimorfismo 
+
 - Conceitos OO
     - Acoplamento 
     - Coesão 
@@ -697,17 +718,103 @@ https://www.typescriptlang.org/
     - Agregação 
     - Composição
 
-- Enum 
-- Interfaces
 
-### Aula ID - 2022.09.15 
-- Profa. Clara
-
-### Aula 70 - 2022.09.16 - 280h
-- Exceções e tratamento de erros 
-- Trabalhando com Datas
 
 ### Aula 71 - 2022.09.19 - 284h
+- Exceções e tratamento de erros 
+    - Call Stack 
+    - Entendendo as exceções que o java devolve 
+        - Null Pointer Exception 
+        - Division by zero 
+        - Index out of Bounds 
+        - etc. 
+    
+    - Tratando as exceções (Try-Catch-Finaly) 
+        - getMessage()
+        - printStackTrace()
+        - varias cláusulas catch, operador | (ou) 
+        
+    - Exceções personalizadas 
+        - Criando as próprias exceções 
+        - Lançando a exceção 
+        - Checked and Unchecked Exceptions 
+    
+    - A Hierarquia das exceções 
+
+- Trabalhando com Datas
+- Enum 
+
+### Aula 72 - 2022.09.20 - 288h
+- Banco de dados 
+
+### Aula 73 - 2022.09.21 - 292h
+- Banco de dados 
+
+### Aula ID - 2022.09.22 
+- Profa. Clara
+
+### Aula 74 - 2022.09.23 - 296h
+- Banco de Dados 
+
+### Aula 75 - 2022.09.26 - 300h
+- Spring Framework (API REST Full)
+
+### Aula EI - 2022.09.27 
+- Prof. Valdecir
+
+### Aula 76 - 2022.09.28 - 304h
+- Spring Framework
+
+### Aula ID - 2022.09.29 
+- Profa. Clara
+
+### Aula 77 - 2022.09.30 - 308h
+- Spring Framework
+
+### Aula 78 - 2022.10.03 - 312h
+- Spring Framework
+
+### Aula 79 - 2022.10.04 - 316h
+- Spring Framework
+
+### Aula 80 - 2022.10.05 - 320h
+- Spring Framework
+
+### Aula ID - 2022.10.06 
+- Profa. Clara
+
+### Aula 81 - 2022.10.07 - 320h
+- Spring Framework
+
+### Aula 82 - 2022.10.10 - 324h
+- Trabalho final ---------------------------
+
+### Aula 83 - 2022.10.11 - 328h
+- Trabalho final ---------------------------
+
+### Aula ID - 2022.10.12 
+- Feriado (Trabalho final...)
+
+### Aula EI - 2022.10.13 
+- Prof. Valdecir
+
+### Aula 84 - 2022.10.14 - 332h
+- Trabalho final ---------------------------
+
+### Aula 85 - 2022.10.17 - 336h
+- Trabalho final ---------------------------
+
+### Aula 86 - 2022.10.18 - 340h
+- Trabalho final (última apresentação para a turma)
+
+### Aula FR - 2022.10.19
+- Formatura e Mostra de Talentos
+
+### Aula FR - 2022.10.20
+- Formatura e Mostra de Talentos
+
+### Aula 87 - 2022.10.21
+- Encerramento 
 
 
 ---

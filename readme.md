@@ -746,6 +746,12 @@ https://www.typescriptlang.org/
 
 ### Aula 72 - 2022.09.20 - 288h
 - Banco de dados 
+#### Materiais Complementares - Postgress
+    https://www.tutorialsteacher.com/postgresql
+    https://www.postgresqltutorial.com/postgresql-getting-started/ 
+    https://www.tutorialspoint.com/postgresql/postgresql_update_query.htm
+    https://www.w3schools.com/sql/default.asp
+
 
 ### Aula 73 - 2022.09.21 - 292h
 - Banco de dados 

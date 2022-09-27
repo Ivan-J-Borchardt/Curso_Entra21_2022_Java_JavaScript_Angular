@@ -61,6 +61,9 @@ https://www.youtube.com/watch?v=JBostGKVv6A
 
 #SagaDosComputadores Ep.6
     https://www.youtube.com/watch?v=uByQnP5FsVY
+
+#SagaDosComputadores Ep.7
+    https://www.youtube.com/watch?v=rS1SgcjYbIE   
 ---
 ---
 

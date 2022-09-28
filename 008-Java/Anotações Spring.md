@@ -101,20 +101,80 @@
 - Também pode ser chamado de VO - Value Object.
 - Serve para poder controlar melhor quais atributos serão devolvidos, dessa forma a classe DTO contém apenas os atributos que deverão realmente ser devolvidos. 
 
-- Crie uma classe UsuarioDto no pacote controller.dto.
+**a. Crie uma classe UsuarioDto no pacote controller.dto.**
+- Adicione os atributos que serão retornados 
+- Adicione um contrutor passando como parâmentro o objeto modelo correspondente e  inicialize todos os atributos 
+- Adicione getters para todos os atributos
 
 ~~~
     package com.example.demo.controller.dto;
 
     public class UsuarioDto {
+        private String userId; 
+        private String nome;
+        private String tipo;
+        
+        public UsuarioDto(Usuario user) {
+            this.userId = user.getUserId();
+            this.nome = user.getNome();
+            this.tipo = user.getTipo();
+        }
+        
+        public String getUserId() {
+            return userId;
+        }
+
+        public String getNome() {
+            return nome;
+        }
+
+        public String getTipo() {
+            return tipo;
+        }
 
     }
 
 ~~~
 
-- Adicione os atributos que serão retornados 
-- Adicione um contrutor passando como parâmentro o objeto modelo correspondente e  inicialize todos os atributos 
-- Adicione getters para todos os atributos
+**b. Altere o tipo de retorno no método listar da classe UsuarioController**
+
+~~~
+	@RequestMapping("/usuarios")
+	@ResponseBody
+	public List<UsuarioDto> listar(){  
+		           ^
+                   |-------------------------
+
+  		Usuario user = new Usuario("XPTO", "Trocar123", "Joao2", "000.003.789-23", "Programador");
+	
+		return Arrays.asList(user, user, user); 
+		
+	}
+
+~~~
+
+**c. Adicione um método na classe UsuarioDTO para converter uma lista de Usuario para uma lista de UsuarioDTO.**
+
+~~~
+	public static List<UsuarioDto> converter(List<Usuario> usuarios) {
+		return usuarios.stream().map(UsuarioDto::new).collect(Collectors.toList());
+	} 
+~~~
+
+**d. Altere o retorno do método listar() da classe UsuarioController, chamando o novo método converter(), para converter a lista de Usuario para uma lista de UsuarioDto.**
+
+~~~
+	@RequestMapping("/usuarios")
+	@ResponseBody
+	public List<UsuarioDto> listar(){
+		
+		Usuario user = new Usuario("XPTO", "Trocar123", "Joao2", "000.003.789-23", "Programador");
+	
+		return UsuarioDto.converter(Arrays.asList(user, user, user)); <---------------
+		
+	}
+~~~
+
 
 
 
@@ -144,4 +204,128 @@
 
 	</dependencies>
 
+~~~
+
+# API REST (Representational State Transfer)
+
+- É um modelo de arquitetura para sistemas distribuidos 
+
+- Roy Fielding, um dos principais autores do protocolo HTTP, em 2000 lista alguns modelos de arquitetura que poderiam ser usados para desenvolvimento de sistemas distribuitos, dentre eles o REST. 
+
+- O Modelo REST foi a base para o protocolo HTTP. 
+
+- Conceitos:
+
+    - Recursos:
+        -  Aluno 
+        -  Topico 
+        -  Curso 
+        -  Disciplinas
+
+    - Identificador de Recursos (URI): 
+        -  Aluno(/alunos) 
+        -  Topico(/topicos) 
+        -  Curso(/cursos) 
+        -  Disciplinas(/disciplina)  
+
+    - Manipulação de Recursos (Verbos HTTP):
+~~~
+       CRUD - Create, Read, Update, Delete
+       ====== 
+       Consultas   GET/aluno
+                   GET/aluno/{id}
+       Criar Novo  POST/aluno 
+       Alterar     PUT/aluno
+                   PUT/aluno/{id}
+       Apagar      DELETE/aluno 
+                   DELETE/aluno/{id}        
+~~~ 
+    - Representação de Recursos (Media Type): 
+~~~        
+    - JSON 
+        "aluno":{
+            "userId" : "XPTO123", 
+            "nome" : "John Von Neumann", 
+            "tipo" : "adm" 
+        }
+
+    - XML 
+        <aluno>
+            <userId>XPTO123</userId>
+            <nome>John Von Neumann</nome>
+            <tipo>adm</tipo>
+        </aluno>
+    
+    - TXT, HTML, Binário, etc. 
+~~~
+
+    - Comunicação Stateless (não mantém sessão aberta) 
+
+
+# Spring Data
+
+## JPA 
+
+1. Adicione a dependência do JPA ao Projeto. 
+
+~~~
+		<!-- JPA - Persistência em DB -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+~~~
+- Por padrão o Spring utiliza o Hibernate como implementação da JPA. Outras implemetações como eclipse link podem ser configuradas. 
+
+
+2. Adicione a dêpendencia do Banco de Dados.
+
+- Utilizaremos o H2, um bando de dados em memória. 
+
+~~~
+		<!-- DB - H2 Banco de Dados em Memória -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+~~~
+
+3. Configurando o Banco de Dados H2 no application.properties 
+
+~~~
+# data source
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.url=jdbc:h2:mem:banco-teste
+spring.datasource.username=sa
+spring.datasource.password=
+
+# jpa
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.jpa.hibernate.ddl-auto=update
+
+# h2
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+~~~
+
+4. Adequando a Classe Modelo  
+
+    a. Adicione a anotação @Entity na classe 
+    b. 
+
+## Fazendo consultas ao Banco de Dados com o padrão Repository
+
+1. Crie uma interface UsuarioRepository no pacote repository. Essa interface precisa herdar de JpaRepository. 
+- A Interface JpaRepository precisa de um generics com dois parametros, o primeiro é a classe modelo e segundo parametro é o tipo de dado da chave primária. 
+~~~
+public interface UsuarioRepository extends JpaRepository<Usuario, String> {
+
+}
+~~~
+
+2. Injete a dependencia da interface UsuarioRepository na classe UsuarioController
+
+~~~
+	@Autowired 
+	private UsuarioRepository usuarioRepository; 
 ~~~

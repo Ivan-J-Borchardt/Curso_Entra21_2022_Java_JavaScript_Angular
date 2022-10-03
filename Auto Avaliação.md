@@ -7,7 +7,7 @@ Faça uma auto-avaliação respondendo ao questionário abaixo. Suas respoastas 
 2. Baixe o arquivo Auto Avaliação.md   
 https://github.com/Ivan-J-Borchardt/Entra21_2022_Java_JavaScript/blob/master/Auto Avaliação.md
 
-3. Renomeie o arquivo para "Auto Avaliação 1".md.
+3. Renomeie o arquivo para "Auto Avaliação 2".md.
 4. Responda o Questionário e suba para seu repositório.  
 
 

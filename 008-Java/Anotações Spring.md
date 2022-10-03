@@ -182,7 +182,7 @@
 
 5. Otimizando a classe Controller 
 
-- @ResponseBody: Essa anitação representa um dos comportamentos característicos de uma API REST, enviar a mensagem no corpo do response. 
+- @ResponseBody: Essa anotação representa um dos comportamentos característicos de uma API REST, enviar a mensagem no corpo do response. 
     - Substitua a @Controller por RestController 
     - Retire a @ResponseBody 
 
@@ -295,13 +295,15 @@
 ~~~
 # data source
 spring.datasource.driverClassName=org.h2.Driver
-spring.datasource.url=jdbc:h2:mem:banco-teste
+spring.datasource.url=jdbc:h2:mem:banco-teste;DATABASE_TO_UPPER=false
 spring.datasource.username=sa
 spring.datasource.password=
 
 # jpa
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 spring.jpa.hibernate.ddl-auto=update
+spring.jpa.defer-datasource-initialization=true
+
 
 # h2
 spring.h2.console.enabled=true
@@ -329,3 +331,82 @@ public interface UsuarioRepository extends JpaRepository<Usuario, String> {
 	@Autowired 
 	private UsuarioRepository usuarioRepository; 
 ~~~
+
+## Fazendo consultas com filtros
+
+- Para fins de exemplo, iremos criar uma consulta filtrando os registros pela coluna 'tipo' da tabela 'Usuario'. 
+
+1. Adicione um parâmetro 'String tipo' ao método listar() na classe UsuarioController
+
+~~~
+	@RequestMapping("/usuarios")
+	@ResponseBody
+	public List<UsuarioDto> listar(String tipo){
+        ...
+    }
+~~~
+
+2. Refatore o método listar(). 
+    -   Caso o parâmetro 'tipo' seja igual a null, então buscar todos os usuarios (usuarioRepository.findAll()); 
+    -   Caso o parâmetro 'tipo' seja diferente de null, então buscar os usuários cujo tipo seja igual ao conteúdo do parâmentro 'tipo' (usuarioRepository.findByTipo(tipo))
+
+~~~
+		if (tipo == null) {
+			List<Usuario> usuarios = usuarioRepository.findAll(); 
+			//Usuario user = new Usuario("XPTO", "Trocar123", "Joao2", "000.003.789-23", "Programador");
+			
+			//return UsuarioDto.converter(Arrays.asList(user, user, user)); 
+			return UsuarioDto.converter(usuarios); 			
+			
+		} else {
+			System.err.println(tipo);
+			List<Usuario> usuarios = usuarioRepository.findByTipo(tipo); 
+			return UsuarioDto.converter(usuarios); 	
+		}		
+~~~
+
+3. Crie o método findByTipo(String Tipo) em UsuarioRepository. 
+
+    - Apenas para uma melhor compreensão, "por de baixo dos panos", o Spring JPA fará a seguinte busca no banco de dados: 
+
+        select * from usuario where tipo = tipo; 
+
+    - Lembre-se que UsuarioRepository é uma interface, dessa forma, apenas declaramos a assinatura do método nela.  
+~~~
+	List<Usuario> findByTipo(String tipo);
+~~~
+
+**Importante:** Para que o Spring JPA reconheça o método em UsuarioRepository e 'saiba' o que fazer com ele, é necessário seguir o seguinte padrão de nomenclatura: 
+
+~~~
+    findBy<Atributo>
+~~~
+## Fazendo consultas com Join
+
+~~~
+    findBy<Entidade><Atributo>
+    ou 
+    findBy<Entidade>_<Atributo>
+
+    findBy<Entidade><Entidade><Atributo>
+~~~
+
+## Fazendo consultas filtrando pela Chave Primária (ID)
+
+~~~
+    findById()
+~~~
+
+## Fazendo consultas com assinatura de método personalizada
+   
+- Adicione a anotation @Query ao método no UsuarioController
+- Passe como parâmetro da anotation @Query a query escrita em JPQL (Java Persistence Query Language) 
+- Adicione a anotation @Param para mapear os atributos da query 
+
+~~~
+	@Query("Select u from Usuario u where u.userId = :userId")
+	List<Usuario> buscarPorUserId(@Param("userId") String userId);
+~~~
+ 
+**Tutorial JPQL:** https://www.youtube.com/watch?v=cg8tFvW7jZk 
+                   https://www.devmedia.com.br/curso/curso-jpql/2108

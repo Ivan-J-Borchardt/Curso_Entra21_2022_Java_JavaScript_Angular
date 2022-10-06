@@ -410,3 +410,221 @@ public interface UsuarioRepository extends JpaRepository<Usuario, String> {
  
 **Tutorial JPQL:** https://www.youtube.com/watch?v=cg8tFvW7jZk 
                    https://www.devmedia.com.br/curso/curso-jpql/2108
+
+
+## Cadastros (Verbo Http POST)
+
+1. Agora que teremos mais de um método respondendo ao mesmo mapeamento de rota ("/usuarios"), precisamos identificar o método das requisições. Isso pode ser feito de duas maneiras diferentes: 
+
+- Adicionando os atributos values e method na anotation @RequestMapping
+~~~
+    @RequestMapping(value= "/usuarios", method = RequestMethod.GET)
+
+    @RequestMapping(value = "/usuarios", method = RequestMethod.POST)
+~~~
+
+- Movendo a anotation @RequestMapping dos métodos para a classe e adicionando as anotations @GetMapping, @PostMapping, @PutMapping e @DeleteMapping aos métodos. 
+~~~
+@RestController
+@RequestMapping("/usuarios")
+public class UsuarioController {
+
+	@GetMapping 
+	public List<UsuarioDto> listar(String tipo){
+        ...
+    }
+
+    @PostMapping
+	public ResponseEntity<UsuarioDto> salvar(@RequestBody UsuarioForm usuarioForm, UriComponentsBuilder uriBuilder) {
+        ...
+    }		
+~~~
+
+2. Crie o um método para salvar o Usuario
+
+- O método salvar recebe um objeto UsuarioForm. A ideia por trás desse objeto é semelhante à ideia do UsuarioDTO, ele servirá como um objeto para transdeferncia de dados do cliente(Frontende, por exemplo) para o Servidor(Backende).  Veja mais detalhes no passo seguinte, onde criaremos a classe UsuarioForm.
+
+- O UsuarioForm deverá ter um método capaz de devolver um objeto Usuario (no nosso caso o chamamos de converter())
+
+- O Parâmetro usuarioForm deverá receber a anotation @RequestBody para indicar que este parâmetro vem no corpo da requisição. 
+
+- Usamos o método save() da interface usuarioRepository para inserir os dados no Banco. 
+
+- Ao final devolvemos um objeto ResponseEntity que retornará o Status 201, uma URI no Header Location para selecionar o registro recém inserido e um UsuarioDto.  
+
+- Por fim crie uma injeção de dependencia para uma interface EnderecoRepository, essa dependência será passada como parâmetro no método UsuarioForm.converter(enderecoRepository) para buscar o enderço no Banco de Dados. 
+
+~~~
+	@PostMapping
+	public ResponseEntity<UsuarioDto> salvar(@RequestBody UsuarioForm usuarioForm, UriComponentsBuilder uriBuilder) {
+		
+		Usuario usuario = usuarioForm.converter(enderecoRepository);
+		
+		usuarioRepository.save(usuario); 
+		
+		URI uri = uriBuilder.path("/usuarios/{id}").buildAndExpand(usuario.getUserId()).toUri(); 
+		return ResponseEntity.created(uri).body(new UsuarioDto(usuario)); 
+	}
+	
+~~~
+
+
+
+
+3. Crie a classe usuarioForm
+
+- Crie a classe From no pacote controller.form 
+
+- Essa classe deverá conter apenas atributos primitivos, getters e Setters e os métodos necessários para criar um Objeto Usuario. 
+
+- Observe que a classe Usuario, tem um relacionamento com a tabela Endereco, o que significa que, na classe, teremos uma intancia de Endereco. Como no UsuarioForm não podemos ter objetos, recebemos apenas o código de Endereco. 
+
+    No método converter, buscamos o Endereco no Banco de Dados para compor o objeto Usuário corretamente. 
+
+
+
+~~~
+public class UsuarioForm {
+	
+	private String userId; 
+	private String senha; 
+	private String nome; 
+	private String cpf; 
+	private String tipo;
+	
+	private int idEndereco;
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public int getIdEndereco() {
+		return idEndereco;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public void setIdEndereco(int idEndereco) {
+		this.idEndereco = idEndereco;
+	}
+
+	public Usuario converter(EnderecoRepository enderecoRepository) {
+		// TODO Auto-generated method stub
+		Endereco endereco = enderecoRepository.findById(idEndereco); 
+		return new Usuario(userId, senha, nome, cpf, tipo, endereco);
+	} 
+
+}
+
+~~~
+
+
+## Validação dos campos (Bean Validation)
+
+#### Referencia: https://beanvalidation.org/ 
+####             https://www.baeldung.com/javax-validation
+
+1. Adicione a dependencia do bean Validation ao Pom.xml
+
+~~~
+		<!-- Bean Validation -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+~~~
+
+2. Adicione a anotation @Valid ao parametro do método salvar() 
+
+
+~~~
+public ResponseEntity<UsuarioDTO> salvar(@RequestBody @Valid UsuarioForm  userForm,UriComponentsBuilder uriBuilder) {
+ ...
+}
+~~~
+
+3. Adicione as anotations do Bean Validation aos atributos do campo Form conforme necessidade. 
+
+~~~
+public class UsuarioForm {
+
+	//Bean Validation 
+	
+	@NotNull @NotEmpty @NotBlank @Size(min=3, max=5)
+	private String userId; 
+	@NotEmpty
+	private String senha; 
+	@NotBlank
+	private String nome;
+
+    ...
+}
+~~~
+
+
+## Deletando registros do Banco de Dados
+
+- A anotation @Transational serve para garantir que a operação seja executada dentro de uma transação. Ela deve ser adicionada em todas as operações de escrita. 
+
+- A Anotation @PathVariable indica que o parâmetro userId virá no endereço da requisição (funciona como uma rota dinâmica). 
+
+~~~
+	@DeleteMapping("/{userId}")
+	@Transactional
+	public ResponseEntity<?> deletar(@PathVariable String userId){
+		usuarioRepository.deleteById(userId); 
+		return ResponseEntity.ok().build();
+	}
+~~~
+
+
+## Tratamento do erro 404
+
+-  A ideia é testar se o Id existe no DB, caso não, retornamos o erro 404 (recurso não encontrado). Esse tratamento de execeção deve ser implementado em todas as rotas dinâmicas. 
+
+~~~
+	@DeleteMapping("/{userId}")
+	@Transactional
+	public ResponseEntity<?> deletar(@PathVariable String userId){
+		Optional<Usuario> optional =  usuarioRepository.findById(userId); 
+		if (optional.isPresent()) {
+			usuarioRepository.deleteById(userId); 
+			return ResponseEntity.ok().build();			
+		}	
+		return ResponseEntity.notFound().build(); 	
+	}
+~~~

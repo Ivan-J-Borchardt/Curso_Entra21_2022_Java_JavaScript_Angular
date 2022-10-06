@@ -17,7 +17,8 @@ public class Usuario {
 	private String nome; 
 	private String cpf; 
 	private String tipo;
-	
+	private String contato; 
+
 
 	@OneToOne
 	private Endereco endereco; 
@@ -28,12 +29,13 @@ public class Usuario {
 		
 	}
 	
-	public Usuario(String userId, String senha, String nome, String cpf, String tipo) {
+	public Usuario(String userId, String senha, String nome, String cpf, String tipo, Endereco end) {
 		this.userId = userId;
 		this.senha = senha;
 		this.nome = nome;
 		this.cpf = cpf;
 		this.tipo = tipo;
+		this.endereco = end; 
 	}
 	
 	

@@ -2,14 +2,22 @@ package com.example.demo.controller.form;
 
 import java.util.Optional;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 import com.example.demo.model.Endereco;
 import com.example.demo.model.Usuario;
 import com.example.demo.repository.EnderecoRepository;
 
 public class UsuarioForm {
 	
+	@NotNull @NotEmpty @NotBlank 
 	private String userId; 
+	@NotNull @NotEmpty @NotBlank @Size(min=4, max=6)
 	private String senha; 
+	@NotBlank
 	private String nome; 
 	private String cpf; 
 	private String tipo;

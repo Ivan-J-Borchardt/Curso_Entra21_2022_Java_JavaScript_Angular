@@ -596,6 +596,8 @@ public class UsuarioForm {
 ~~~
 
 
+
+
 ## Deletando registros do Banco de Dados
 
 - A anotation @Transational serve para garantir que a operação seja executada dentro de uma transação. Ela deve ser adicionada em todas as operações de escrita. 

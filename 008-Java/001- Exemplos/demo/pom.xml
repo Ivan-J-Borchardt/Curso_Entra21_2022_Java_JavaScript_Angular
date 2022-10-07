@@ -40,6 +40,12 @@
 			<scope>runtime</scope>
 		</dependency>	
 		
+		<!-- Bean Validation -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+		
 		<!-- JPA - Persistência em DB -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

@@ -17,7 +17,7 @@ public class Usuario {
 	private String nome; 
 	private String cpf; 
 	private String tipo;
-	private String contato; 
+
 
 
 	@OneToOne

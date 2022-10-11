@@ -1,5 +1,6 @@
 package com.example.demo.controller.dto;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -10,12 +11,19 @@ public class UsuarioDto {
 	private String userId; 
 	private String nome;  
 	private String tipo;
+//	private LocalDate data;
 	
 	
+//	public LocalDate getData() {
+//		return data;
+//	}
+
+
 	public UsuarioDto(Usuario user) {
 		this.userId = user.getUserId();
 		this.nome = user.getNome();
 		this.tipo = user.getTipo();
+//		this.data = user.getData(); 
 	}
 	
 	

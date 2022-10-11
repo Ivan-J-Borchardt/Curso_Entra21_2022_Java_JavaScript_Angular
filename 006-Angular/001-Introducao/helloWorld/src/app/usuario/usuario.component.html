@@ -1,0 +1,24 @@
+<p>Cadastro de usuario</p>
+<div>
+    <div>
+        <label for="">UserId:</label>
+    </div>
+    <input type="text" [(ngModel)]="userId">
+</div>
+<div>
+    <div>
+        <label for="">Nome:</label>
+    </div>
+    <input type="text" [(ngModel)]="usuarioDto.nome">
+</div>
+<div>
+    <div>
+        <label for="">Tipo:</label>
+    </div>
+    <input type="text" [(ngModel)]="usuarioDto.tipo">
+</div>
+
+<div>
+    <button (click)="getUsuario()" class="btn btn-primary">Buscar Usuario</button>
+    <button (click)="saveUsuario()" class="btn btn-primary">Salvar</button>
+</div>

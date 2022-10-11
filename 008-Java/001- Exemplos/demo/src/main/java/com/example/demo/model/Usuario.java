@@ -1,11 +1,17 @@
 package com.example.demo.model;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 public class Usuario {
@@ -23,6 +29,9 @@ public class Usuario {
 	@OneToOne
 	private Endereco endereco; 
 	
+
+	private LocalDate data; 
+	        
 	
 	
 	public Usuario() {
@@ -76,6 +85,14 @@ public class Usuario {
 
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
+	}
+
+	public LocalDate getData() {
+		return data;
+	}
+
+	public void setData(LocalDate data) {
+		this.data = data;
 	}
 	
 	

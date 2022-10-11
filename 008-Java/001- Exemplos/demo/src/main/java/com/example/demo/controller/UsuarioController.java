@@ -8,13 +8,16 @@ import java.util.Optional;
 import javax.transaction.Transactional;
 import javax.validation.Valid;
 
+import org.hibernate.internal.build.AllowSysOut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -23,6 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import com.example.demo.controller.dto.UsuarioDto;
+import com.example.demo.controller.form.AlterarUsuarioForm;
 import com.example.demo.controller.form.UsuarioForm;
 import com.example.demo.model.Usuario;
 import com.example.demo.repository.EnderecoRepository;
@@ -40,6 +44,7 @@ public class UsuarioController {
 
 	
 	//@RequestMapping(value= "/usuarios", method = RequestMethod.GET)
+	@CrossOrigin
 	@GetMapping 
 	public List<UsuarioDto> listar(String tipo){
 		
@@ -57,14 +62,15 @@ public class UsuarioController {
 	}
 	
 	
-	
+	@CrossOrigin
 	@GetMapping("/{userId}") 
 	public ResponseEntity<UsuarioDto> detalhar(@PathVariable String userId) {
 		
 		Optional<Usuario> usuarioOpt = usuarioRepository.findById(userId); 
 		if (usuarioOpt.isPresent()) {
 			Usuario usuario = usuarioOpt.get();
-			return ResponseEntity.ok(new UsuarioDto(usuario));
+			System.out.println(usuario.getData()); 
+ 			return ResponseEntity.ok(new UsuarioDto(usuario));
 		}
 
 		return ResponseEntity.notFound().build(); 
@@ -73,6 +79,7 @@ public class UsuarioController {
 	
 	
 	//@RequestMapping(value = "/usuarios", method = RequestMethod.POST)
+	@CrossOrigin
 	@PostMapping
 	@Transactional
 	public ResponseEntity<UsuarioDto> salvar(@RequestBody @Valid UsuarioForm usuarioForm, UriComponentsBuilder uriBuilder) {
@@ -85,8 +92,18 @@ public class UsuarioController {
 		return ResponseEntity.created(uri).body(new UsuarioDto(usuario)); 
 	}
 	
+	@CrossOrigin
+	@PutMapping("/{userId}")
+	@Transactional
+	public ResponseEntity<UsuarioDto>  alterar(@PathVariable String userId, @RequestBody AlterarUsuarioForm usuarioForm ){
+		
+		Usuario usuario = usuarioForm.alterar(userId, usuarioRepository); 
+		
+		return ResponseEntity.ok(new UsuarioDto(usuario)); 
+	}
 	
 	
+	@CrossOrigin
 	@DeleteMapping("/{userId}")
 	@Transactional
 	public ResponseEntity<?> deletar(@PathVariable String userId){

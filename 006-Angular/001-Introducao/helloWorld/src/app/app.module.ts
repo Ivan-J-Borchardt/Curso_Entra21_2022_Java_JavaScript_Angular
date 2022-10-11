@@ -14,6 +14,7 @@ import { Error404Component } from './error404/error404.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './services/auth/auth.guard';
 import { FormularioComponent } from './formulario/formulario.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormularioComponent } from './formulario/formulario.component';
     CabecalhoComponent,
     Error404Component,
     LoginComponent,
-    FormularioComponent
+    FormularioComponent,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,
